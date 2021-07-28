@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../header/Header";
-import "./instructions.css";
+import "./about.css";
 
 const Instructions = () => {
   return (
@@ -8,7 +8,7 @@ const Instructions = () => {
       <Header />
       <main>
         <div className="container">
-          <h1>Инструкции</h1>
+          <h1>О нас</h1>
         </div>
       </main>
     </>

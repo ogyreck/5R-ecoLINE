@@ -4,7 +4,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import Main from './components/contents/main/Main';
 import Blog from './components/contents/blog/Blog';
 import News from './components/contents/news/News';
-import Instructions from './components/contents/instructions/Instructions';
+import About from './components/contents/about/About';
 import Shop from './components/contents/shop/Shop';
 
 const App = () => {
@@ -14,7 +14,7 @@ const App = () => {
         <Route exact path='/' component={Main}/>
         <Route exact path='/blog' component={Blog}/>
         <Route exact path='/news' component={News}/>
-        <Route exact path='/instructions' component={Instructions}/>
+        <Route exact path='/about' component={About}/>
         <Route exact path='/shop' component={Shop}/>
       </BrowserRouter>
     </>

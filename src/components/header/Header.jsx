@@ -16,18 +16,18 @@ const Header = () => {
           <div className="navbar">
             <ul className="nav__links">
               <li>
-                  <Link to="/blog">
-                    Блок
-                  </Link>
-                </li>
-              <li>
                 <Link to="/news">
                   Новости
                 </Link>
+                </li>
+              <li>
+                <Link to="/about">
+                  О нас
+                </Link>
               </li>
               <li>
-                <Link to="/instructions">
-                  Инструкции
+                <Link to="/blog">
+                  Блог
                 </Link>
               </li>
               <li>
