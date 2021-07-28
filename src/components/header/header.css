@@ -1,0 +1,77 @@
+header{
+  background-image: url();
+}
+
+.header{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* логотип */
+.logo{
+  margin-top: 26px;
+}
+
+
+/*  Навбар */
+.navbar{
+  margin-top: 34px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav__links{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav__links li{
+  display: inline;
+  margin-left: 60px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.nav__links li:hover{
+  padding-bottom: 2px;
+  border-bottom: 2px solid #FCCF62
+}
+
+.nav__links li a {
+  color: #9AA688;
+}
+
+.nav__links li a:hover {
+  color: #E7EFD9;
+}
+
+.nav__links li:first-child {
+  margin-left: 0px;
+}
+
+/* Поиск */
+
+.search{
+  margin-top: 26px;
+}
+
+.search__input {
+  color: #9A9A9A;
+  font-size: 16px;
+  padding-left: 41px;
+  font-weight: 500;
+  background: url(../../img/search.svg) no-repeat 12px 12px;
+  background-color: #eeeeee;
+  border-radius: 8px;
+  width: 206px;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+
+.search__input:focus,
+.search__input:hover {
+  background-color: #C2C2C2;
+}
