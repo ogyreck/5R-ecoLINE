@@ -1,0 +1,68 @@
+.blockWithVideo{
+    display: flex;
+    height: 500px;
+    background: #C28686;
+    background-image: url(./with_video_background.png);
+}
+
+.sectionWithVideo{
+    position: relative;
+    top: 90px;
+    width: 50%;
+    height: 320px;
+    border-radius: 4px;
+}
+
+.video{
+    position: relative;
+    left: 18%;
+    height: 320px;
+    width: 64%;
+}
+
+.textAndButton
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 161px;
+    left: 25px;
+    height: 178px;
+    width: 452px;
+}
+
+.motivationText{
+    position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.buttonToShop{
+    position: relative;
+    height: 62px;
+    width: 206px;
+    top: 32px;
+    background: transparent;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 128%;
+    text-align: center;
+    color: #FFFFFF;
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.buttonToShop:hover{
+    background: rgba(23, 23, 23, 0.18);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+}

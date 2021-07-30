@@ -8,6 +8,7 @@ import About from './components/contents/about/About';
 import Shop from './components/contents/shop/Shop';
 import Quizz from './components/contents/Quizz'
 import Numbers from './components/contents/Numbers'
+import BlockWithVideo from './components/contents/BlockWithVideo';
 
 const App = () => {
     return (
@@ -22,6 +23,7 @@ const App = () => {
             <div className="App">
                 <Quizz />
                 <Numbers/>
+                <BlockWithVideo/>
             </div>
         </>
     );
