@@ -54,7 +54,7 @@ nav ul{
 }
 
 .nav__links li:first-child {
-  margin-left: 0px;
+  margin-left: 0;
 }
 
 .nav__link-shop img{
@@ -135,7 +135,7 @@ nav ul{
   font-size: 16px;
   padding-left: 41px;
   font-weight: 500;
-  background: url(../../img/search.svg) no-repeat 12px 12px;
+  background: url(/src/img/search.svg) no-repeat 12px 12px;
   background-color: #eeeeee;
   border-radius: 8px;
   width: 206px;
