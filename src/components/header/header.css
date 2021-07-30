@@ -1,42 +1,48 @@
 header{
-  background-image: url('/src/img/main_bg.jpg');
+  position:fixed;
+  width: 100%;
 }
 
 .header{
   display: flex;
-  width: 100%;
   justify-content: space-between;
 }
 
 /* логотип */
 .logo{
-  margin-top: 26px;
+  margin-top: 33px;
 }
-
 
 /*  Навбар */
 .navbar{
-  margin-top: 34px;
-  display: flex;
-  justify-content: center;
+  display: table;
+  margin-top: 41px;
 }
 
-.nav__links{
-  list-style-type: none;
+nav ul{
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
+.nav__links:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .nav__links li{
-  display: inline;
+  float: left;
+  position: relative;
   margin-left: 60px;
   font-size: 16px;
   font-weight: 500;
 }
 
-.nav__links li:hover{
+.nav__links li a:hover{
   padding-bottom: 2px;
-  border-bottom: 2px solid #FCCF62
+  border-bottom: 2px solid #FCCF62;
+  cursor: pointer;
 }
 
 .nav__links li a {
@@ -51,12 +57,79 @@ header{
   margin-left: 0;
 }
 
-/* Поиск */
-
-.search{
-  margin-top: 26px;
+.nav__link-shop img{
+  margin-left: 10px;
 }
 
+.nav__link-items{
+  background: #273037;
+  position: absolute;
+  margin-top: 10px;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  width: 115px;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin :0 0;
+  transition: .5s ease-in-out;
+}
+
+.nav__link-items li {
+  margin: 0;
+}
+.nav__link-items li a:hover {
+  padding-bottom: 0px;
+  border-bottom: none;
+}
+.nav__link-items li a {
+  display: block;
+  text-align: center;
+  margin: 15px 25px; 
+}
+
+.nav__links>li:hover .nav__link-items {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+
+/* Поиск */
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  margin-top: 45px;
+}
+
+.search, .favorites, .goods {
+  cursor: pointer;
+}
+.favorites, .goods {
+  cursor: pointer;
+  margin-left: 32px;
+}
+
+.goods{
+  position: relative;
+}
+
+.goods__number{
+  color: #E0E0E0;
+  border-radius: 50%;
+  padding: 2px 5px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  background-color: #25733B;
+  margin-bottom: 10px;
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+
+/*
 .search__input {
   color: #9A9A9A;
   font-size: 16px;
@@ -74,4 +147,4 @@ header{
 .search__input:focus,
 .search__input:hover {
   background-color: #C2C2C2;
-}
+} */
