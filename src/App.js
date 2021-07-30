@@ -6,7 +6,7 @@ import Blog from './components/contents/blog/Blog';
 import News from './components/contents/news/News';
 import About from './components/contents/about/About';
 import Shop from './components/contents/shop/Shop';
-import Quizz from './components/contents/Quizz'
+import Quizz from './components/contents/main/Quizz'
 
 const App = () => {
     return (
