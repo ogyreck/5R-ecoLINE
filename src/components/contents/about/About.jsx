@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../../header/Header";
 import "./about.css";
 
-const Instructions = () => {
+const About = () => {
   return (
     <>
       <Header />
@@ -15,4 +15,4 @@ const Instructions = () => {
   )
 }
 
-export default Instructions;
+export default About;
