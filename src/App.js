@@ -8,6 +8,7 @@ import News from './components/contents/news/News';
 import About from './components/contents/about/About';
 import Shop from './components/contents/shop/Shop';
 import Quizz from './components/contents/Quizz'
+import Numbers from './components/contents/Numbers'
 
 const App = () => {
     return (
@@ -21,6 +22,7 @@ const App = () => {
             </BrowserRouter>
             <div className="App">
                 <Quizz />
+                <Numbers/>
             </div>
         </>
     );
