@@ -1,18 +1,18 @@
 import React from "react";
 import Header from "../../header/Header";
-import "./news.css";
+import "./tips.css";
 
-const News = () => {
+const Tips = () => {
   return (
     <>
       <Header />
       <main>
         <div className="container">
-          <h1>Новости</h1>
+          <h1>Советы</h1>
         </div>
       </main>
     </>
   )
 }
 
-export default News;
+export default Tips;

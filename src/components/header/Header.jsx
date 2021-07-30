@@ -17,18 +17,18 @@ const Header = () => {
           <nav className="navbar">
             <ul className="nav__links">
               <li>
-                <Link to="/news">
-                  Новости
-                </Link>
-                </li>
-              <li>
                 <Link to="/about">
                   О нас
                 </Link>
-              </li>
+                </li>
               <li>
                 <Link to="/blog">
                   Блог
+                </Link>
+              </li>
+              <li>
+                <Link to="/tips">
+                  Советы
                 </Link>
               </li>
               <li className="nav__link-shop">
@@ -39,12 +39,12 @@ const Header = () => {
                 <ul className="nav__link-items">
                   <li>
                     <Link to="/shop">
-                      Каталог
+                      Оплата и доставка
                     </Link>
                   </li>
                   <li>
                     <Link to="/shop">
-                      Оплата
+                      Каталог товаров
                     </Link>
                     </li>
                 </ul>
@@ -64,8 +64,6 @@ const Header = () => {
               <img id="goods__btn" src="/img/basket.svg" alt="" />
               <label className="goods__number" htmlFor="goods__btn">1</label>
             </div>
-              
-
             {/* <input className="search__input" type="text" placeholder="Поиск"/> */}
           </div>
         </div>

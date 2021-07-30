@@ -1,8 +1,12 @@
 import React from "react";
 import Header from "../../header/Header";
+import Quizz from "./Quizz"
 import "./main.css";
 
 const Main = () => {
+  const click = () => {
+    window.location.assign("./shop");
+  }
   return (
     <>
       <Header />
@@ -17,6 +21,7 @@ const Main = () => {
             </div>
           </div>
         </section>
+
         <section className="numbers">
           <h2 className="humbers__heading">Цифры, которые имеют значение</h2>
           <div className="numbers__items">
@@ -38,6 +43,18 @@ const Main = () => {
             </div>
           </div>
         </section>
+
+        <section className="blockWithVideo">
+          <div className="sectionWithVideo">
+            <iframe className="video" src="https://www.youtube.com/embed/gJAp5tWiN8Q" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          </div>
+          <div className="textAndButton">
+            <div className="motivationText">Жить экологично - это легко, полезно и выгодно!</div>
+            <button className="buttonToShop" onClick={click}>В магазин</button>
+          </div>
+        </section>
+
+        <Quizz/>
       </main>
     </>
   )

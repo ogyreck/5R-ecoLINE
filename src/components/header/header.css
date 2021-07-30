@@ -1,16 +1,20 @@
 header{
   position:fixed;
   width: 100%;
+  background-color: transparent;
+  /* background-color: rgba(3, 61, 20, 0.9); */
 }
 
 .header{
   display: flex;
   justify-content: space-between;
+  z-index: 20;
 }
 
 /* логотип */
 .logo{
   margin-top: 33px;
+  margin-bottom: 33px;
 }
 
 /*  Навбар */
@@ -68,7 +72,7 @@ nav ul{
   left: 0;
   top: 100%;
   z-index: 5;
-  width: 115px;
+  width: 125px;
   opacity: 0;
   transform: scaleY(0);
   transform-origin :0 0;
