@@ -44,17 +44,35 @@ const Main = () => {
           </div>
         </section>
 
-        <section className="blockWithVideo">
-          <div className="sectionWithVideo">
-            <iframe className="video" src="https://www.youtube.com/embed/gJAp5tWiN8Q" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <section className="video">
+          <div className="container video__row">
+            <div className="block__video">
+              <iframe className="block__video-url" src="https://www.youtube.com/embed/gJAp5tWiN8Q" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            </div>
+            <div className="block__text">
+              <div className="block__text-motivation">Жить экологично - это <br/>легко, полезно и выгодно!</div>
+              <button className="block__text-btn" onClick={click}>В магазин</button>
+            </div>
           </div>
-          <div className="textAndButton">
-            <div className="motivationText">Жить экологично - это легко, полезно и выгодно!</div>
-            <button className="buttonToShop" onClick={click}>В магазин</button>
-          </div>
+
         </section>
 
         <Quizz/>
+
+        <section className="purpose">
+          <div className="container purpose__row">
+            <div>
+              <h2 className="purpose__title">Наши цели</h2>
+              <p className="purpose__text"><strong>ЭКОпорлал 5R.</strong> - это набор пошаговых инструкций и кейсов, которые сможет изучить и повторить каждый. Мы поможем сформировать системное мышление и сориентируем на пути к осознанной экологичной жизни. <br /><br />Наша цель - доказать, что внедрение в жизнь эко-привычек - это не сложно. <br /><br />Там, где есть понимание проблемы – есть действие!</p>
+            </div>
+            <div>
+              <img className="purpose__img-after" src="./img/photo_after.jpg" alt="" />
+              <img className="purpose__img-before" src="./img/photo_before.jpg" alt="" />
+            </div>
+          </div>
+          
+        </section>
+
       </main>
     </>
   )

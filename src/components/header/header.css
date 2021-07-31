@@ -1,8 +1,8 @@
 header{
   position:fixed;
   width: 100%;
-  /* background-color: transparent; */
-  background-color: rgba(3, 61, 20, 0.8);
+  background-color: rgba(243, 243, 243, 0.6);
+  /* background-color: rgba(3, 61, 20, 0.8); */
   z-index: 20;
 }
 

@@ -91,51 +91,51 @@
 
 /* секция с видео */
 
-.blockWithVideo {
+.video__row {
+  display: flex;
+  flex-direction: row;
+}
+
+.video {
   display: flex;
   height: 500px;
   background: #C28686;
+  /* background: url(/src/img/with_video_background.png) no-repeat center center; */
   background-image: url(/src/img/with_video_background.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.sectionWithVideo {
-  position: relative;
-  top: 90px;
-  width: 50%;
+.block__video {
+  margin-top: 90px;
+  width: 600px;
   height: 320px;
   border-radius: 4px;
 }
 
-.video {
-  position: relative;
-  left: 18%;
-  height: 320px;
-  width: 64%;
+.block__video-url {
+  width: 100%;
+  height: 100%;
 }
 
-.textAndButton {
-  position: relative;
+.block__text {
   display: flex;
   flex-direction: column;
-  top: 161px;
-  left: 25px;
-  height: 178px;
-  width: 452px;
+  margin-top: 161px;
+  margin-left: 104px;
 }
 
-.motivationText {
-  position: relative;
+.block__text-motivation {
   font-weight: 500;
   font-size: 36px;
   line-height: 44px;
   color: #FFFFFF;
 }
 
-.buttonToShop {
-  position: relative;
-  height: 62px;
-  width: 206px;
-  top: 32px;
+.block__text-btn {
+  height: 60px;
+  width: 204px;
+  margin-top: 32px;
   background: transparent;
   font-size: 20px;
   line-height: 128%;
@@ -147,7 +147,45 @@
   border-radius: 4px;
 }
 
-.buttonToShop:hover {
+.block__text-btn:hover {
   background: rgba(23, 23, 23, 0.18);
   border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+/*  секция с целями */
+.purpose{
+  height: 653px;
+  background: url(../../../img/goal_bg.jpg) no-repeat center center;
+}
+
+.purpose__title{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 24px;
+  color: #fff;
+  padding-top: 140px;
+}
+
+.purpose__text{
+  margin-top: 42px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  line-height: 162%;
+  width: 556px;
+}
+
+.purpose__row{
+  display: flex;
+  flex-direction: row;
+}
+
+.purpose__img-after{
+  margin-top: 47px;
+  position: relative;
+}
+
+.purpose__img-before {
+  margin-top: 26px;
+  position: absolute;
+  margin-left: -53px;
 }

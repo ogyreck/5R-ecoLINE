@@ -9,6 +9,23 @@ const Quizz = () => {
     const [score, setScore] = useState(0)
     const [showScore, setShowScore] = useState(false)
 
+
+    // const handleNextQuestion = () => {
+    //     console.log('next');
+    //     const nextQuestion = currentQuestion + 1; 
+        
+    //     if (nextQuestion < questions.length - 1) setCurrentQuestion(nextQuestion)
+    //     else setShowScore(true)
+    // }
+
+    // const handlePrevQuestion = () => {
+    //     console.log('Prev');
+    //     const nextQuestion = currentQuestion - 1; 
+        
+    //     if (nextQuestion < questions.length - 1) setCurrentQuestion(nextQuestion)
+    //     else setShowScore(true)
+    // }
+
     const handleAnswerOptionClick = (isCorrect) => {
         if (isCorrect) setScore((score + 1))
 
@@ -25,31 +42,6 @@ const Quizz = () => {
     }
 
     return (
-        // <div className="quizz">
-        //     {
-        //         showScore
-        //         ? <div className="section__score">
-        //             <div>Правильных ответов {score} из {questions.length}</div>
-        //             <button className="refresh_btn"
-        //             onClick={refresh}>Попробовать еще раз</button>
-        //         </div>
-        //         : <div className="question__section">
-        //             <div className="question__count">
-        //                 <span>Вопрос {currentQuestion + 1} </span> / {questions.length}
-        //             </div>
-        //             <div className="question__text">
-        //                 {questions[currentQuestion].questionText}
-        //             </div>
-        //             <div className="answer__section">
-        //                 {questions[currentQuestion].answerOptions.map(item => (
-        //                     <button onClick={() => handleAnswerOptionClick(item.isCorrect)}>
-        //                         {item.answerText}
-        //                     </button>
-        //                 ))}
-        //             </div>
-        //         </div>
-        //     }
-        // </div>
         <section className="test">
             <h2 className="test__heading">Проверь себя</h2>
             <p className="test__description">Пройди тест из 8 вопросов и узнай, <br /> почему планету необходимо спасать уже сейчас</p>
@@ -61,7 +53,16 @@ const Quizz = () => {
                             <button className="refresh_btn"
                                 onClick={refresh}>Попробовать еще раз</button>
                         </div>
-                        : <div className="question__section">
+                        : 
+                        <div className="quizz__section">
+
+                        <div className="question__hidden">
+                            <div className="question__text">
+                                {questions[currentQuestion].questionText}
+                            </div>
+                        </div>
+
+                        <div className="question__section">
                             {/* <div className="question__count">
                     <span>Вопрос {currentQuestion + 1} </span> / {questions.length}
                   </div> */}
@@ -75,6 +76,21 @@ const Quizz = () => {
                                     </button>
                                 ))}
                             </div>
+                        </div>
+
+                        <div className="question__hidden">
+                            <div className="question__text">
+                                {questions[currentQuestion].questionText}
+                            </div>
+
+                            {/* <div className="answer__section">
+                                {questions[currentQuestion + 1].answerOptions.map(item => (
+                                    <button key={item.answerText} className="button__quizz" onClick={() => handleAnswerOptionClick(item.isCorrect)}>
+                                        {item.answerText}
+                                    </button>
+                                ))}
+                            </div> */}
+                        </div>
                         </div>
                 }
             </div>
