@@ -89,7 +89,37 @@ const Main = () => {
             </div>
             <button className="concept__btn">Читать</button>
 
+          </div>
+        </section>
 
+        <section className="blog">
+          <div className="blog__bg">
+            <div className="container">
+              <h2 className="blog__title">Блог</h2>
+              <div className="blog__topics">
+                <button className="blog__topic-active">Популярные</button>
+                <button>Ресурсы</button>
+                <button>Отдых</button>
+                <button>Климат</button>
+                <button>Экотехнологии</button>
+                <button>Проблемы</button>
+                <button>Пути решения</button>
+              </div>
+              <div className="blog__cards">
+                <div className="blog__card-item">
+                  <img src="./img/cards/card_1" alt="" />
+                </div>
+                <div className="blog__card-item">
+
+                </div>
+                <div className="blog__card-item">
+
+                </div>
+                <div className="blog__card-item">
+
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
