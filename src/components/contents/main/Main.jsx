@@ -47,6 +47,7 @@ const Main = () => {
         <section className="video">
           <div className="container video__row">
             <div className="block__video">
+              {/* <img className="block__video-url" src="../img/video_preloader.jpg" alt="" /> */}
               <iframe className="block__video-url" src="https://www.youtube.com/embed/gJAp5tWiN8Q" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
             </div>
             <div className="block__text">
@@ -70,7 +71,26 @@ const Main = () => {
               <img className="purpose__img-before" src="./img/photo_before.jpg" alt="" />
             </div>
           </div>
-          
+        </section>
+
+        <section className="concept">
+          <div className="container">
+
+            <div className="concept__row">
+              <h2 className="concept__title">Концепция</h2>
+              <img className="concept__img" src="/img/5R.svg" alt="" />
+              <div className="concept__words">
+                <span><span>REFUSE</span> - ОТКАЖИСЬ</span>
+                <span><span>REDUCE</span> - СОКРАТИ</span>
+                <span><span>REUSE</span> - ПЕРЕИПОЛЬЗУЙ</span>
+                <span><span>RECYCLE</span> - ПЕРЕРАБОТАЙ</span>
+                <span><span>ROT</span> - КОМПОСТИРУЙ</span>
+              </div>
+            </div>
+            <button className="concept__btn">Читать</button>
+
+
+          </div>
         </section>
 
       </main>

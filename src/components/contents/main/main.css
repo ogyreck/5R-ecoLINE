@@ -189,3 +189,63 @@
   position: absolute;
   margin-left: -53px;
 }
+
+/* секция с концепцией 5R */
+
+.concept{
+  background-image: url(../../../img/concept_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 859px;
+}
+
+.concept__row{
+  display: flex;
+  flex-direction: row;
+  padding-top: 149px;
+}
+.concept button{
+  display: flex;
+  justify-content: center;
+}
+
+.concept__title{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 24px;
+  color: rgba(33, 60, 31, 0.9);
+  margin-right: 74px;
+}
+
+.concept__img {
+  margin-top: 94px;
+  margin-right: 24px;
+}
+
+.concept__words {
+  display: flex;
+  flex-direction: column;
+  margin-top: 128px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 128%;
+  color: #92A790;
+
+}
+
+.concept__words span span{
+  color: #213C1F;
+}
+
+.concept__btn{
+  background-color: #387732;
+  padding: 18px 70px;
+  border: none;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 102px;
+  font-size: 20px;
+  line-height: 128%;
+  border-radius: 4px;
+  color: #fff;
+}
