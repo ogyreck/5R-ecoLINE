@@ -1,5 +1,6 @@
 import React from "react";
-import Header from "../../header/Header";
+import Header from "../../header/Header"; 
+import { Link } from "react-router-dom";
 import Quizz from "./Quizz"
 import "./main.css";
 
@@ -107,18 +108,57 @@ const Main = () => {
               </div>
               <div className="blog__cards">
                 <div className="blog__card-item">
-                  <img src="./img/cards/card_1" alt="" />
+                  <img src="/img/cards/card_1.jpg" alt="" />
+                  <span className="card__title">Война за воду. <br/>Является ли эта угроза реальной?</span>
+                  <div className="card__info">
+                    <div className="card__info-viewers">
+                      <img src="/img/eye.svg" alt="" />
+                      <span>304</span>
+                    </div>
+                    <span className="card__info-date">05.07.2021</span>
+                  </div>
                 </div>
-                <div className="blog__card-item">
+                <div className="blog__card-hover">
+                  <span className="card__title-hover">Знали ли вы, что мы можем получать тепло и электричество из биологических отходов?</span>
+                  <button className="card__btn-hover">Читать</button>
 
                 </div>
                 <div className="blog__card-item">
-
+                  <img src="/img/cards/card_3.jpg" alt="" />
+                  <span className="card__title">Война за воду. <br />Является ли эта угроза реальной?</span>
+                  <div className="card__info">
+                    <div className="card__info-viewers">
+                      <img src="/img/eye.svg" alt="" />
+                      <span>304</span>
+                    </div>
+                    <span className="card__info-date">05.07.2021</span>
+                  </div>
                 </div>
                 <div className="blog__card-item">
-
+                  <img src="/img/cards/card_4.jpg" alt="" />
+                  <span className="card__title">Война за воду. <br />Является ли эта угроза реальной?</span>
+                  <div className="card__info">
+                    <div className="card__info-viewers">
+                      <img src="/img/eye.svg" alt="" />
+                      <span>304</span>
+                    </div>
+                    <span className="card__info-date">05.07.2021</span>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="subscribe">
+          <div className="container subscribe__row">
+            <img className="subscribe__title" src="/img/form_img.png" alt="" />
+            {/* <h2 className="subscribe__title">Будьте в курсе последних эко-событий</h2> */}
+            <div className="form">
+              <input className="form__input" type="text" placeholder="Email"/>
+              <button className="form__btn">Подписаться</button>
+              <br/>
+              <span className="form__text">Нажимая кнопку "Подписаться", Вы даете<br /> согласие на <Link to="/" className="form__text-link">обработку персональных данных</Link></span>
             </div>
           </div>
         </section>
