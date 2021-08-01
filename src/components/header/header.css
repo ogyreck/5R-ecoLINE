@@ -14,14 +14,19 @@ header{
 
 /* логотип */
 .logo{
-  margin-top: 33px;
+  margin-top: 32px;
   margin-bottom: 33px;
+}
+
+.logo a{
+  display: flex;
+  align-items: center;
 }
 
 /*  Навбар */
 .navbar{
   display: table;
-  margin-top: 41px;
+  margin-top: 40px;
 }
 
 nav ul{
@@ -67,13 +72,16 @@ nav ul{
 }
 
 .nav__link-items{
+  display: flex;
+  flex-direction: column;
   background: #273037;
   position: absolute;
   margin-top: 10px;
+  padding-left: 5px;
   left: 0;
   top: 100%;
   z-index: 5;
-  width: 125px;
+  width: 170px;
   opacity: 0;
   transform: scaleY(0);
   transform-origin :0 0;
@@ -89,8 +97,8 @@ nav ul{
 }
 .nav__link-items li a {
   display: block;
-  text-align: center;
-  margin: 15px 25px; 
+  text-align: left;
+  margin: 15px 0px; 
 }
 
 .nav__links>li:hover .nav__link-items {
@@ -103,8 +111,8 @@ nav ul{
 
 .navigation {
   display: flex;
-  flex-direction: row;
-  margin-top: 45px;
+  /* flex-direction: row; */
+  margin-top: 32px;
 }
 
 .search, .favorites, .goods {
@@ -153,3 +161,66 @@ nav ul{
 .search__input:hover {
   background-color: #C2C2C2;
 } */
+
+
+
+
+
+/* для главной страницы */
+.navigation{
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation__link{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navigation a{
+  display: block;
+  text-align: right;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 11px;
+  color: #878787;
+}
+
+.navigation__link-vk{
+  margin-left: 41px;
+}
+.navigation__link-inst,
+.navigation__link-telegram {
+  margin-left: 15px;
+}
+
+.navigation__link-vk,
+.navigation__link-inst,
+.navigation__link-telegram {
+  width: 31px;
+  height: 31px;
+  background-color:grey;
+  border-radius: 50%;
+  text-align: center;
+  /* display: table-cell; */
+  /* vertical-align: middle; */
+  /* line-height: 27px; */
+}
+.navigation__link-vk img,
+.navigation__link-inst img,
+.navigation__link-telegram img {
+  vertical-align: -webkit-baseline-middle;
+}
+
+.logo__name {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 130%;
+  color: #E3BC58;
+  margin-left: 7px;
+}
+
+.logo__name span{
+  color: #FFEFC5;
+}

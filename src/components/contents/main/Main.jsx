@@ -1,5 +1,6 @@
 import React from "react";
-import Header from "../../header/Header"; 
+import HeaderMain from "../../header/Header_main";
+import Footer from "../../footer/Footer";
 import { Link } from "react-router-dom";
 import Quizz from "./Quizz"
 import "./main.css";
@@ -10,7 +11,7 @@ const Main = () => {
   }
   return (
     <>
-      <Header />
+      <HeaderMain />
       <main>
         <section className="main">
           <div className="container">
@@ -155,7 +156,7 @@ const Main = () => {
             <img className="subscribe__title" src="/img/form_img.png" alt="" />
             {/* <h2 className="subscribe__title">Будьте в курсе последних эко-событий</h2> */}
             <div className="form">
-              <input className="form__input" type="text" placeholder="Email"/>
+              <input className="form__input" type="email" placeholder="Email"/>
               <button className="form__btn">Подписаться</button>
               <br/>
               <span className="form__text">Нажимая кнопку "Подписаться", Вы даете<br /> согласие на <Link to="/" className="form__text-link">обработку персональных данных</Link></span>
@@ -164,6 +165,8 @@ const Main = () => {
         </section>
 
       </main>
+
+      <Footer/>
     </>
   )
 }

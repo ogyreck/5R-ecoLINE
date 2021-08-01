@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "../../header/Header";
+import HeaderShop from "../../header/Header_shop";
 import "./shop.css";
 
 const Shop = () => {
   return (
     <>
-      <Header />
+      <HeaderShop />
       <main>
         <div className="container">
           <h1>Эко-магазин</h1>
