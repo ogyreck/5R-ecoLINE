@@ -79,7 +79,7 @@ const Main = () => {
 
             <div className="concept__row">
               <h2 className="concept__title">Концепция</h2>
-              <img className="concept__img" src="/img/5R.svg" alt="" />
+              <img className="concept__img" src="/img/5R.png" alt="" />
               <div className="concept__words">
                 <span><span>REFUSE</span> - ОТКАЖИСЬ</span>
                 <span><span>REDUCE</span> - СОКРАТИ</span>
