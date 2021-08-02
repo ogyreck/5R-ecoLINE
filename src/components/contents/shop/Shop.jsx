@@ -35,7 +35,7 @@ const Shop = () => {
               </div>
             </div>
             <div className="shop-card__item">
-              <img src={cardImage} alt="card-image" className="shop-card__image" />
+              <img src={cardImage} alt="" className="shop-card__image" />
               <div className="shop-card__content">
                 <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
                 <div className="flex-wrapper">
@@ -48,7 +48,7 @@ const Shop = () => {
               </div>
             </div>
             <div className="shop-card__item">
-              <img src={cardImage} alt="card-image" className="shop-card__image" />
+              <img src={cardImage} alt="" className="shop-card__image" />
               <div className="shop-card__content">
                 <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
                 <div className="flex-wrapper">
@@ -61,7 +61,7 @@ const Shop = () => {
               </div>
             </div>
             <div className="shop-card__item">
-              <img src={cardImage} alt="card-image" className="shop-card__image" />
+              <img src={cardImage} alt="" className="shop-card__image" />
               <div className="shop-card__content">
                 <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
                 <div className="flex-wrapper">
@@ -74,7 +74,7 @@ const Shop = () => {
               </div>
             </div>
             <div className="shop-card__item">
-              <img src={cardImage} alt="card-image" className="shop-card__image" />
+              <img src={cardImage} alt="" className="shop-card__image" />
               <div className="shop-card__content">
                 <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
                 <div className="flex-wrapper">
@@ -87,7 +87,7 @@ const Shop = () => {
               </div>
             </div>
             <div className="shop-card__item">
-              <img src={cardImage} alt="card-image" className="shop-card__image" />
+              <img src={cardImage} alt="" className="shop-card__image" />
               <div className="shop-card__content">
                 <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
                 <div className="flex-wrapper">
@@ -100,7 +100,7 @@ const Shop = () => {
               </div>
             </div>
             <div className="shop-card__item">
-              <img src={cardImage} alt="card-image" className="shop-card__image" />
+              <img src={cardImage} alt="" className="shop-card__image" />
               <div className="shop-card__content">
                 <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
                 <div className="flex-wrapper">
@@ -113,7 +113,7 @@ const Shop = () => {
               </div>
             </div>
             <div className="shop-card__item">
-              <img src={cardImage} alt="card-image" className="shop-card__image" />
+              <img src={cardImage} alt="" className="shop-card__image" />
               <div className="shop-card__content">
                 <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
                 <div className="flex-wrapper">
@@ -126,7 +126,7 @@ const Shop = () => {
               </div>
             </div>
             <div className="shop-card__item">
-              <img src={cardImage} alt="card-image" className="shop-card__image" />
+              <img src={cardImage} alt="" className="shop-card__image" />
               <div className="shop-card__content">
                 <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
                 <div className="flex-wrapper">
