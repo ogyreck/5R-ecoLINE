@@ -7,8 +7,8 @@ const Shop = () => {
     <>
       <Header />
       <main>
-        <div className="container">
-          <h1>Эко-магазин</h1>
+        <div className="container-shop">
+          <h2 className="main-heading main-heading-shop">Каталог товаров</h2>
         </div>
       </main>
     </>
