@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../header/Header";
 import "./shop.css";
-
+import { Link } from "react-router-dom";
 import basket from "../../../img/basket-icon.png"
 import favorites from "../../../img/favorites-icon.png"
 import cardImage from "../../../img/shop-image.png"
@@ -22,14 +22,14 @@ const Shop = () => {
           </div>
           <div className="shop-cards">
             <div className="shop-card__item">
-              <img src={cardImage} alt="card-image" className="shop-card__image" />
+              <img src={cardImage} alt="" className="shop-card__image" />
               <div className="shop-card__content">
                 <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
                 <div className="flex-wrapper">
                   <div className="shop-card__price">299 ₽</div>
                   <div className="shop-card__icons">
-                    <a href="#"><img src={basket} alt="корзина" className="shop-basket" /></a>
-                    <a href="#"><img src={favorites} alt="избранное" className="shop-basket" /></a>
+                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
+                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
                   </div>
                 </div>
               </div>
@@ -41,8 +41,8 @@ const Shop = () => {
                 <div className="flex-wrapper">
                   <div className="shop-card__price">299 ₽</div>
                   <div className="shop-card__icons">
-                    <a href="#"><img src={basket} alt="корзина" className="shop-basket" /></a>
-                    <a href="#"><img src={favorites} alt="избранное" className="shop-basket" /></a>
+                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
+                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
                   </div>
                 </div>
               </div>
@@ -54,8 +54,8 @@ const Shop = () => {
                 <div className="flex-wrapper">
                   <div className="shop-card__price">299 ₽</div>
                   <div className="shop-card__icons">
-                    <a href="#"><img src={basket} alt="корзина" className="shop-basket" /></a>
-                    <a href="#"><img src={favorites} alt="избранное" className="shop-basket" /></a>
+                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
+                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
                   </div>
                 </div>
               </div>
@@ -67,8 +67,8 @@ const Shop = () => {
                 <div className="flex-wrapper">
                   <div className="shop-card__price">299 ₽</div>
                   <div className="shop-card__icons">
-                    <a href="#"><img src={basket} alt="корзина" className="shop-basket" /></a>
-                    <a href="#"><img src={favorites} alt="избранное" className="shop-basket" /></a>
+                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
+                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
                   </div>
                 </div>
               </div>
@@ -80,8 +80,8 @@ const Shop = () => {
                 <div className="flex-wrapper">
                   <div className="shop-card__price">299 ₽</div>
                   <div className="shop-card__icons">
-                    <a href="#"><img src={basket} alt="корзина" className="shop-basket" /></a>
-                    <a href="#"><img src={favorites} alt="избранное" className="shop-basket" /></a>
+                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
+                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
                   </div>
                 </div>
               </div>
@@ -93,8 +93,8 @@ const Shop = () => {
                 <div className="flex-wrapper">
                   <div className="shop-card__price">299 ₽</div>
                   <div className="shop-card__icons">
-                    <a href="#"><img src={basket} alt="корзина" className="shop-basket" /></a>
-                    <a href="#"><img src={favorites} alt="избранное" className="shop-basket" /></a>
+                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
+                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
                   </div>
                 </div>
               </div>
@@ -106,8 +106,8 @@ const Shop = () => {
                 <div className="flex-wrapper">
                   <div className="shop-card__price">299 ₽</div>
                   <div className="shop-card__icons">
-                    <a href="#"><img src={basket} alt="корзина" className="shop-basket" /></a>
-                    <a href="#"><img src={favorites} alt="избранное" className="shop-basket" /></a>
+                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
+                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
                   </div>
                 </div>
               </div>
@@ -119,8 +119,8 @@ const Shop = () => {
                 <div className="flex-wrapper">
                   <div className="shop-card__price">299 ₽</div>
                   <div className="shop-card__icons">
-                    <a href="#"><img src={basket} alt="корзина" className="shop-basket" /></a>
-                    <a href="#"><img src={favorites} alt="избранное" className="shop-basket" /></a>
+                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
+                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
                   </div>
                 </div>
               </div>
@@ -132,8 +132,8 @@ const Shop = () => {
                 <div className="flex-wrapper">
                   <div className="shop-card__price">299 ₽</div>
                   <div className="shop-card__icons">
-                    <a href="#"><img src={basket} alt="корзина" className="shop-basket" /></a>
-                    <a href="#"><img src={favorites} alt="избранное" className="shop-basket" /></a>
+                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
+                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
                   </div>
                 </div>
               </div>
