@@ -33,18 +33,8 @@ const Shop = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="shop-card__item">
-              <img src={cardImage} alt="" className="shop-card__image" />
-              <div className="shop-card__content">
-                <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
-                <div className="flex-wrapper">
-                  <div className="shop-card__price">299 ₽</div>
-                  <div className="shop-card__icons">
-                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
-                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
-                  </div>
-                </div>
+              <div className="card-basket">
+                <button className="shop-card-button">В корзину</button>
               </div>
             </div>
             <div className="shop-card__item">
@@ -59,18 +49,8 @@ const Shop = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="shop-card__item">
-              <img src={cardImage} alt="" className="shop-card__image" />
-              <div className="shop-card__content">
-                <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
-                <div className="flex-wrapper">
-                  <div className="shop-card__price">299 ₽</div>
-                  <div className="shop-card__icons">
-                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
-                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
-                  </div>
-                </div>
+              <div className="card-basket">
+                <button className="shop-card-button">В корзину</button>
               </div>
             </div>
             <div className="shop-card__item">
@@ -85,18 +65,8 @@ const Shop = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="shop-card__item">
-              <img src={cardImage} alt="" className="shop-card__image" />
-              <div className="shop-card__content">
-                <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
-                <div className="flex-wrapper">
-                  <div className="shop-card__price">299 ₽</div>
-                  <div className="shop-card__icons">
-                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
-                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
-                  </div>
-                </div>
+              <div className="card-basket">
+                <button className="shop-card-button">В корзину</button>
               </div>
             </div>
             <div className="shop-card__item">
@@ -111,18 +81,8 @@ const Shop = () => {
                   </div>
                 </div>
               </div>
-            </div>
-            <div className="shop-card__item">
-              <img src={cardImage} alt="" className="shop-card__image" />
-              <div className="shop-card__content">
-                <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
-                <div className="flex-wrapper">
-                  <div className="shop-card__price">299 ₽</div>
-                  <div className="shop-card__icons">
-                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
-                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
-                  </div>
-                </div>
+              <div className="card-basket">
+                <button className="shop-card-button">В корзину</button>
               </div>
             </div>
             <div className="shop-card__item">
@@ -136,6 +96,73 @@ const Shop = () => {
                     <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
                   </div>
                 </div>
+              </div>
+              <div className="card-basket">
+                <button className="shop-card-button">В корзину</button>
+              </div>
+            </div>
+            <div className="shop-card__item">
+              <img src={cardImage} alt="" className="shop-card__image" />
+              <div className="shop-card__content">
+                <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
+                <div className="flex-wrapper">
+                  <div className="shop-card__price">299 ₽</div>
+                  <div className="shop-card__icons">
+                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
+                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
+                  </div>
+                </div>
+              </div>
+              <div className="card-basket">
+                <button className="shop-card-button">В корзину</button>
+              </div>
+            </div>
+            <div className="shop-card__item">
+              <img src={cardImage} alt="" className="shop-card__image" />
+              <div className="shop-card__content">
+                <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
+                <div className="flex-wrapper">
+                  <div className="shop-card__price">299 ₽</div>
+                  <div className="shop-card__icons">
+                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
+                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
+                  </div>
+                </div>
+              </div>
+              <div className="card-basket">
+                <button className="shop-card-button">В корзину</button>
+              </div>
+            </div>
+            <div className="shop-card__item">
+              <img src={cardImage} alt="" className="shop-card__image" />
+              <div className="shop-card__content">
+                <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
+                <div className="flex-wrapper">
+                  <div className="shop-card__price">299 ₽</div>
+                  <div className="shop-card__icons">
+                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
+                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
+                  </div>
+                </div>
+              </div>
+              <div className="card-basket">
+                <button className="shop-card-button">В корзину</button>
+              </div>
+            </div>
+            <div className="shop-card__item">
+              <img src={cardImage} alt="" className="shop-card__image" />
+              <div className="shop-card__content">
+                <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
+                <div className="flex-wrapper">
+                  <div className="shop-card__price">299 ₽</div>
+                  <div className="shop-card__icons">
+                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
+                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
+                  </div>
+                </div>
+              </div>
+              <div className="card-basket">
+                <button className="shop-card-button">В корзину</button>
               </div>
             </div>
           </div>
