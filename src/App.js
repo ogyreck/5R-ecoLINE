@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
-// import logo from './logo.svg'
 
 import Main from './components/contents/main/Main';
 import Blog from './components/contents/blog/Blog';
@@ -9,6 +8,7 @@ import About from './components/contents/about/About';
 import Shop from './components/contents/shop/Shop';
 import Quizz from './components/contents/Quizz'
 import Numbers from './components/contents/Numbers'
+import BlockWithVideo from './components/contents/BlockWithVideo';
 
 const App = () => {
     return (
@@ -23,6 +23,7 @@ const App = () => {
             <div className="App">
                 <Quizz />
                 <Numbers/>
+                <BlockWithVideo/>
             </div>
         </>
     );

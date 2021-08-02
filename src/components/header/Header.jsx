@@ -10,10 +10,11 @@ const Header = () => {
         <div className="header">
           <div className="logo">
             <Link to="/">
-              <img src="/src/img/logo.svg" alt="logo" />
+              <img src="/img/logo.svg" alt="logo" />
             </Link>
           </div>
-          <div className="navbar">
+
+          <nav className="navbar">
             <ul className="nav__links">
               <li>
                 <Link to="/news">
@@ -30,15 +31,42 @@ const Header = () => {
                   Блог
                 </Link>
               </li>
-              <li>
+              <li className="nav__link-shop">
                 <Link to="/shop">
                   Эко-магазин
+                  <img src="../img/arrow.svg" alt="arrow" />
                 </Link>
+                <ul className="nav__link-items">
+                  <li>
+                    <Link to="/shop">
+                      Каталог
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/shop">
+                      Оплата
+                    </Link>
+                    </li>
+                </ul>
               </li>
+              
             </ul>
-          </div>
-          <div className="search">
-            <input className="search__input" type="text" placeholder="Поиск"/>
+          </nav>
+
+          <div className="navigation">
+            <div className="search">
+              <img src="/img/search.svg" alt="" />
+            </div>
+            <div className="favorites">
+              <img src="/img/favorites.svg" alt="" />
+            </div>
+            <div className="goods">
+              <img id="goods__btn" src="/img/basket.svg" alt="" />
+              <label className="goods__number" htmlFor="goods__btn">1</label>
+            </div>
+              
+
+            {/* <input className="search__input" type="text" placeholder="Поиск"/> */}
           </div>
         </div>
       </div>
