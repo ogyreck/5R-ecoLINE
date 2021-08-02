@@ -35,7 +35,7 @@ const Footer = () => {
                   <img src="/img/footer/telegram.svg" alt="" />
                 </div>
               </div>
-              <Link className="footer__social-emal">EcoPortal20@mail.ru</Link>
+              <Link to="/" className="footer__social-emal">EcoPortal20@mail.ru</Link>
             </div>
             
           </div>

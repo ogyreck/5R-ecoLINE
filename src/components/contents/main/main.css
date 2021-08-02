@@ -185,6 +185,7 @@
 }
 
 .purpose__img-before {
+  right: 0;
   margin-top: 26px;
   position: absolute;
   margin-left: -53px;
@@ -280,7 +281,7 @@
 
 .blog__topics{
   padding-top: 44px;
-  margin-right: -50px;
+  margin-right: -5px;
 }
 
 .blog__topic-active {
@@ -316,13 +317,32 @@
   background-color: #fff;
   border-radius: 4px;
   background-image: none;
+  opacity: 1;
+  position: relative;
 }
-.blog__card-item:hover {
-  background-image: url(../../../img/blog_card.jpg);
+
+.blog__card-item:hover{
+  box-shadow: 2px 2px 40px rgba(67, 41, 41, 0.4);
+}
+
+.blog__card-item:hover .blog__card-hover {
+  opacity: 1;
 }
 
 /* карточка при наведении */
+
+.blog__card-visible{
+  display: block;
+}
+.blog__card-visible img{
+  border-radius: 4px;
+}
+
 .blog__card-hover{
+  opacity: 0;
+  position: absolute;
+  top:0;
+  left: 0;
   background-image: url(../../../img/blog_card.jpg);
   width: 288px;
   height: 400px;
@@ -361,6 +381,7 @@
 }
 
 .card__info{
+  opacity: 1;
   display: flex;
   justify-content: space-between;
   padding: 0 24px;

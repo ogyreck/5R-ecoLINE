@@ -5,7 +5,7 @@ import "./header.css";
 const HeaderShop = () => {
   return (
     <>
-      <header>
+      <header id="haeder">
         <div className="container">
           <div className="header">
             <div className="logo">
