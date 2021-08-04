@@ -1,0 +1,462 @@
+.main{
+  background: url(../../../img/main_bg.jpg) no-repeat center center;
+  width:100%;
+  height:692px;
+}
+
+.main{
+  padding-top: 192px;
+}
+
+.main__title{
+  font-size: 60px;
+  width: 50%;
+  color: #fff;
+  /* font-family: Roboto;
+  font-style: normal; */
+  font-weight: bold;
+  line-height: 114%;
+}
+
+.main__subtitle{
+  display: block;
+  margin-top: 16px;
+  font-size: 20px;
+  line-height: 128%;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.main__btn {
+  margin-top: 49px;
+}
+
+.main__btn button{
+  font-size: 20px;
+  line-height: 128%;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.main__btn-info{
+  background-color: #387732;
+  padding: 18px 70px;
+  border: none;
+  margin-right: 60px;
+}
+.main__btn-shop {
+  padding: 17px 54px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+/* секция с цифрами */
+
+.numbers {
+  padding-top: 180px;
+  padding-bottom: 204px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.humbers__heading {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 24px;
+  color: rgba(67, 41, 41, 0.9);
+  padding-bottom: 80px;
+}
+
+.numbers__items {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 162px;
+}
+
+.numbers__item-heading {
+  padding-bottom: 4px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 148%;
+  color: rgba(67, 41, 41, 0.9);
+}
+
+.numbers__item-description {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 148%;
+  color: rgba(67, 41, 41, 0.6);
+}
+
+/* секция с видео */
+
+.video__row {
+  display: flex;
+  flex-direction: row;
+}
+
+.video {
+  display: flex;
+  height: 500px;
+  background: #C28686;
+  /* background: url(/src/img/with_video_background.png) no-repeat center center; */
+  background-image: url(/src/img/with_video_background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.block__video {
+  margin-top: 90px;
+  width: 600px;
+  height: 320px;
+  border-radius: 4px;
+}
+
+.block__video-url {
+  width: 100%;
+  height: 100%;
+}
+
+.block__text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 161px;
+  margin-left: 104px;
+}
+
+.block__text-motivation {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  color: #FFFFFF;
+}
+
+.block__text-btn {
+  height: 60px;
+  width: 204px;
+  margin-top: 32px;
+  background: transparent;
+  font-size: 20px;
+  line-height: 128%;
+  text-align: center;
+  color: #FFFFFF;
+
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.block__text-btn:hover {
+  background: rgba(23, 23, 23, 0.18);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+/*  секция с целями */
+.purpose{
+  height: 653px;
+  background: url(../../../img/goal_bg.jpg) no-repeat center center;
+}
+
+.purpose__title{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 24px;
+  color: #fff;
+  padding-top: 140px;
+}
+
+.purpose__text{
+  margin-top: 42px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  line-height: 162%;
+  width: 556px;
+}
+
+.purpose__row{
+  display: flex;
+  flex-direction: row;
+}
+
+.purpose__img-after{
+  margin-top: 47px;
+  position: relative;
+}
+
+.purpose__img-before {
+  right: 0;
+  margin-top: 26px;
+  position: absolute;
+  margin-left: -53px;
+}
+
+/* секция с концепцией 5R */
+
+.concept{
+  background-image: url(../../../img/concept_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 859px;
+}
+
+.concept__row{
+  display: flex;
+  flex-direction: row;
+  padding-top: 149px;
+}
+.concept button{
+  display: flex;
+  justify-content: center;
+}
+
+.concept__title{
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 24px;
+  color: rgba(33, 60, 31, 0.9);
+  margin-right: 74px;
+}
+
+.concept__img {
+  margin-top: 94px;
+  margin-right: 24px;
+}
+
+.concept__words {
+  display: flex;
+  flex-direction: column;
+  margin-top: 128px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 128%;
+  color: #92A790;
+
+}
+
+.concept__words span span{
+  color: #213C1F;
+}
+
+.concept__btn{
+  background-color: #387732;
+  padding: 18px 70px;
+  border: none;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 102px;
+  font-size: 20px;
+  line-height: 128%;
+  border-radius: 4px;
+  color: #fff;
+}
+
+/* секция с блогом */
+
+.blog{
+  /* background-image: url(../../../img/blog_bg.jpg); */
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* background-color: linear-gradient(90deg, #EBEDED 24.06%, #F8F8F8 100%); */
+  background: linear-gradient(90deg, #EBEDED 24.06%, #F8F8F8 100%);
+  height: 859px;
+
+}
+
+.blog__bg{
+  background-image: url(../../../img/blog_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  height: 859px;
+  padding-top: 98px;
+}
+
+.blog__title{
+  margin-top: 98px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 148%;
+  color: #C28686;
+}
+
+.blog__topics{
+  padding-top: 44px;
+  margin-right: -5px;
+}
+
+.blog__topic-active {
+  background-color: #C28686 !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+}
+
+.blog__topics button{
+  width: 152px;
+  padding:10px;
+  color: #C28686;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 124%;
+  border: 1px solid #C28686;
+  background-color: transparent;
+  border-radius: 48px;
+  margin-right: 24px;
+}
+
+.blog__cards{
+  display: flex;
+  flex-direction: row;
+  margin-top: 64px;
+}
+
+.blog__card-item{
+  width: 288px;
+  height: 400px;
+  margin-right: 24px;
+  background-color: #fff;
+  border-radius: 4px;
+  background-image: none;
+  opacity: 1;
+  position: relative;
+}
+
+.blog__card-item:hover{
+  box-shadow: 2px 2px 40px rgba(67, 41, 41, 0.4);
+}
+
+.blog__card-item:hover .blog__card-hover {
+  opacity: 1;
+}
+
+/* карточка при наведении */
+
+.blog__card-visible{
+  display: block;
+}
+.blog__card-visible img{
+  border-radius: 4px;
+}
+
+.blog__card-hover{
+  opacity: 0;
+  position: absolute;
+  top:0;
+  left: 0;
+  background-image: url(../../../img/blog_card.jpg);
+  width: 288px;
+  height: 400px;
+  margin-right: 24px;
+  background-color: #fff;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.card__title-hover {
+  display: block;
+  padding: 0 18px;
+  font-size: 20px;
+  line-height: 140%;
+  color: #fff;
+  margin-top: 82px;
+}
+
+.card__btn-hover{
+  padding: 16px 68px;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-size: 20px;
+  line-height: 128%;
+  color: #fff;
+  margin-top: 50px;
+}
+/*  */
+
+.card__title{
+  display: block;
+  padding: 28px 24px;
+  font-size: 20px;
+  line-height: 140%;
+}
+
+.card__info{
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  color: #878787;
+  font-size: 14px;
+}
+
+.card__info-date{
+  display: flex;
+  text-align: right;
+}
+
+.card__info-viewers img{
+  margin-right: 4px;
+}
+
+.blog__card-item:last-child {
+  margin-right: 0px;
+}
+
+/* секция с подпиской */
+
+.subscribe{
+  height: 487px;
+}
+
+.subscribe__row{
+  display: flex;
+  flex-direction: row;
+  padding-top: 181px;
+}
+
+.subscribe__title{
+  width: 405px;
+  height: 80px;
+  margin-right: 53px;
+}
+
+.form__input::placeholder {
+  color: #C9C9C9;
+}
+.form__input {
+  position: relative;
+  width: 394px;
+  height: 62px;
+  border-radius: 4px 0px 0px 4px;
+  border: 1px solid #878787;
+  outline: none;
+  padding-left: 16px;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.form__btn{
+  position: absolute;
+  margin-left: -1px;
+  width: 206px;
+  height: 62px;
+  background-color: #387732;
+  border-radius: 0px 4px 4px 0px;
+  border: none;
+  font-size: 20px;
+  line-height: 128%;
+  color: #fff;
+}
+
+.form__text{
+  display: block;
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #878787;
+}
+
+.form__text-link{
+  display: inline;
+  color: rgba(81, 119, 78, 0.8);
+}
