@@ -1,0 +1,27 @@
+.blog__topics {
+  margin-top: 52px;
+  display: flex;
+  flex-direction: row;
+  gap: 17px;
+  justify-content: flex-start;
+  margin-bottom: 60px;
+}
+
+.blog__topic-active {
+  background-color: #c28686 !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+}
+
+.blog__topics button {
+  width: 152px;
+  padding: 10px;
+  color: #c28686;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 124%;
+  border: 1px solid #c28686;
+  background-color: transparent;
+  border-radius: 48px;
+}
