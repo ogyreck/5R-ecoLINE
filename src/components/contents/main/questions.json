@@ -1,0 +1,138 @@
+[
+    {
+        "questionText": "Сколько литров пресной воды тратится на 100 мл кофе?",
+        "answerOptions": [
+            {
+                "answerText": "Менее 30 л",
+                "isCorrect": false
+            },
+            {
+                "answerText": "50 л",
+                "isCorrect": false
+            },
+            {
+                "answerText": "130 л",
+                "isCorrect": true
+            }
+        ]
+    },
+    {
+        "questionText": "Повторное использование вещей сокращает эко-след на:",
+        "answerOptions": [
+            {
+                "answerText": "70 %",
+                "isCorrect": true
+            },
+            {
+                "answerText": "50 л",
+                "isCorrect": false
+            },
+            {
+                "answerText": "10 л",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "questionText": "Сколько лет будет разлагается полиэтиленовый пакет?",
+        "answerOptions": [
+            {
+                "answerText": "~ 50 лет",
+                "isCorrect": false
+            },
+            {
+                "answerText": "~ 100 - 200 лет",
+                "isCorrect": true
+            },
+            {
+                "answerText": "~ 500 лет",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "questionText": "Сколько нужно пластиковых бутылок, чтобы сделать 1 пару кроссовок?",
+        "answerOptions": [
+            {
+                "answerText": "Более 150",
+                "isCorrect": false
+            },
+            {
+                "answerText": "Около 100",
+                "isCorrect": false
+            },
+            {
+                "answerText": "Около 20",
+                "isCorrect": true
+            }
+        ]
+    },
+    {
+        "questionText": "Переработка сокращает загрязнение воды на:",
+        "answerOptions": [
+            {
+                "answerText": "20 %",
+                "isCorrect": false
+            },
+            {
+                "answerText": "50 %",
+                "isCorrect": true
+            },
+            {
+                "answerText": "80 %",
+                "isCorrect": false
+            }
+        ]
+    },
+    {
+        "questionText": "Сколько тонн нефти ежегодно попадает в океан?",
+        "answerOptions": [
+            {
+                "answerText": "Менее 1 млн тонн",
+                "isCorrect": false
+            },
+            {
+                "answerText": "Менее 5 млн тонн",
+                "isCorrect": false
+            },
+            {
+                "answerText": "От 5 до 10 млн тонн",
+                "isCorrect": true
+            }
+        ]
+    },
+    {
+        "questionText": "Сколько лет будет разлагаться пластиковая зубная щетка?",
+        "answerOptions": [
+            {
+                "answerText": "От 80 до 200 лет",
+                "isCorrect": false
+            },
+            {
+                "answerText": "До 500 лет",
+                "isCorrect": false
+            },
+            {
+                "answerText": "От 500 до 1000 лет",
+                "isCorrect": true
+            }
+        ]
+    },
+    {
+        "questionText": "Сколько кг мусора производит российская семья из 4 человек?",
+        "answerOptions": [
+            {
+                "answerText": "Около 400 кг",
+                "isCorrect": true
+            },
+            {
+                "answerText": "Около 200 кг",
+                "isCorrect": false
+            },
+            {
+                "answerText": "Менее 100 кг",
+                "isCorrect": false
+            }
+        ]
+    }
+]

@@ -1,7 +1,7 @@
 .discount {
   padding-top: 67px;
   width: 100%;
-  
+   
 }
 
 .discount__title {
@@ -11,8 +11,11 @@
   font-size: 32px;
   line-height: 130%;
   color: #878787;
+  background-image: url(../../../../img/discount-image.png);
+  background-repeat: no-repeat;
 }
 
 .discount-wrapper{
-   background: linear-gradient(90deg, #f9f9f9 37.89%, #efefef 100%);
+  background: linear-gradient(90deg, #f9f9f9 37.89%, #efefef 100%);
+
 }

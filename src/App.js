@@ -6,9 +6,6 @@ import Blog from './components/contents/blog/Blog';
 import News from './components/contents/news/News';
 import About from './components/contents/about/About';
 import Shop from './components/contents/shop/Shop';
-import Quizz from './components/contents/Quizz'
-import Numbers from './components/contents/Numbers'
-import BlockWithVideo from './components/contents/BlockWithVideo';
 
 const App = () => {
     return (
@@ -20,11 +17,6 @@ const App = () => {
                 <Route exact path='/about' component={About}/>
                 <Route exact path='/shop' component={Shop}/>
             </BrowserRouter>
-            <div className="App">
-                <Quizz />
-                <Numbers/>
-                <BlockWithVideo/>
-            </div>
         </>
     );
 }

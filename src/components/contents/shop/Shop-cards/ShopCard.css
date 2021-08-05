@@ -15,6 +15,10 @@
   position: relative;
 }
 
+.shop-card__item:hover{
+  box-shadow: 2px 2px 40px rgba(107, 64, 64, 0.3);
+}
+
 .shop-card__content {
   padding: 20px 20px 26px 20px;
 }
@@ -59,6 +63,7 @@
   background: rgba(107, 64, 64, 0.5);
   border-radius: 4px 4px 0px 0px;
   opacity: 1;
+  
 }
 
 .shop-card-button {

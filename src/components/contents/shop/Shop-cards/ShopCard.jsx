@@ -7,7 +7,6 @@ import cardImage from "../../../../img/shop-image.png"
 const ShopCard = () => {
   return (
     <>
-      <div className="shop-cards">
         <div className="shop-card__item">
           <img src={cardImage} alt="" className="shop-card__image" />
           <div className="shop-card__content">
@@ -26,7 +25,6 @@ const ShopCard = () => {
             NEW
           </div>
         </div>
-      </div>
     </>
   )
 }
