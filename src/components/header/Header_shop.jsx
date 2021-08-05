@@ -5,12 +5,13 @@ import "./header.css";
 const HeaderShop = () => {
   return (
     <>
-      <header id="haeder">
+      <header id="header">
         <div className="container">
           <div className="header">
             <div className="logo">
               <Link to="/">
-                <img src="/img/logo.svg" alt="logo" />
+                <img src="/img/header_logo.svg" alt="logo" />
+                <span className="logo__name">5R. <span>эко</span>портал</span>
               </Link>
             </div>
 
@@ -24,11 +25,6 @@ const HeaderShop = () => {
                 <li>
                   <Link to="/blog">
                     Блог
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/tips">
-                    Советы
                   </Link>
                 </li>
                 <li className="nav__link-shop">

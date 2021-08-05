@@ -77,7 +77,7 @@ const Quizz = () => {
 
                         <div className="question__hidden">
                             <div className="question__hidden-text">
-                                {questions[currentQuestion + 1].questionText.slice(0, -1)}?
+                                {questions[currentQuestion].questionText.slice(0, -1)}?
                             </div>
                         </div>
                         

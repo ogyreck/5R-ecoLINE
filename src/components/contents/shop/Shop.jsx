@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderMain from "../../header/Header_main";
+import HeaderShop from "../../header/Header_shop";
 import "./shop.css";
 import { Link } from "react-router-dom";
 import basket from "../../../img/basket-icon.png"
@@ -9,7 +9,7 @@ import cardImage from "../../../img/shop-image.png"
 const Shop = () => {
   return (
     <>
-      <HeaderMain />
+      <HeaderShop />
       <main>
         <div className="container-shop">
           <h2 className="main-heading main-heading-shop">Каталог товаров</h2>
