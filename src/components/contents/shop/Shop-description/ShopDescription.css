@@ -1,0 +1,35 @@
+.main-heading-shop {
+  color: rgba(33, 60, 31, 0.9);
+  text-align: left;
+  padding-top: 100px;
+  padding-bottom: 52px;
+}
+
+.subtitle {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 190%;
+  color: #6a6a6a;
+  width: 513px;
+}
+
+.list-subtitle {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 190%;
+  color: #4f4f4f;
+  padding-top: 32px;
+  padding-bottom: 2px;
+}
+
+.shop-list--second{
+   width: 693px;
+}
+
+.shop-list__item {
+  list-style-type: disc;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 190%;
+  color: #6a6a6a;
+}
