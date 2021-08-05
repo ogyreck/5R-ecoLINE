@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 import Quizz from "./Quizz"
 import "./main.css";
 
-import css from"./main.css";
 
 export default class Main extends Component {
 // const Main = () => {
@@ -89,13 +88,8 @@ export default class Main extends Component {
             </div>
           </section>
 
-          <div className={css.container}>
-            <h1 className={css.title}>Sticky slider</h1>
-            <div className={css.slider}>
-              <Slider />
-            </div>
-          </div>
-          {/* <Slider/> */}
+          <Slider />
+
 
           <section className="video">
             <div className="container video__row">

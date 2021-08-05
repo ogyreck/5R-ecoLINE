@@ -103,7 +103,7 @@ export default class HeaderMain extends Component{
                   <img src="/img/social/telegram.svg" alt="" />
                 </div>
               </div>
-              <Link to="/">Ecoportal@mail.ru</Link>
+              {/* <Link to="/">Ecoportal@mail.ru</Link> */}
             </div>
           </div>
         </div>

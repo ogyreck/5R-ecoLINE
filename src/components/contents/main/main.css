@@ -9,10 +9,6 @@
   margin: 1em 0;
 }
 
-.slider {
-  margin: 0 -15px;
-}
-
 /* */
 
 .main{
@@ -27,7 +23,7 @@
 
 .main__title{
   font-size: 60px;
-  width: 50%;
+  width: 576px;
   color: #fff;
   /* font-family: Roboto;
   font-style: normal; */
