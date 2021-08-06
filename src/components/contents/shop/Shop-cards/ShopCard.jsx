@@ -1,30 +1,41 @@
 import React from "react";
 import "./ShopCard.css";
 import { Link } from "react-router-dom";
-import favorites from "../../../../img/favorites-icon.png"
+import favorites from "../../../../img/favorites-icon.svg"
 import cardImage from "../../../../img/shop-image.png"
 
 const ShopCard = () => {
   return (
     <>
-        <div className="shop-card__item">
+      <div className="shop-card__item">
+        <img src={cardImage} alt="" className="shop-card__image" />
+        <div className="shop-card__content">
+          <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
+          <div className="shop-card__price">299 ₽</div>
+        </div>
+        <div className="shop-card__icons">
+          <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
+        </div>
+        <div className="card-new">
+          NEW
+        </div>
+        <div className="shop-card__item shop-card__item--hover">
           <img src={cardImage} alt="" className="shop-card__image" />
           <div className="shop-card__content">
-            <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
-            <div className="flex-wrapper">
-              <div className="shop-card__price">299 ₽</div>
-              <div className="shop-card__icons">
-                <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
-              </div>
+            <p className="shop-card__title shop-card__title--hover">Ершик кокосовый для чистки бутылочек</p>
+            <div className="shop-card__price">299 ₽</div>
+            <div className="card-basket">
+              <button className="shop-card-button">В корзину</button>
             </div>
           </div>
-          <div className="card-basket">
-            <button className="shop-card-button">В корзину</button>
+          <div className="shop-card__icons">
+            <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
           </div>
           <div className="card-new">
             NEW
           </div>
         </div>
+      </div>
     </>
   )
 }

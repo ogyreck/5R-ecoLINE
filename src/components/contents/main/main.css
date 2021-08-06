@@ -1,18 +1,3 @@
-.container {
-  padding: 0 15px;
-}
-
-.title {
-  font-weight: 700;
-  font-size: 2.5em;
-  text-align: center;
-  margin: 1em 0;
-}
-
-.slider {
-  margin: 0 -15px;
-}
-
 /* */
 
 .main {
@@ -22,12 +7,11 @@
   padding-bottom: 300px;
 }
 
+
 .main__title {
   font-size: 60px;
   width: 50%;
   color: #fff;
-  /* font-family: Roboto;
-  font-style: normal; */
   font-weight: bold;
   line-height: 114%;
 }
@@ -57,6 +41,7 @@
   border: none;
   margin-right: 60px;
 }
+
 .main__btn-shop {
   padding: 17px 54px;
   background-color: transparent;
@@ -64,44 +49,6 @@
 }
 
 /* секция с цифрами */
-
-.numbers {
-  padding-top: 180px;
-  padding-bottom: 204px;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-}
-
-.humbers__heading {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 24px;
-  color: rgba(67, 41, 41, 0.9);
-  padding-bottom: 80px;
-}
-
-.numbers__items {
-  text-align: left;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 162px;
-}
-
-.numbers__item-heading {
-  padding-bottom: 4px;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 148%;
-  color: rgba(67, 41, 41, 0.9);
-}
-
-.numbers__item-description {
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 148%;
-  color: rgba(67, 41, 41, 0.6);
-}
 
 /* секция с видео */
 
@@ -167,272 +114,9 @@
 }
 
 /*  секция с целями */
-.purpose {
-  padding-top: 160px;
-  padding-bottom: 206px;
-  background: url(../../../img/goal_bg.jpg) no-repeat center center;
-  background-size: cover;
-}
-
-.purpose__title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 24px;
-  color: #fff;
-  padding-top: 140px;
-}
-
-.purpose__text {
-  margin-top: 42px;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 20px;
-  line-height: 162%;
-  width: 556px;
-}
-
-.purpose__row {
-  display: flex;
-  flex-direction: row;
-}
-
-.purpose__img-after {
-  margin-top: 47px;
-  position: relative;
-}
-
-.purpose__img-before {
-  right: 0;
-  margin-top: 26px;
-  position: absolute;
-  margin-left: -53px;
-}
 
 /* секция с концепцией 5R */
 
-.concept {
-  background-image: url(../../../img/concept_bg.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding-top: 160px;
-  padding-bottom: 200px;
-}
-
-.concept button {
-  display: flex;
-  justify-content: center;
-}
-
-.concept__title {
-  font-weight: bold;
-  color: rgba(33, 60, 31, 0.9);
-  font-size: 40px;
-  line-height: 148%;
-}
-
-.concept-text {
-  font-weight: 900;
-  font-size: 350px;
-  line-height: 128%;
-  background: url("../../../img/leaves.png");
-  color: transparent;
-  -webkit-background-clip: text;
-  animation: animate 50s infinite linear;
-  animation-direction: alternate;
-}
-
-@keyframes animate {
-  0% {
-    background-position: -10% -10%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: -10% -10%;
-  }
-}
-
-.flex-wrapper-concept {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.concept-list__item {
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 128%;
-  color: #92a790;
-}
-
-.concept-list__item:not(:last-child) {
-  padding-bottom: 15px;
-}
-
-.list__item--color {
-  color: rgba(33, 60, 31, 0.9);
-}
-
-.concept__btn {
-  background-color: #387732;
-  padding: 18px 70px;
-  border: none;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 102px;
-  font-size: 20px;
-  line-height: 128%;
-  border-radius: 4px;
-  color: #fff;
-}
-
 /* секция с блогом */
-
-.blog {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url(../../../img/blog_bg.jpg);
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  background-size: cover;
-}
-
-.blog__bg {
-
-  padding-top: 160px;
-  padding-bottom: 255px;
-}
-
-.blog__title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 148%;
-  color: #c28686;
-}
-
-.blog__topics {
-  padding-top: 44px;
-  margin-right: -5px;
-}
-
-.blog__topic-active {
-  background-color: #c28686 !important;
-  color: #fff !important;
-  font-weight: 500 !important;
-}
-
-.blog__topics button {
-  width: 152px;
-  padding: 10px;
-  color: #c28686;
-  text-align: center;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 124%;
-  border: 1px solid #c28686;
-  background-color: transparent;
-  border-radius: 48px;
-  margin-right: 24px;
-}
-
-.blog__cards {
-  display: flex;
-  flex-direction: row;
-  margin-top: 64px;
-}
-
-.blog__card-item {
-  width: 288px;
-  height: 400px;
-  margin-right: 24px;
-  background-color: #fff;
-  border-radius: 4px;
-  background-image: none;
-  opacity: 1;
-  position: relative;
-}
-
-.blog__card-item:hover {
-  box-shadow: 2px 2px 40px rgba(67, 41, 41, 0.4);
-}
-
-.blog__card-item:hover .blog__card-hover {
-  opacity: 1;
-}
-
-/* карточка при наведении */
-
-.blog__card-visible {
-  display: block;
-}
-.blog__card-visible img {
-  border-radius: 4px;
-}
-
-.blog__card-hover {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-image: url(../../../img/blog_card.jpg);
-  width: 288px;
-  height: 400px;
-  margin-right: 24px;
-  background-color: #fff;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.card__title-hover {
-  display: block;
-  padding: 0 18px;
-  font-size: 20px;
-  line-height: 140%;
-  color: #fff;
-  margin-top: 82px;
-}
-
-.card__btn-hover {
-  padding: 16px 68px;
-  border-radius: 4px;
-  background-color: transparent;
-  border: 1px solid #fff;
-  font-size: 20px;
-  line-height: 128%;
-  color: #fff;
-  margin-top: 50px;
-}
-/*  */
-
-.card__title {
-  display: block;
-  padding: 28px 24px;
-  font-size: 20px;
-  line-height: 140%;
-}
-
-.card__info {
-  opacity: 1;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 24px;
-  color: #878787;
-  font-size: 14px;
-}
-
-.card__info-date {
-  display: flex;
-  text-align: right;
-}
-
-.card__info-viewers img {
-  margin-right: 4px;
-}
-
-.blog__card-item:last-child {
-  margin-right: 0px;
-}
 
 /* секция с подпиской */

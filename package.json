@@ -35,5 +35,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-id-swiper": "^4.0.0",
+    "swiper": "^6.8.1"
   }
 }
