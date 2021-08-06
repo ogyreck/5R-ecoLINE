@@ -1,0 +1,14 @@
+.container-shop {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  height: auto;
+  max-width: 1170px;
+}
+
+.main-heading-catalog {
+  color: #c28686;
+  padding-top: 147px;
+  text-align: left;
+}
+

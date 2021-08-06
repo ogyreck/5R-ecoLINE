@@ -1,0 +1,39 @@
+.purpose {
+  padding-top: 160px;
+  padding-bottom: 206px;
+  background: url(../.././../../img/goal_bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+.purpose__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 24px;
+  color: #fff;
+  padding-top: 140px;
+}
+
+.purpose__text {
+  margin-top: 42px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;
+  line-height: 162%;
+  width: 556px;
+}
+
+.purpose__row {
+  display: flex;
+  flex-direction: row;
+}
+
+.purpose__img-after {
+  margin-top: 47px;
+  position: relative;
+}
+
+.purpose__img-before {
+  right: 0;
+  margin-top: 26px;
+  position: absolute;
+  margin-left: -53px;
+}
