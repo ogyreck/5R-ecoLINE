@@ -1,18 +1,18 @@
 import React from "react";
 import Header from "../../header/Header";
-import "./blog.css";
+import "./instructions.css";
 
-const Blog = () => {
+const Instructions = () => {
   return (
     <>
       <Header />
       <main>
         <div className="container">
-          <h1>Блог</h1>
+          <h1>Инструкции</h1>
         </div>
       </main>
     </>
   )
 }
 
-export default Blog;
+export default Instructions;

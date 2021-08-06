@@ -35,11 +35,7 @@ const Footer = () => {
                   <img src="/img/footer/telegram.svg" alt="" />
                 </div>
               </div>
-<<<<<<< HEAD
               <Link to="/" className="footer__social-emal">EcoPortal20@mail.ru</Link>
-=======
-              <Link className="footer__social-emal">EcoPortal20@mail.ru</Link>
->>>>>>> dev3
             </div>
             
           </div>

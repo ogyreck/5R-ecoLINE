@@ -63,9 +63,6 @@ const Quizz = () => {
                         </div>
 
                         <div className="question__section">
-                            {/* <div className="question__count">
-                    <span>Вопрос {currentQuestion + 1} </span> / {questions.length}
-                  </div> */}
                             <div className="question__text">
                                 {questions[currentQuestion].questionText}
                             </div>
@@ -82,15 +79,8 @@ const Quizz = () => {
                             <div className="question__hidden-text">
                                 {questions[currentQuestion].questionText.slice(0, -1)}?
                             </div>
-
-                            {/* <div className="answer__section">
-                                {questions[currentQuestion + 1].answerOptions.map(item => (
-                                    <button key={item.answerText} className="button__quizz" onClick={() => handleAnswerOptionClick(item.isCorrect)}>
-                                        {item.answerText}
-                                    </button>
-                                ))}
-                            </div> */}
                         </div>
+                        
                         </div>
                 }
             </div>

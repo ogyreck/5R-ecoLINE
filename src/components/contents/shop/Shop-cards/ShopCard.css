@@ -16,7 +16,7 @@
 }
 
 .shop-card__item:hover{
-  box-shadow: 2px 2px 40px rgba(107, 64, 64, 0.2);
+  box-shadow: 2px 2px 40px rgba(107, 64, 64, 0.3);
 }
 
 .shop-card__content {
