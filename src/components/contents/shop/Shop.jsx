@@ -1,5 +1,5 @@
 import React from "react";
-
+import HeaderShop from "../../header/Header_shop";
 import "./shop.css";
 import ShopCards from "./Shop-cards/ShopCards";
 import BlogTopics from "./Blog-topics/BlogTopics";
@@ -12,7 +12,7 @@ import Subscribe from "./Subscribe/Subscribe";
 const Shop = () => {
   return (
     <>
-      <HeaderShop/>
+      <HeaderShop />
       <main>
         <Discount/>
         <div className="container-shop">

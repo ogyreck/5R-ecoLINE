@@ -436,3 +436,60 @@
 }
 
 /* секция с подпиской */
+
+.subscribe{
+  height: 487px;
+}
+
+.subscribe__row{
+  display: flex;
+  flex-direction: row;
+  padding-top: 181px;
+}
+
+.subscribe__title{
+  width: 405px;
+  height: 80px;
+  margin-right: 53px;
+}
+
+.form__input::placeholder {
+  color: #C9C9C9;
+}
+.form__input {
+  position: relative;
+  width: 394px;
+  height: 62px;
+  border-radius: 4px 0px 0px 4px;
+  border: 1px solid #878787;
+  outline: none;
+  padding-left: 16px;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.form__btn{
+  position: absolute;
+  margin-left: -1px;
+  width: 206px;
+  height: 62px;
+  background-color: #387732;
+  border-radius: 0px 4px 4px 0px;
+  border: none;
+  font-size: 20px;
+  line-height: 128%;
+  color: #fff;
+}
+
+.form__text{
+  display: block;
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 22px;
+  color: #878787;
+}
+
+.form__text-link{
+  display: inline;
+  color: rgba(81, 119, 78, 0.8);
+}

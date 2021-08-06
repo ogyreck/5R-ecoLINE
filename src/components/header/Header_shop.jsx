@@ -5,7 +5,7 @@ import "./header.css";
 const HeaderShop = () => {
   return (
     <>
-      <header id="header">
+      <header>
         <div className="container">
           <div className="header">
             <div className="logo">
@@ -25,6 +25,11 @@ const HeaderShop = () => {
                 <li>
                   <Link to="/blog">
                     Блог
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/tips">
+                    Советы
                   </Link>
                 </li>
                 <li className="nav__link-shop">

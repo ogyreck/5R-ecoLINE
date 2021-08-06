@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "../../header/Header";
+import HeaderMain from "../../header/Header_main";
 import "./about.css";
 
 const About = () => {
   return (
     <>
-      <Header />
+      <HeaderMain />
       <main>
         <div className="container">
           <h1>О нас</h1>
