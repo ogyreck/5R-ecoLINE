@@ -1,148 +1,35 @@
 import React from "react";
-import HeaderMain from "../../header/Header_main";
+
 import "./shop.css";
-import { Link } from "react-router-dom";
-import basket from "../../../img/basket-icon.png"
-import favorites from "../../../img/favorites-icon.png"
-import cardImage from "../../../img/shop-image.png"
+import ShopCards from "./Shop-cards/ShopCards";
+import BlogTopics from "./Blog-topics/BlogTopics";
+import ShopDescription from "./Shop-description/ShopDescription";
+import Discount from "./Discount/Discount";
+import HeaderShop from "../../header/Header_shop";
+import Footer from "../../footer/Footer";
+import Subscribe from "./Subscribe/Subscribe";
 
 const Shop = () => {
   return (
     <>
-      <HeaderMain />
+      <HeaderShop/>
       <main>
+        <Discount/>
         <div className="container-shop">
-          <h2 className="main-heading main-heading-shop">Каталог товаров</h2>
-          <div className="blog__topics">
-            <button>Все товары</button>
-            <button>Zero Waste</button>
-            <button className="blog__topic-active">Для дома</button>
-            <button>Косметика</button>
-            <button>Личная гигена</button>
-          </div>
-          <div className="shop-cards">
-            <div className="shop-card__item">
-              <img src={cardImage} alt="" className="shop-card__image" />
-              <div className="shop-card__content">
-                <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
-                <div className="flex-wrapper">
-                  <div className="shop-card__price">299 ₽</div>
-                  <div className="shop-card__icons">
-                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
-                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="shop-card__item">
-              <img src={cardImage} alt="" className="shop-card__image" />
-              <div className="shop-card__content">
-                <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
-                <div className="flex-wrapper">
-                  <div className="shop-card__price">299 ₽</div>
-                  <div className="shop-card__icons">
-                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
-                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="shop-card__item">
-              <img src={cardImage} alt="" className="shop-card__image" />
-              <div className="shop-card__content">
-                <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
-                <div className="flex-wrapper">
-                  <div className="shop-card__price">299 ₽</div>
-                  <div className="shop-card__icons">
-                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
-                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="shop-card__item">
-              <img src={cardImage} alt="" className="shop-card__image" />
-              <div className="shop-card__content">
-                <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
-                <div className="flex-wrapper">
-                  <div className="shop-card__price">299 ₽</div>
-                  <div className="shop-card__icons">
-                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
-                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="shop-card__item">
-              <img src={cardImage} alt="" className="shop-card__image" />
-              <div className="shop-card__content">
-                <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
-                <div className="flex-wrapper">
-                  <div className="shop-card__price">299 ₽</div>
-                  <div className="shop-card__icons">
-                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
-                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="shop-card__item">
-              <img src={cardImage} alt="" className="shop-card__image" />
-              <div className="shop-card__content">
-                <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
-                <div className="flex-wrapper">
-                  <div className="shop-card__price">299 ₽</div>
-                  <div className="shop-card__icons">
-                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
-                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="shop-card__item">
-              <img src={cardImage} alt="" className="shop-card__image" />
-              <div className="shop-card__content">
-                <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
-                <div className="flex-wrapper">
-                  <div className="shop-card__price">299 ₽</div>
-                  <div className="shop-card__icons">
-                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
-                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="shop-card__item">
-              <img src={cardImage} alt="" className="shop-card__image" />
-              <div className="shop-card__content">
-                <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
-                <div className="flex-wrapper">
-                  <div className="shop-card__price">299 ₽</div>
-                  <div className="shop-card__icons">
-                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
-                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="shop-card__item">
-              <img src={cardImage} alt="" className="shop-card__image" />
-              <div className="shop-card__content">
-                <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
-                <div className="flex-wrapper">
-                  <div className="shop-card__price">299 ₽</div>
-                  <div className="shop-card__icons">
-                    <Link to="/"><img src={basket} alt="корзина" className="shop-basket" /></Link>
-                    <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ShopDescription/>
+          <h2 className="main-heading main-heading-catalog">Каталог товаров</h2>
+          <BlogTopics />
+          <ShopCards />
+         <Subscribe/>
         </div>
       </main>
+      <Footer/>
     </>
   )
 }
+
+
+
+
 
 export default Shop;

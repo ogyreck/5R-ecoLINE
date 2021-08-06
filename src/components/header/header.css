@@ -1,9 +1,10 @@
-header{
+#header{
   position:fixed;
   width: 100%;
-  background-color: rgba(243, 243, 243, 0.6);
+  background-color: transparent;
   /* background-color: rgba(3, 61, 20, 0.8); */
   z-index: 20;
+  border-bottom: none;
 }
 
 .header{
@@ -49,32 +50,36 @@ nav ul{
   font-weight: 500;
 }
 
-.nav__links li a:hover{
+.nav__link-item:hover {
   padding-bottom: 2px;
-  border-bottom: 2px solid #FCCF62;
+  border-bottom: 2px solid #387732;
   cursor: pointer;
 }
 
-.nav__links li a {
-  color: #9AA688;
+.nav__link-item {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: normal;
 }
 
-.nav__links li a:hover {
-  color: #E7EFD9;
+.nav__link-item:hover {
+  color: #fff;
+  /* color: #4F4F4F; */
+  font-weight: 500;
 }
 
 .nav__links li:first-child {
   margin-left: 0;
 }
 
-.nav__link-shop img{
+.nav__link-shop img {
   margin-left: 10px;
 }
 
 .nav__link-items{
   display: flex;
   flex-direction: column;
-  background: #273037;
+  background-color: transparent;
+  border-radius: 0px 0px 4px 4px;
   position: absolute;
   margin-top: 10px;
   padding-left: 5px;
@@ -98,13 +103,15 @@ nav ul{
 .nav__link-items li a {
   display: block;
   text-align: left;
-  margin: 15px 0px; 
+  margin: 12px 0px; 
 }
 
 .nav__links>li:hover .nav__link-items {
   opacity: 1;
   transform: scaleY(1);
 }
+
+
 
 
 /* Поиск */
@@ -217,10 +224,10 @@ nav ul{
   font-weight: bold;
   font-size: 28px;
   line-height: 130%;
-  color: #E3BC58;
+  color: #fff;
   margin-left: 7px;
 }
 
 .logo__name span{
-  color: #FFEFC5;
+  color: #387732;
 }

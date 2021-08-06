@@ -1,0 +1,95 @@
+.flex-wrapper {
+  display: flex;
+  padding-top: 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop-card__item {
+  background: #ffffff;
+  box-shadow: 2px 2px 40px rgba(107, 64, 64, 0.1);
+  border-radius: 4px;
+  width: 270px;
+  margin-bottom: 52px;
+  position: relative;
+}
+
+.shop-card__item:hover {
+  box-shadow: 2px 2px 40px rgba(107, 64, 64, 0.3);
+}
+
+.shop-card__content {
+  padding: 20px 20px 32px 20px;
+  text-align: center;
+}
+
+.shop-card__icons {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.shop-card__title {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  color: #878787;
+  padding-bottom: 8px;
+}
+
+.shop-card__price {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: #c28686;
+}
+
+.shop-card__image {
+  width: 270px;
+  height: 240px;
+}
+
+.shop-card-button {
+  border: 1.2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  background: #c28686;
+  width: 155px;
+  height: 54px;
+}
+
+.card-new {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  background: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  color: #c28686;
+  padding: 7px 20px 8px 20px;
+}
+
+.card-basket{
+  padding-top: 16px;
+}
+
+.shop-card__item--hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.shop-card__item--hover:hover{
+  opacity: 1;
+}
+
+.shop-card__title--hover{
+  color: #6B4040;
+}
