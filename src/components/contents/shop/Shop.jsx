@@ -9,7 +9,7 @@ import HeaderShop from "../../header/Header_shop";
 import Footer from "../../footer/Footer";
 import Subscribe from "./Subscribe/Subscribe";
 
-const Shop = () => {
+const Shop = (props) => {
   return (
     <>
       <HeaderShop/>
@@ -19,7 +19,7 @@ const Shop = () => {
           <ShopDescription/>
           <h2 className="main-heading main-heading-catalog">Каталог товаров</h2>
           <BlogTopics />
-          <ShopCards />
+          <ShopCards state={props.state} dispatch={props.dispatch}/>
          <Subscribe/>
         </div>
       </main>

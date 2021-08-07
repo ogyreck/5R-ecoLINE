@@ -6,14 +6,17 @@ import Blog from './components/contents/blog/Blog';
 import About from './components/contents/about/About';
 import Shop from './components/contents/shop/Shop';
 
-const App = () => {
+const App = (props) => {
+    // debugger;
+    console.log(props)
     return (
+        
         <>
             <BrowserRouter>
                 <Route exact path='/' component={Main}/>
                 <Route exact path='/blog' component={Blog}/>
                 <Route exact path='/about' component={About}/>
-                <Route exact path='/shop' component={Shop}/>
+                <Route exact path='/shop' render={()=><Shop state={props.state} dispatch={props.dispatch}/>}/>
             </BrowserRouter>
         </>
     );
