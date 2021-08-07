@@ -10,7 +10,6 @@
 .header{
   display: flex;
   justify-content: space-between;
-
 }
 
 /* логотип */
@@ -116,12 +115,6 @@ nav ul{
 
 /* Поиск */
 
-.navigation {
-  display: flex;
-  /* flex-direction: row; */
-  margin-top: 32px;
-}
-
 .search, .favorites, .goods {
   cursor: pointer;
 }
@@ -174,7 +167,8 @@ nav ul{
 
 
 /* для главной страницы */
-.navigation{
+.navigationHeader {
+  margin-top: 32px;
   display: flex;
   flex-direction: column;
 }
@@ -185,9 +179,9 @@ nav ul{
   align-items: center;
 }
 
-.navigation a{
+.navigationHeader a {
   display: block;
-  text-align: right;
+  text-align: center;
   font-size: 16px;
   line-height: 22px;
   margin-top: 11px;
@@ -230,4 +224,39 @@ nav ul{
 
 .logo__name span{
   color: #387732;
+}
+
+/* для страницы магазина */
+
+.navigation__shop{
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+}
+
+/* .header{ */
+  /* background-color: rgba(70, 70, 70, 0.466) !important; */
+/* } */
+
+.navigation__search-icon path,
+.navigation__favorites-icon path,
+.navigation__basket-icon path{
+  /* fill: red; */
+  /* fill:inherit;
+  stroke:inherit; */
+}
+
+.navigation__search-icon:hover,
+.navigation__favorites-icon:hover,
+.navigation__basket-icon:hover {
+  fill: #C28686;
+  stroke: #C28686;
+}
+.navigation__search-icon ,
+.navigation__favorites-icon ,
+.navigation__basket-icon {
+  fill: #878787;
+  stroke: #878787;
+  color: #878787;
+  /* stroke-width: 1.5px; */
 }

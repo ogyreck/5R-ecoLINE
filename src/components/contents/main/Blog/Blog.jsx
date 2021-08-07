@@ -22,7 +22,7 @@ const Blog = () => {
 
             <div className="blog__card-item">
               <div className="blog__card-visible">
-                <img src="/img/cards/card_1.jpg" alt="" />
+                <img src="/img/blog-cards/card_1.jpg" alt="" />
                 <span className="card__title">Война за воду. <br />Является ли эта угроза реальной?</span>
                 <div className="card__info">
                   <div className="card__info-viewers">
@@ -42,7 +42,7 @@ const Blog = () => {
 
             <div className="blog__card-item">
               <div className="blog__card-visible">
-                <img src="/img/cards/card_3.jpg" alt="" />
+                <img src="/img/blog-cards/card_3.jpg" alt="" />
                 <span className="card__title">Война за воду. <br />Является ли эта угроза реальной?</span>
                 <div className="card__info">
                   <div className="card__info-viewers">
@@ -60,7 +60,7 @@ const Blog = () => {
 
             <div className="blog__card-item">
               <div className="blog__card-visible">
-                <img src="/img/cards/card_4.jpg" alt="" />
+                <img src="/img/blog-cards/card_4.jpg" alt="" />
                 <span className="card__title">Война за воду. <br />Является ли эта угроза реальной?</span>
                 <div className="card__info">
                   <div className="card__info-viewers">

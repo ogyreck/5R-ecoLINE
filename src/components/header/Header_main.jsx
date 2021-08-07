@@ -88,20 +88,20 @@ export default class HeaderMain extends Component{
               </ul>
             </nav>
 
-            <div className="navigation">
+            <div className="navigationHeader">
               <div className="navigation__link">
-                <div className="search">
+                <Link className="search">
                   <img src="/img/search.svg" alt="" />
-                </div>
-                <div className="navigation__link-vk">
+                </Link>
+                <Link className="navigation__link-vk">
                   <img src="/img/social/VK.svg" alt="" />
-                </div>
-                <div className="navigation__link-inst">
+                </Link>
+                  <Link className="navigation__link-inst">
                   <img src="/img/social/inst.svg" alt="" />
-                </div>
-                <div className="navigation__link-telegram">
+                </Link>
+                <Link className="navigation__link-telegram">
                   <img src="/img/social/telegram.svg" alt="" />
-                </div>
+                </Link>
               </div>
               {/* <Link to="/">Ecoportal@mail.ru</Link> */}
             </div>

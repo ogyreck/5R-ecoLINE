@@ -10,7 +10,7 @@ const HeaderShop = () => {
           <div className="header">
             <div className="logo">
               <Link to="/">
-                <img src="/img/header_logo.svg" alt="logo" />
+                <img src="/img/header_logo.svg" alt="Логотип" />
                 <span className="logo__name">5R. <span>эко</span>портал</span>
               </Link>
             </div>
@@ -49,18 +49,23 @@ const HeaderShop = () => {
               </ul>
             </nav>
 
-            <div className="navigation">
+            <div className="navigation__shop">
               <div className="search">
-                <img src="/img/search.svg" alt="" />
+                <svg width="19" height="20" className="navigation__search-icon">
+                  <use xlinkHref="header.svg#search"></use>
+                </svg>
               </div>
               <div className="favorites">
-                <img src="/img/favorites.svg" alt="" />
+                <svg width="23" height="20" fill="red" className="navigation__favorites-icon">
+                  <use xlinkHref="header.svg#favorites"></use>
+                </svg>
               </div>
               <div className="goods">
-                <img id="goods__btn" src="/img/basket.svg" alt="" />
+                <svg width="23" height="20"  className="navigation__basket-icon">
+                  <use xlinkHref="header.svg#basket"></use>
+                </svg>
                 <label className="goods__number" htmlFor="goods__btn">1</label>
               </div>
-              {/* <input className="search__input" type="text" placeholder="Поиск"/> */}
             </div>
           </div>
         </div>
