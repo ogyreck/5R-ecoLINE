@@ -51,60 +51,88 @@ export default class HeaderMain extends Component{
 
             <nav className="navbar">
               <ul className="nav__links">
-                <li>
-                  <Link to="/about" className="nav__link-item">
-                    О нас
-                  </Link>
-                  </li>
-                <li>
-                  <Link to="/blog" className="nav__link-item">
-                    Блог
-                  </Link>
-                </li>
+
                 <li className="nav__link-shop" >
                   <Link to="/shop" className="nav__link-item">
-                    Эко-магазин
+                    Каталог
                     <img src="../img/arrow.svg" alt="arrow" />
                   </Link>
                   <ul className="nav__link-items">
                     <li>
                       <Link to="/shop" className="nav__link-item">
-                        Каталог
+                        Все товары
                       </Link>
                     </li>
                     <li>
                       <Link to="/shop" className="nav__link-item">
-                        Оплата и доставка
+                        Для дома
                       </Link>
                     </li>
                     <li>
                       <Link to="/shop" className="nav__link-item">
-                        FAQ
+                        Zero Waste
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/shop" className="nav__link-item">
+                        Косметика
+                      </Link>
+                    </li>
+                    <li>
+                      <Link to="/shop" className="nav__link-item">
+                        Личная гигиена
                       </Link>
                     </li>
                   </ul>
+                </li>
+                <li>
+                  <Link to="/about" className="nav__link-item">
+                    О нас
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/blog" className="nav__link-item">
+                    Блог
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/" className="nav__link-item">
+                    Контакты
+                  </Link>
                 </li>
                 
               </ul>
             </nav>
 
-            <div className="navigationHeader">
+            {/* <div className="navigationHeader"> */}
               <div className="navigation__link">
-                <Link className="search">
-                  <img src="/img/search.svg" alt="" />
+                <Link to="/" className="search">
+                  <svg width="21" height="21" className="navigation__search-icon">
+                    <use xlinkHref="sprite.svg#search"></use>
+                  </svg>
+                  {/* <img src="/img/search.svg" alt="" /> */}
                 </Link>
-                <Link className="navigation__link-vk">
-                  <img src="/img/social/VK.svg" alt="" />
+                {/* <Link to="/" className="navigation__link-vk"> */}
+                <Link to="/" className="favorites">
+                  <svg width="23" height="20" className="navigation__search-icon">
+                    <use xlinkHref="sprite.svg#favorites"></use>
+                  </svg>
+                  {/* <img src="/img/social/VK.svg" alt="" /> */}
                 </Link>
-                  <Link className="navigation__link-inst">
-                  <img src="/img/social/inst.svg" alt="" />
+                {/* <Link to="/" className="navigation__link-inst"> */}
+                <Link to="/" className="basket">
+                  <svg width="23" height="20" className="navigation__basket-icon">
+                    <use xlinkHref="sprite.svg#basket"></use>
+                  </svg>
+                  <label className="goods__number" htmlFor="goods__btn">1</label>
+                  {/* <img src="/img/social/inst.svg" alt="" /> */}
                 </Link>
-                <Link className="navigation__link-telegram">
+                {/* <Link to="/" className="navigation__link-telegram">
                   <img src="/img/social/telegram.svg" alt="" />
-                </Link>
+                </Link> */}
               </div>
               {/* <Link to="/">Ecoportal@mail.ru</Link> */}
-            </div>
+            {/* </div> */}
           </div>
         </div>
       </header>

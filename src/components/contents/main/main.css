@@ -5,11 +5,12 @@
   width: 100%;
   padding-top: 192px;
   padding-bottom: 300px;
+  background-size: cover;
 }
 
 .main__title {
   font-size: 60px;
-  width: 50%;
+  width: 60%;
   color: #fff;
   font-weight: bold;
   line-height: 114%;
@@ -39,6 +40,13 @@
   padding: 18px 70px;
   border: none;
   margin-right: 60px;
+}
+.main__btn-info:hover{
+  background-color: #2E642A;
+}
+.main__btn-info:focus,
+.main__btn-info:active{
+  background-color: #234F20;
 }
 
 .main__btn-shop {

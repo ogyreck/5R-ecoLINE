@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link} from "react-router-dom";
 import HeaderMain from "../../header/Header_main";
 import Slider from "./Slider/Slider";
 import Footer from "../../footer/Footer";
@@ -27,8 +28,8 @@ export default class Main extends Component {
               <h1 className="main__title">Стань частью больших изменений</h1>
               <span className="main__subtitle">Поможем сформировать твой персональный план по “спасению мира”</span>
               <div className="main__btn">
-                <button className="main__btn-info">Читать</button>
-                <button className="main__btn-shop">В магазин</button>
+                <Link to="/blog"><button className="main__btn-info">Читать</button></Link>
+                <Link to="/shop"><button className="main__btn-shop">В магазин</button></Link>
               </div>
             </div>
           </section>

@@ -1,3 +1,10 @@
+.card__bg{
+  background-image: url(../../../../img/card_product_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .navigation{
   padding-top: 169px;
 }
@@ -105,7 +112,7 @@
   border: 2px solid #878787;
 }
 
-.card__count{
+.card__count-text {
   padding-top: 28px;
   display: block;
   font-weight: 500;
@@ -116,6 +123,7 @@
 
 .card__count-switch{
   display: block;
+  padding-top: 8px;
 }
 
 .card__btn{
@@ -132,4 +140,106 @@
 
 .card__favorites{
   padding-left: 31px;
+}
+
+.card__count-btn{
+  font-size: 20px;
+  line-height: 130%;
+  color: #6A6A6A;
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #E7E7E7;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.card__count{
+  background-color: transparent;
+  border: none;
+  width: 12px;
+  font-size: 20px;
+  line-height: 130%;
+  color: #6A6A6A;
+  margin: 0px 12px;
+}
+
+:root{
+  --swiper-navigation-size: 20px;
+}
+
+.card__description{
+  padding-top: 100px;
+  padding-left: 35px;
+}
+
+.card__description h3{
+  font-size: 32px;
+  line-height: 128%;
+  color: #585858;
+}
+
+.card__description-text {
+  width: 780px;
+  padding-top: 40px;
+  font-size: 18px;
+  line-height: 190%;
+  color: #6A6A6A;
+}
+
+.card__composition p{
+  font-size: 18px;
+  line-height: 190%;
+  padding-top: 4px;
+  color: #6A6A6A;
+}
+.card__composition h4{
+  padding-top: 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 190%;
+  color: #585858;
+
+}
+
+.card__prameters p{
+  font-size: 18px;
+  line-height: 190%;
+  padding-top: 4px;
+  color: #6A6A6A;
+  padding-bottom: 152px;
+}
+.card__prameters h4{
+  padding-top: 40px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 190%;
+  color: #585858;
+}
+
+.card__favorite{
+  fill: none;
+  cursor: pointer;
+  stroke: #878787;
+  margin-left: 32px;
+}
+
+.card__favorite:hover{
+  stroke: #C28686;
+}
+
+.card__favorite:active,
+.card__favorite:focus{
+  fill: #C28686;
+  stroke: #C28686;
+}
+/*  */
+
+.basket__svg{
+  cursor: pointer;
+  fill: #878787;
+  stroke: #878787;
 }
