@@ -21,8 +21,8 @@
 }
 
 .blog__topics {
-  padding-top: 44px;
-  margin-right: -5px;
+  padding-top: 68px;
+  padding-bottom: 52px;
 }
 
 .blog__topic-active {
@@ -32,8 +32,9 @@
 }
 
 .blog__topics button {
-  width: 152px;
-  padding: 10px;
+  width: 175px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #c28686;
   text-align: center;
   font-weight: 400;
@@ -42,7 +43,6 @@
   border: 1px solid #c28686;
   background-color: transparent;
   border-radius: 48px;
-  margin-right: 24px;
 }
 
 .blog__cards {

@@ -56,10 +56,10 @@ const HeaderShop = () => {
               <div className="favorites">
                 <img src="/img/favorites.svg" alt="" />
               </div>
-              <div className="goods">
+              <Link to="/shop/basket" className="goods">
                 <img id="goods__btn" src="/img/basket.svg" alt="" />
                 <label className="goods__number" htmlFor="goods__btn">1</label>
-              </div>
+              </Link>
               {/* <input className="search__input" type="text" placeholder="Поиск"/> */}
             </div>
           </div>

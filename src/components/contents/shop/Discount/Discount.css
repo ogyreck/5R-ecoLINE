@@ -11,11 +11,11 @@
   font-size: 32px;
   line-height: 130%;
   color: #878787;
-  background-image: url(../../../../img/discount-image.png);
+  background-image: url(../../../../img/discount-image.jpg);
   background-repeat: no-repeat;
 }
 
 .discount-wrapper{
-  background: linear-gradient(90deg, #f9f9f9 37.89%, #efefef 100%);
+  background: #F6F8FA;
 
 }

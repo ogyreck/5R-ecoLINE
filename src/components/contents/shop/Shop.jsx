@@ -16,11 +16,11 @@ const Shop = () => {
       <main>
         <Discount/>
         <div className="container-shop">
-          <ShopDescription/>
+          {/* <ShopDescription/> */}
           <h2 className="main-heading main-heading-catalog">Каталог товаров</h2>
           <BlogTopics />
           <ShopCards />
-         <Subscribe/>
+         {/* <Subscribe/> */}
         </div>
       </main>
       <Footer/>

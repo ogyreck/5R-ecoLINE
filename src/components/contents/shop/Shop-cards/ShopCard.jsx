@@ -12,28 +12,15 @@ const ShopCard = () => {
         <div className="shop-card__content">
           <p className="shop-card__title">Ершик кокосовый для чистки бутылочек</p>
           <div className="shop-card__price">299 ₽</div>
+          <div className="card-basket">
+            <button className="shop-card-button">В корзину</button>
+          </div>
         </div>
         <div className="shop-card__icons">
           <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
         </div>
         <div className="card-new">
           NEW
-        </div>
-        <div className="shop-card__item shop-card__item--hover">
-          <img src={cardImage} alt="" className="shop-card__image" />
-          <div className="shop-card__content">
-            <p className="shop-card__title shop-card__title--hover">Ершик кокосовый для чистки бутылочек</p>
-            <div className="shop-card__price">299 ₽</div>
-            <div className="card-basket">
-              <button className="shop-card-button">В корзину</button>
-            </div>
-          </div>
-          <div className="shop-card__icons">
-            <Link to="/"><img src={favorites} alt="избранное" className="shop-basket" /></Link>
-          </div>
-          <div className="card-new">
-            NEW
-          </div>
         </div>
       </div>
     </>
