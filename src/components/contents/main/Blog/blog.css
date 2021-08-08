@@ -43,6 +43,7 @@
   border: 1px solid #c28686;
   background-color: transparent;
   border-radius: 48px;
+  margin-right: 24px;
 }
 
 .blog__cards {
@@ -74,6 +75,7 @@
 
 .blog__card-visible {
   display: block;
+  transition: all 0.3;
 }
 
 .blog__card-visible img {
@@ -92,6 +94,7 @@
   background-color: #fff;
   border-radius: 4px;
   text-align: center;
+  transition: all 0.3;
 }
 
 .card__title-hover {

@@ -9,18 +9,18 @@ import HeaderShop from "../../header/Header_shop";
 import Footer from "../../footer/Footer";
 import Subscribe from "./Subscribe/Subscribe";
 
-const Shop = () => {
+const Shop = (props) => {
   return (
     <>
       <HeaderShop/>
       <main>
         <Discount/>
         <div className="container-shop">
-          {/* <ShopDescription/> */}
+          <ShopDescription/>
           <h2 className="main-heading main-heading-catalog">Каталог товаров</h2>
           <BlogTopics />
-          <ShopCards />
-         {/* <Subscribe/> */}
+          <ShopCards state={props.state} dispatch={props.dispatch}/>
+         <Subscribe/>
         </div>
       </main>
       <Footer/>
