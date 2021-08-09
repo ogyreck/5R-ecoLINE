@@ -16,7 +16,7 @@ const App = (props) => {
                 <Route exact path='/' component={Main}/>
                 <Route exact path='/blog' component={Blog}/>
                 <Route exact path='/about' component={About}/>
-                <Route exact path='/shop' render={()=><Shop state={props.state} dispatch={props.dispatch}/>}/>
+                <Route exact path='/shop' render={()=><Shop />}/>
             </BrowserRouter>
         </>
     );

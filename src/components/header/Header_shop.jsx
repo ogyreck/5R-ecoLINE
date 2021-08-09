@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
 
-const HeaderShop = () => {
+const HeaderShop = (props) => {
+
   return (
     <>
       <header id="header">
@@ -58,7 +59,7 @@ const HeaderShop = () => {
               </div>
               <div className="goods">
                 <img id="goods__btn" src="/img/basket.svg" alt="" />
-                <label className="goods__number" htmlFor="goods__btn">1</label>
+                <label className="goods__number" htmlFor="goods__btn">{props.inBasket}</label>
               </div>
               {/* <input className="search__input" type="text" placeholder="Поиск"/> */}
             </div>
