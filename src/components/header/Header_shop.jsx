@@ -71,17 +71,17 @@ const HeaderShop = () => {
             <div className="navigation__shop">
               <div className="search">
                 <svg width="21" height="21" className="navigation__search-icon">
-                  <use xlinkHref="sprite.svg#search"></use>
+                  <use xlinkHref="/sprite.svg#search"></use>
                 </svg>
               </div>
               <div className="favorites">
                 <svg width="23" height="20" fill="red" className="navigation__favorites-icon">
-                  <use xlinkHref="sprite.svg#favorites"></use>
+                  <use xlinkHref="/sprite.svg#favorites"></use>
                 </svg>
               </div>
               <div className="basket">
                 <svg width="23" height="20"  className="navigation__basket-icon">
-                  <use xlinkHref="sprite.svg#basket"></use>
+                  <use xlinkHref="/sprite.svg#basket"></use>
                 </svg>
                 <label className="goods__number" htmlFor="goods__btn">1</label>
               </div>

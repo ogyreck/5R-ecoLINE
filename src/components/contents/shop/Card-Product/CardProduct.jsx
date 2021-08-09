@@ -28,16 +28,9 @@ const CardProduct = () => {
     }
   }
 
-  // const updateInput = () => {
-    
-  // }
-  // const handleSubmit = () => {
-
-  // }
-
   return (
     <>
-      <HeaderShop />
+      <HeaderShop/>
       <div className="card__bg">
 
       <section className="navigation">

@@ -1,6 +1,8 @@
 import React, { Component} from "react";
 import "./cardProduct.css";
 
+import AddCount from "./AddCount.js";
+import DelCount from "./DelCount.js";
 
 // const CardInfo = (props) =>{
 export default class CardInfo extends Component {
@@ -56,9 +58,9 @@ export default class CardInfo extends Component {
         </div>
         <span className="card__count-text">Количество</span>
         <span className="card__count-switch">
-          <span className="card__count-btn">−</span>
+          <span onClick={DelCount} className="card__count-btn">−</span>
           <input className="card__count" disabled type="type" value="1" min="1" max="10" />
-          <span className="card__count-btn" >+</span>
+          <span onClick={AddCount} className="card__count-btn" >+</span>
         </span>
         <button className="card__btn">В корзину</button>
         

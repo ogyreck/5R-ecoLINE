@@ -160,7 +160,8 @@
 .card__count{
   background-color: transparent;
   border: none;
-  width: 12px;
+  width: 28px;
+  text-align: center;
   font-size: 20px;
   line-height: 130%;
   color: #6A6A6A;
