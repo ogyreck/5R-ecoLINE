@@ -2,7 +2,7 @@
   position:fixed;
   width: 100%;
   background-color: transparent;
-  /* background-color: rgba(3, 61, 20, 0.8); */
+   background-color: rgba(98, 38, 38, 0.8);
   z-index: 20;
   border-bottom: none;
 }
@@ -118,7 +118,7 @@ nav ul{
 
 .navigation {
   display: flex;
-  /* flex-direction: row; */
+   flex-direction: row;
   margin-top: 32px;
 }
 
@@ -176,7 +176,7 @@ nav ul{
 /* для главной страницы */
 .navigation{
   display: flex;
-  flex-direction: column;
+
 }
 
 .navigation__link{

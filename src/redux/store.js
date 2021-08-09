@@ -4,7 +4,7 @@ import {cardReducer} from './card-reducer';
 
 let reducer = cardReducer
 
-console.log(reducer())
+// s
 
 let store = createStore(reducer)
 
