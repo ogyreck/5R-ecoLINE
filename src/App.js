@@ -5,6 +5,7 @@ import Main from './components/contents/main/Main';
 import Blog from './components/contents/blog/Blog';
 import About from './components/contents/about/About';
 import Shop from './components/contents/shop/Shop';
+import Basket from "./components/contents/shop/Bascet/Basket";
 
 const App = (props) => {
     // debugger;
@@ -17,6 +18,7 @@ const App = (props) => {
                 <Route exact path='/blog' component={Blog}/>
                 <Route exact path='/about' component={About}/>
                 <Route exact path='/shop' render={()=><Shop />}/>
+                <Route exact path='/shop/basket' component={Basket}/>
             </BrowserRouter>
         </>
     );
