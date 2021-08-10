@@ -1,0 +1,49 @@
+.products__line {
+  background: #c4c4c4;
+  border: 1px solid #c9c9c9;
+  width: 100%;
+  margin: 0;
+  margin-top: 52px;
+  margin-bottom: 42px;
+}
+.products__promocode:hover button {
+  background: #a86969;
+}
+
+.products__promocode input {
+  padding: 16px 10px 16px 20px;
+  outline: none;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  width: 300px;
+  height: 56px;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #c9c9c9;
+}
+
+.products__total {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140%;
+  color: #585858;
+}
+
+.products__total span {
+  font-weight: 500;
+}
+
+.products__promocode button {
+  border: none;
+  width: 185px;
+  height: 55px;
+  margin-left: -1px;
+  background: #c28686;
+  border-radius: 0px 4px 4px 0px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
