@@ -11,6 +11,9 @@ import Basket from "./Basket";
 
 
 let mapStateToProps = (state) => {
+
+    console.log(state, 'state - mapStateToProps')
+
     return{
         basket: state.basket
     }
