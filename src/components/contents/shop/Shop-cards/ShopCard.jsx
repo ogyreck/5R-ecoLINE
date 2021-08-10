@@ -23,23 +23,6 @@ const ShopCard = (props) => {
     }
 
     return (
-<<<<<<< HEAD
-        <>
-            <div className="shop-card__item">
-                <img src={cardImage} alt="" className="shop-card__image" />
-                <div className="shop-card__content">
-                    <p className="shop-card__title">{props.name}</p>
-                    <div className="shop-card__price">{props.cost}₽</div>
-                    <div className="card-basket">
-                        <button className="shop-card-button">В корзину</button>
-                    </div>
-                </div>
-                {/* <div className="shop-card__icons">
-                 <Link to="/"><img src={props.img} alt="избранное" className="shop-basket" /></Link>
-                </div> */}
-
-                <NEW sale={props.new} />
-=======
         <div className="shop-card__item">
             <img src={cardImage} alt="" className="shop-card__image" />
             <div className="shop-card__content">
@@ -57,7 +40,6 @@ const ShopCard = (props) => {
         </div>
 
         
->>>>>>> dev4
 
     )
 }

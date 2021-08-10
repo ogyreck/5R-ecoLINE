@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./header.css";
 
 const HeaderShop = (props) => {
@@ -11,7 +11,7 @@ const HeaderShop = (props) => {
                     <div className="header">
                         <div className="logo">
                             <Link to="/">
-                                <img src="/img/header_logo.svg" alt="Логотип"/>
+                                <img src="/img/header_logo.svg" alt="Логотип" />
                                 <span className="logo__name">5R. <span>эко</span>портал</span>
                             </Link>
                         </div>
@@ -21,7 +21,7 @@ const HeaderShop = (props) => {
                                 <li className="nav__link-shop">
                                     <Link to="/shop" className="nav__link-item">
                                         Каталог
-                                        <img src="../img/arrow.svg" alt="arrow"/>
+                                        <img src="../img/arrow.svg" alt="arrow" />
                                     </Link>
                                     <ul className="nav__link-items">
                                         <li>
@@ -69,26 +69,6 @@ const HeaderShop = (props) => {
                             </ul>
                         </nav>
 
-<<<<<<< HEAD
-            <div className="navigation">
-              <div className="search">
-                <img src="/img/search.svg" alt="" />
-              </div>
-              <div className="favorites">
-                <img src="/img/favorites.svg" alt="" />
-              </div>
-              <Link to="/shop/basket" className="goods">
-                <img id="goods__btn" src="/img/basket.svg" alt="" />
-                <label className="goods__number" htmlFor="goods__btn">1</label>
-              </Link>
-              {/* <input className="search__input" type="text" placeholder="Поиск"/> */}
-            </div>
-          </div>
-        </div>
-      </header>
-    </>
-  )
-=======
                         <div className="navigation__shop">
                             <div className="search">
                                 <svg width="21" height="21" className="navigation__search-icon">
@@ -115,7 +95,6 @@ const HeaderShop = (props) => {
             </header>
         </>
     )
->>>>>>> dev4
 };
 
 export default HeaderShop;

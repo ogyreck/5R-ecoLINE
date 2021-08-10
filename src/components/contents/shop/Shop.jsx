@@ -21,13 +21,8 @@ const Shop = (props) => {
           {/* <ShopDescription/> */}
           <h2 className="main-heading main-heading-catalog">Каталог товаров</h2>
           <BlogTopics />
-<<<<<<< HEAD
-          <ShopCards state={props.state} dispatch={props.dispatch}/>
-         {/* <Subscribe/> */}
-=======
           <ShopCardsContainer />
          <Subscribe/>
->>>>>>> dev4
         </div>
       </main>
       <Footer/>

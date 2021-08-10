@@ -58,7 +58,11 @@
   color: transparent;
 }
 
-
+.delivery-textarea {
+  width: 100%;
+  height: 120px;
+  resize: none;
+}
 
 .input-checkbox {
   margin-right: 12px;

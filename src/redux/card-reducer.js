@@ -11,11 +11,7 @@ let initialState = {
         {sale:true, img:"shop-image.png", 
         nameCard:'Ершик кокосовый для чистки бутылочек', cost:"299", id:2, disable: false, inButton: 'В коризину'},
         {sale:true, img:"shop-image.png", 
-<<<<<<< HEAD
-        nameCard:'Миска для салата из массива бука', cost:"309"},
-=======
         nameCard:'Ершик для унитаза', cost:"309" , id:3, disable: false, inButton: 'В коризину'},
->>>>>>> dev4
         {sale:true, img:"shop-image.png", 
         nameCard:'Ершик кокосовый для чистки бутылочек', cost:"299" , id:4, disable: false, inButton: 'В коризину'},
         {sale:true, img:"shop-image.png", 
