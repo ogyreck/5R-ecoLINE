@@ -1,12 +1,19 @@
 import Product from "./Product"
 import "./Products.css"
 
-const Products = () => {
+const Noting =  () =>{
+    return(
+        <span className='noting'>Корзина пустая</span>
+    )
+}
+
+const Products = (props) => {
+    let productBasKet = props.basket.map(product => <Product nameCard={product.nameCard} cost={product.cost}/>)
+    let nothing =  `Корзина пустая`
    return (
       <div className="products">
          <div className="products__cards">
-            <Product/>
-            <Product/>
+             {productBasKet.length >= 1 ? productBasKet: <Noting/> }
          </div>
          <hr className="products__line" />
          <div className="flex-wrapper">
