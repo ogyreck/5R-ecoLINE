@@ -10,7 +10,6 @@
 .header{
   display: flex;
   justify-content: space-between;
-
 }
 
 /* логотип */
@@ -103,7 +102,7 @@ nav ul{
 .nav__link-items li a {
   display: block;
   text-align: left;
-  margin: 12px 0px; 
+  margin: 12px 0px;
 }
 
 .nav__links>li:hover .nav__link-items {
@@ -116,17 +115,13 @@ nav ul{
 
 /* Поиск */
 
-.navigation {
-  display: flex;
-  /* flex-direction: row; */
-  margin-top: 32px;
-}
-
-.search, .favorites, .goods {
+.search,
+.favorites,
+.basket {
   cursor: pointer;
 }
-.favorites, .goods {
-  cursor: pointer;
+.favorites,
+.basket {
   margin-left: 32px;
 }
 
@@ -137,7 +132,7 @@ nav ul{
 .goods__number{
   color: #E0E0E0;
   border-radius: 50%;
-  padding: 2px 5px;
+  padding: 2px 7px;
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
@@ -174,7 +169,8 @@ nav ul{
 
 
 /* для главной страницы */
-.navigation{
+.navigationHeader {
+  margin-top: 32px;
   display: flex;
   flex-direction: column;
 }
@@ -185,9 +181,9 @@ nav ul{
   align-items: center;
 }
 
-.navigation a{
+.navigationHeader a {
   display: block;
-  text-align: right;
+  text-align: center;
   font-size: 16px;
   line-height: 22px;
   margin-top: 11px;
@@ -217,7 +213,7 @@ nav ul{
 .navigation__link-vk img,
 .navigation__link-inst img,
 .navigation__link-telegram img {
-  vertical-align: -webkit-baseline-middle;
+  vertical-align: middle;
 }
 
 .logo__name {
@@ -230,4 +226,41 @@ nav ul{
 
 .logo__name span{
   color: #387732;
+}
+
+/* для страницы магазина */
+
+.navigation__shop{
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+}
+
+/* .header{ */
+/* background-color: rgba(70, 70, 70, 0.466) !important; */
+/* } */
+
+
+.navigation__search-icon:hover,
+.navigation__favorites-icon:hover{
+  /* fill: #C28686; */
+  stroke: #C28686;
+  /* color: #C28686; */
+}
+.navigation__search-icon ,
+.navigation__favorites-icon {
+
+  fill: none;
+  stroke: #878787;
+  /* color: #878787; */
+  /* stroke-width: 1.5px; */
+}
+
+.navigation__basket-icon {
+  fill: none;
+  stroke: #878787;
+}
+.navigation__basket-icon:hover {
+  fill: none;
+  stroke: #C28686;
 }

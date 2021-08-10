@@ -1,14 +1,14 @@
 import Footer from "../../../footer/Footer";
-import HeaderShop from "../../../header/Header_shop";
 import "./Basket.css";
 import Delivery from "./Delivery/Delivery";
 
 import Products from "./Products/Products";
+import HeaderShopContainer from "../../../header/Header_shopContainer";
 
 const Basket = () => {
    return (
       <>
-         <HeaderShop />
+         <HeaderShopContainer />
          <section className="basket">
             <div className="navigation"></div>
             <h2 className="main-heading main-heading-basket">Корзина</h2>

@@ -81,9 +81,20 @@
 
 .shop-card__item:hover p{
   color: #6B4040;
+<<<<<<< HEAD
 }
 
 .shop-card__item:hover button{
   background: #C28686;
   color: #FFFFFF;
+=======
+}
+
+.shop-card__item:hover button{
+  background: #C28686;
+  color: #FFFFFF;
+}
+.id{
+  display: none;
+>>>>>>> dev4
 }
