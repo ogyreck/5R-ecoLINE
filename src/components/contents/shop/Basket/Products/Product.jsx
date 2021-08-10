@@ -1,14 +1,15 @@
 import "./Product.css"
 import productCardImage from "../../../.././../img/product-image.jpg"
 
-const Product = () => {
+const Product = (props) => {
    return (
       <div className="products__card">
          <img src={productCardImage} alt="" className="products__card-image" />
-         <div className="products__card-description">Стакан складной Stojo(Розовый)</div>
-         <div className="products__card-price">1 200 ₽</div>
-         <div className="products__card-count">1</div>
-         <div className="products__card-total">1 200 ₽</div>
+         <div className="products__card-description">{props.nameCard}</div>
+         <div className="products__card-price">{props.cost} ₽</div>
+         <div className="products__card-count">1</div>{/* до бавить чтоб улетало на стейт*/}
+
+         <div className="products__card-total">{props.cost} ₽</div>
          <span class="close"></span>
       </div>
    );

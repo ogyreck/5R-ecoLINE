@@ -5,7 +5,8 @@ import Delivery from "./Delivery/Delivery";
 import Products from "./Products/Products";
 import HeaderShopContainer from "../../../header/Header_shopContainer";
 
-const Basket = () => {
+const Basket = (props) => {
+    console.log(props)
    return (
       <>
          <HeaderShopContainer />
@@ -19,7 +20,7 @@ const Basket = () => {
                   <li className="basket__information-item">Количество</li>
                   <li className="basket__information-item">Сумма</li>
                </ul>
-               <Products/>
+               <Products basket={props.basket}/>
                <Delivery/>
             </div>
             <div className="basket-image"></div>

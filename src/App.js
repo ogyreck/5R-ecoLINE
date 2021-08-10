@@ -8,6 +8,7 @@ import Shop from './components/contents/shop/Shop';
 import Basket from "./components/contents/shop/Basket/Basket";
 import ScrollToTop from "./ScrollToTop";
 import CardProduct from "./components/contents/shop/Card-Product/CardProduct";
+import BasketContainer from "./components/contents/shop/Basket/BasketContainer";
 
 const App = (props) => {
     // debugger;
@@ -21,7 +22,7 @@ const App = (props) => {
                 <Route exact path='/blog' component={Blog}/>
                 <Route exact path='/about' component={About}/>
                 <Route exact path='/shop' render={()=><Shop />}/>
-                <Route exact path='/shop/basket' component={Basket}/>
+                <Route exact path='/shop/basket' render={()=><BasketContainer />}/>
                 <Route exact path='/shop/card' component={CardProduct}/>
             </ScrollToTop>
             </BrowserRouter>
