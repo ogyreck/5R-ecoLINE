@@ -1,5 +1,7 @@
 .delivery {
-  padding: 72px 183px 232px 183px;
+  cursor: default;
+  width: 630px;
+  margin: 0 auto;
 }
 
 .radio {

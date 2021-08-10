@@ -118,11 +118,11 @@ nav ul{
 .search,
 .favorites,
 .basket {
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .favorites,
 .basket {
-  margin-left: 32px;
+  /* margin-left: 32px; */
 }
 
 .goods{

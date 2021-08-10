@@ -18,8 +18,8 @@
 }
 
 .basket-container {
-  padding-left: 445px;
-  padding-right: 445px;
+  width: 1033px;
+  margin: 0 auto;
 }
 
 .basket__information {
