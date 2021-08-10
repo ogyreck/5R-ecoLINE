@@ -6,6 +6,8 @@ import Blog from './components/contents/blog/Blog';
 import About from './components/contents/about/About';
 import Shop from './components/contents/shop/Shop';
 import Basket from "./components/contents/shop/Bascet/Basket";
+import ScrollToTop from "./ScrollToTop";
+import CardProduct from "./components/contents/shop/Card-Product/CardProduct";
 
 const App = (props) => {
     // debugger;
@@ -14,14 +16,18 @@ const App = (props) => {
         
         <>
             <BrowserRouter>
+            <ScrollToTop>
                 <Route exact path='/' component={Main}/>
                 <Route exact path='/blog' component={Blog}/>
                 <Route exact path='/about' component={About}/>
                 <Route exact path='/shop' render={()=><Shop />}/>
                 <Route exact path='/shop/basket' component={Basket}/>
+                <Route exact path='/shop/card' component={CardProduct}/>
+            </ScrollToTop>
             </BrowserRouter>
         </>
     );
+
 }
 
 export default App;

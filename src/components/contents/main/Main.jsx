@@ -10,6 +10,7 @@ import Numbers from "./Numbers/Numbers";
 import Purpose from "./Purpose/Purpose";
 import Concept from "./Concept/Concept";
 import Blog from "./Blog/Blog";
+import HeaderShopContainer from "../../header/Header_shopContainer";
 
 
 export default class Main extends Component {
@@ -23,7 +24,7 @@ export default class Main extends Component {
   render() {
     return (
       <>
-        <HeaderMain />
+        <HeaderShopContainer />
         <main>
             <section className="main">
               <div className="container">
