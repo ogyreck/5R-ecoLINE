@@ -1,7 +1,9 @@
 import Footer from "../../../footer/Footer";
 import HeaderShop from "../../../header/Header_shop";
 import "./Basket.css";
-import productCardImage from "../../../../img/product-image.jpg"
+import Delivery from "./Delivery/Delivery";
+
+import Products from "./Products/Products";
 
 const Basket = () => {
    return (
@@ -17,37 +19,10 @@ const Basket = () => {
                   <li className="basket__information-item">Количество</li>
                   <li className="basket__information-item">Сумма</li>
                </ul>
-               <div className="products">
-                  <div className="products__cards">
-                     <div className="products__card">
-                        <img src={ productCardImage } alt="" className="products__card-image" />
-                        <div className="products__card-description">Стакан складной Stojo(Розовый)</div>
-                        <div className="products__card-price">1 200 ₽</div>
-                        <div className="products__card-count">1</div>
-                        <div className="products__card-total">1 200 ₽</div>
-                        <span class="close"></span>
-                     </div>
-                     <div className="products__card">
-                        <img src={ productCardImage } alt="" className="products__card-image" />
-                        <div className="products__card-description">Стакан складной Stojo(Розовый)</div>
-                        <div className="products__card-price">1 200 ₽</div>
-                        <div className="products__card-count">1</div>
-                        <div className="products__card-total">1 200 ₽</div>
-                        <span class="close"></span>
-                     </div>
-                     <div className="products__card">
-                        <img src={ productCardImage } alt="" className="products__card-image" />
-                        <div className="products__card-description">Стакан складной Stojo(Розовый)</div>
-                        <div className="products__card-price">1 200 ₽</div>
-                        <div className="products__card-count">1</div>
-                        <div className="products__card-total">1 200 ₽</div>
-                        <span class="close"></span>
-                     </div>
-                  </div>
-                  <div className="products__promocode"></div>
-                  <div className="products__total"></div>
-               </div>
+               <Products/>
+               <Delivery/>
             </div>
+            <div className="basket-image"></div>
          </section>
          <Footer />
       </>

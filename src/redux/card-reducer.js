@@ -8,7 +8,7 @@ let initialState = {
         {sale:true, img:"shop-image.png", 
         nameCard:'Ершик кокосовый для чистки бутылочек', cost:"299"},
         {sale:true, img:"shop-image.png", 
-        nameCard:'Ершик для унитаза', cost:"309"},
+        nameCard:'Миска для салата из массива бука', cost:"309"},
         {sale:true, img:"shop-image.png", 
         nameCard:'Ершик кокосовый для чистки бутылочек', cost:"299"},
         {sale:true, img:"shop-image.png", 

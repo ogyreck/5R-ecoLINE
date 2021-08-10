@@ -1,0 +1,102 @@
+.form-heading {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: #51774e;
+  padding-bottom: 28px;
+}
+
+.flex-wrapper-input {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.radio-border {
+  border: none;
+  padding: 0;
+  padding-bottom: 68px;
+}
+
+.personal-info {
+  padding-bottom: 68px;
+}
+
+.form-input {
+  width: 291px;
+  height: 52px;
+  outline: none;
+  border: none;
+  padding: 15px 0px 15px 20px;
+  background: #ececec;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #878787;
+}
+
+.form-input:focus {
+  border: 1px solid #6a6a6a;
+  background: #fff;
+}
+
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+:focus::-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+
+
+.input-checkbox {
+  margin-right: 12px;
+}
+
+.input-checkbox-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 190%;
+  color: #585858;
+}
+
+.offer {
+  padding-top: 36px;
+  padding-bottom: 24px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 190%;
+  color: #585858;
+}
+
+.offer__link {
+  color: #387732;
+}
+
+.button-container {
+  padding-top: 44px;
+  text-align: center;
+}
+
+.form-button {
+  outline: none;
+  border: none;
+  padding: 16px 38px;
+  background: #387732;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
