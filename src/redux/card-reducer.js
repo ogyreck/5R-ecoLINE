@@ -69,13 +69,12 @@ export const cardReducer = (state = initialState, action)=>{
                     nameCard: stateCopy.cardsData[action.idCard-1].nameCard,
                     cost: stateCopy.cardsData[action.idCard-1].cost,
                     id: action.idCard,
-                    disable: false,
-                    inButton: 'В коризину'
+                    disable: true,
+                    inButton: 'Добавлено'
             }
 
             stateCopy.basket.push(newCard)
-            newCard.disable = true;
-            newCard.inButton= 'Добавлено'
+
             stateCopy.basketLenght = stateCopy.basket.length
             localStorage.setItem('basket', JSON.stringify(stateCopy.basket))
             localStorage.setItem('cardsData', JSON.stringify(stateCopy.cardsData))
@@ -90,15 +89,16 @@ export const cardReducer = (state = initialState, action)=>{
                 let newBask;
                 let newCard;
                 for (let i =0; i<bask.length; i++){
-
-                    if(bask[i].id === action.idCardDelete){
+                    console.log(bask[i].id, '1')
+                    console.log(action.idCardDelete)
+                    // if(bask[i].id === action.idCardDelete){
 
                         newBask = bask.filter(item => item!==bask[i])
                         newCard = card.map((item) => item!==bask[i]? item: {...item, disable: false,inButton: 'В корзину'}
                         )
                 }
 
-
+                // console.log(newBask)
                 stateCopy.basket = [...newBask]
                 stateCopy.cardsData = [...newCard]
                 stateCopy.basketLenght = stateCopy.basket.length
@@ -107,7 +107,7 @@ export const cardReducer = (state = initialState, action)=>{
                     localStorage.setItem('cardsData', JSON.stringify([...newCard]))
                 localStorage.setItem('baskLength', JSON.stringify([...newBask].length))
                 return stateCopy
-        }}
+        }
 
         default:
             return state;
