@@ -21,8 +21,8 @@
 }
 
 .blog__topics {
-  padding-top: 44px;
-  margin-right: -5px;
+  padding-top: 68px;
+  padding-bottom: 52px;
 }
 
 .blog__topic-active {
@@ -32,8 +32,9 @@
 }
 
 .blog__topics button {
-  width: 152px;
-  padding: 10px;
+  width: 175px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #c28686;
   text-align: center;
   font-weight: 400;
@@ -68,13 +69,13 @@
 
 .blog__card-item:hover .blog__card-hover {
   opacity: 1;
-  transition: ease-in-out 0.3s;
 }
 
 /* карточка при наведении */
 
 .blog__card-visible {
   display: block;
+  transition: all 0.3;
 }
 
 .blog__card-visible img {
@@ -93,6 +94,7 @@
   background-color: #fff;
   border-radius: 4px;
   text-align: center;
+  transition: all 0.3;
 }
 
 .card__title-hover {

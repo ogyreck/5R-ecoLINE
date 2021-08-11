@@ -1,4 +1,4 @@
-import React from "react";
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 // Import Swiper styles
@@ -18,6 +18,8 @@ const Slider = () => {
                 <Swiper
                     navigation={true}
                     pagination={true}
+                    slidesPerView={1} 
+                    loop={true}
                 >
                     <SwiperSlide>
                         <img className="slide__img" src="/img/slider/slide_1.png" alt="" />

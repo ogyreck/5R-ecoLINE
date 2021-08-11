@@ -30,7 +30,7 @@
   align-items: flex-end;
 }
 
-.swiper-pagination span{
+.swiper-pagination-bullet{
   width: 320px !important;
   height: 1px !important;
   border-radius: 0px !important;

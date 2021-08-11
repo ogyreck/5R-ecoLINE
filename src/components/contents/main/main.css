@@ -8,6 +8,7 @@
   background-size: cover;
 }
 
+
 .main__title {
   font-size: 60px;
   width: 60%;
@@ -41,13 +42,6 @@
   border: none;
   margin-right: 60px;
 }
-.main__btn-info:hover{
-  background-color: #2E642A;
-}
-.main__btn-info:focus,
-.main__btn-info:active{
-  background-color: #234F20;
-}
 
 .main__btn-shop {
   padding: 17px 54px;
@@ -56,8 +50,6 @@
 }
 
 /* секция с цифрами */
-
-
 
 /* секция с видео */
 

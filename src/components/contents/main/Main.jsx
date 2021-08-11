@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Link} from "react-router-dom";
-import HeaderMain from "../../header/Header_main";
+// import HeaderMain from "../../header/Header_main";
 import Slider from "./Slider/Slider";
 import Footer from "../../footer/Footer";
 import Quiz from "../main/Quiz/Quiz"
@@ -11,33 +10,34 @@ import Numbers from "./Numbers/Numbers";
 import Purpose from "./Purpose/Purpose";
 import Concept from "./Concept/Concept";
 import Blog from "./Blog/Blog";
+import HeaderShopContainer from "../../header/Header_shopContainer";
+
 
 export default class Main extends Component {
 
-  click() {
-    window.location.assign("./shop");
-  }
+  // click() {
+  //   window.location.assign("./shop");
+  // }
+
+
 
   render() {
     return (
       <>
-        <HeaderMain />
+        <HeaderShopContainer />
         <main>
-          <section className="main">
-            <div className="container">
-              <h1 className="main__title">Стань частью больших изменений</h1>
-              <span className="main__subtitle">Поможем сформировать твой персональный план по “спасению мира”</span>
-              <div className="main__btn">
-                <Link to="/blog"><button className="main__btn-info">Читать</button></Link>
-                <Link to="/shop"><button className="main__btn-shop">В магазин</button></Link>
+            <section className="main">
+              <div className="container">
+                <h1 className="main__title">Стань частью больших изменений</h1>
+                <span className="main__subtitle">Поможем сформировать твой персональный план по “спасению мира”</span>
+                <div className="main__btn">
+                  <button className="main__btn-info">Читать</button>
+                  <button className="main__btn-shop">В магазин</button>
+                </div>
               </div>
-            </div>
-          </section>
-
-          <Numbers/>
-
+            </section>
+          <Numbers />
           <Slider />
-
           {/* <section className="video">
             <div className="container video__row">
               <div className="block__video">
@@ -50,23 +50,17 @@ export default class Main extends Component {
               </div>
             </div>
           </section> */}
-
           <Quiz />
-
-          <Purpose/>
-
-          <Concept/>
-
-          <Blog/>
-
+          <Purpose />
+          <Concept />
+          <Blog />
           <Subscribe />
-
         </main>
-
         <Footer />
       </>
     )
   }
 }
+
 
 // export default Main;

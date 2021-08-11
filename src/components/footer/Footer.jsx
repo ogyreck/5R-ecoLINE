@@ -10,27 +10,18 @@ const Footer = () => {
           <div className="footer">
             <div className="footer__logo">
               <img src="/img/footer_logo.svg" alt="" />
-              <span className="footer__logo-text">5R. <span>эко</span>портал</span>
+              <span className="footer__logo-text"><span>5R.</span> экопортал</span>
             </div>
             <div className="footer__menu">
               <span>Меню</span>
-              <Link to="/shop">Католог</Link>
               <Link to="/about">О нас</Link>
               <Link to="/blog">Блог</Link>
-              <Link to="/blog">Контакты</Link>
             </div>
             <div className="footer__catalog">
-              <span>Каталог</span>
-              <Link to="/shop">Для дома</Link>
-              <Link to="/shop">Zero Waste</Link>
-              <Link to="/shop">Косметика</Link>
-              <Link to="/shop">Личная гигиена</Link>
-            </div>
-            <div className="footer__catalog">
-              <span>Покупателю</span>
+              <span>Эко магазин</span>
+              <Link to="/shop">Каталог</Link>
               <Link to="/shop">Оплата и доставка</Link>
               <Link to="/shop">FAQ</Link>
-              <Link to="/shop">Сертификаты</Link>
             </div>
             <div className="footer__social">
               <div className="footer__social-links">
@@ -45,30 +36,9 @@ const Footer = () => {
                 </div>
               </div>
               <Link to="/" className="footer__social-emal">EcoPortal20@mail.ru</Link>
-              <Link to="/" className="footer__social-tel">+7 (912) 017-22-72</Link>
             </div>
             
           </div>
-        </div>
-        <div className="footer__line"></div>
-        <div className="container">
-          <div className="footer__docs">
-            <div className="footer__pay">
-              <img src="/img/visa.svg" alt="" />
-              <img src="/img/masterCard.svg" alt="" />
-              <img src="/img/mir.svg" alt="" />
-            </div>
-            <div className="footer__offer">
-              <Link to="/">Публичная оферта</Link>
-            </div>
-            <div className="footer__policy">
-              <Link to="/">Политика конфиденциальности</Link>
-            </div>
-            <div className="footer__date">
-              <span>© 2021 5R. экопортал</span>
-            </div>
-          </div>
-          
         </div>
       </footer>
     </>

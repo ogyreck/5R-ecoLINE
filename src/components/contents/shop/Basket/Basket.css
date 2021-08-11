@@ -1,0 +1,51 @@
+.basket {
+  position: relative;
+}
+
+.basket-image {
+  position: absolute;
+  right: 86px;
+  bottom: 0px;
+  background-image: url("../../../.././img/basket-image.jpg");
+  width: 356px;
+  height: 334px;
+}
+
+.main-heading-basket {
+  text-align: left;
+  padding-left: 376px;
+  padding-top: 156px;
+}
+
+.basket-container {
+  width: 1033px;
+  margin: 0 auto;
+}
+
+.basket__information {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-top: 72px;
+  padding-bottom: 40px;
+  padding-left: 0;
+}
+
+.basket__information-item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 110%;
+  color: #c9c9c9;
+}
+
+.basket__information-item:nth-child(1) {
+  padding-right: 419px;
+}
+
+.basket__information-item:nth-child(2) {
+  padding-right: 98px;
+}
+
+.basket__information-item:nth-child(3) {
+  padding-right: 71px;
+}

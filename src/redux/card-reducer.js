@@ -1,7 +1,4 @@
-
-
 const ADD_CARD = "CARD-ADD"
-
 
 let initialState = {
 
@@ -30,22 +27,33 @@ let initialState = {
     basket: [
     ],
     basketLenght: 0
+}
 
+let productsJson = JSON.parse(localStorage.getItem('basket'))
+
+let products = productsJson ? productsJson : []
+
+let catalog = JSON.parse(localStorage.getItem('cardsData'))
+
+if (products.length) {
+    initialState.basket = [...products]
+    initialState.basketLenght = products.length
+    initialState.cardsData = [...catalog]
 
 }
 
-
-
 export const cardReducer = (state = initialState, action)=>{
-    console.log(state)
+    // console.log(state)
+
     let stateCopy = {
         ...state,
         cardsData: [...state.cardsData],
         basket: [...state.basket],
         disable: {...state.cardsData.disable},
         inButton: {...state.cardsData.inButton}
-
     }
+
+    console.log(stateCopy, 'stateCopy')
 
 
     switch (action.type){
@@ -63,6 +71,8 @@ export const cardReducer = (state = initialState, action)=>{
 
             stateCopy.basket.push(newCard)
             stateCopy.basketLenght = stateCopy.basket.length
+            localStorage.setItem('basket', JSON.stringify(stateCopy.basket))
+            localStorage.setItem('cardsData', JSON.stringify(stateCopy.cardsData))
             return stateCopy;
         }
 
@@ -76,12 +86,14 @@ export const cardReducer = (state = initialState, action)=>{
 }
 
 
+
 export const addBasketAction = (idCardValue) => {
     return{
         type: ADD_CARD,
         idCard: idCardValue
     }
 }
+
 export const cardAddActionCreator = () =>{
     return{
         type: "RENDER-CARD"
