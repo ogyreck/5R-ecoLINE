@@ -29,10 +29,17 @@ let initialState = {
     basketLenght: 0
 }
 
-let products = JSON.parse(localStorage.getItem('basket'))
+let productsJson = JSON.parse(localStorage.getItem('basket'))
+
+let products = productsJson ? productsJson : []
+
+let catalog = JSON.parse(localStorage.getItem('cardsData'))
 
 if (products.length) {
-    initialState.basket = [...products]            
+    initialState.basket = [...products]
+    initialState.basketLenght = products.length
+    initialState.cardsData = [...catalog]
+
 }
 
 export const cardReducer = (state = initialState, action)=>{
@@ -65,6 +72,7 @@ export const cardReducer = (state = initialState, action)=>{
             stateCopy.basket.push(newCard)
             stateCopy.basketLenght = stateCopy.basket.length
             localStorage.setItem('basket', JSON.stringify(stateCopy.basket))
+            localStorage.setItem('cardsData', JSON.stringify(stateCopy.cardsData))
             return stateCopy;
         }
 
