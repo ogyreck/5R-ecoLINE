@@ -131,7 +131,7 @@ nav ul{
 }
 
 .goods__number{
-  color: #E0E0E0;
+  /* color: #E0E0E0;
   border-radius: 50%;
   padding: 2px 7px;
   font-weight: 500;
@@ -141,7 +141,25 @@ nav ul{
   margin-bottom: 10px;
   position: absolute;
   margin-top: -10px;
-  margin-left: -10px;
+  margin-left: -10px; */
+
+  display: flex;
+  width: 23px;
+  color: #E0E0E0;
+  border-radius: 50%;
+  padding: 2px 7px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  background-color: #25733B;
+  margin-bottom: 10px;
+  position: absolute;
+  margin-top: -37px;
+  margin-left: 11px;
+  height: 23px;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 

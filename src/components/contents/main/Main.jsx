@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 // import HeaderMain from "../../header/Header_main";
+import { Link } from "react-router-dom";
 import Slider from "./Slider/Slider";
 import Footer from "../../footer/Footer";
 import Quiz from "../main/Quiz/Quiz"
@@ -21,6 +22,8 @@ export default class Main extends Component {
 
 
 
+
+
   render() {
     return (
       <>
@@ -32,7 +35,7 @@ export default class Main extends Component {
                 <span className="main__subtitle">Поможем сформировать твой персональный план по “спасению мира”</span>
                 <div className="main__btn">
                   <button className="main__btn-info">Читать</button>
-                  <button className="main__btn-shop">В магазин</button>
+                  <Link to="/shop"> <button className="main__btn-shop">В магазин</button></Link>
                 </div>
               </div>
             </section>
