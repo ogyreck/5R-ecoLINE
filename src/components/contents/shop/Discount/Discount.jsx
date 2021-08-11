@@ -4,7 +4,7 @@ const Discount = () => {
    return (
       <div className="discount">
          <div className="discount-wrapper">
-            <p className="discount__title">Скидка на первый заказ 10% по промокоду “summer21"</p>
+            <p className="discount__title">Скидка 10% на всю косметику до конца августа!</p>
          </div>
       </div>
    );

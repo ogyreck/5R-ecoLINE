@@ -4,11 +4,12 @@
   margin-left: auto;
   height: auto;
   max-width: 1170px;
+  padding-bottom: 232px;
 }
 
 .main-heading-catalog {
   color: #c28686;
-  padding-top: 147px;
+  padding-top: 100px;
   text-align: left;
 }
 
