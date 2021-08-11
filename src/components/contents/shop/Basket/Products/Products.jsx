@@ -8,8 +8,12 @@ const Noting =  () =>{
 }
 
 const Products = (props) => {
-    let productBasKet = props.basket.map(product => <Product nameCard={product.nameCard} cost={product.cost}/>)
-    let nothing =  `Корзина пустая`
+    console.log(props)
+    let productBasKet = props.basket.map(product => <Product
+                                                            nameCard={product.nameCard}
+                                                            cost={product.cost} id={product.id}
+                                                            deleteBascket={props.deleteBascet}/>)
+
    return (
       <div className="products">
          <div className="products__cards">

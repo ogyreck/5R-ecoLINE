@@ -3,16 +3,16 @@ import Footer from "../../../footer/Footer";
 import "./Basket.css";
 import Delivery from "./Delivery/Delivery";
 
-import Products from "./Products/Products";
-import HeaderShopContainer from "../../../header/Header_shopContainer";
+
 import {connect} from "react-redux";
 import Basket from "./Basket";
+import {deleteBascetAction} from "../../../../redux/card-reducer";
 
 
 
 let mapStateToProps = (state) => {
 
-    console.log(state, 'state - mapStateToProps')
+
 
     return{
         basket: state.basket
@@ -20,7 +20,9 @@ let mapStateToProps = (state) => {
 }
 let mapDispatchToProps = (dispatch) =>{
     return{
-
+        deleteBascket : (id) =>{
+            dispatch(deleteBascetAction(id))
+        }
     }
 }
 
