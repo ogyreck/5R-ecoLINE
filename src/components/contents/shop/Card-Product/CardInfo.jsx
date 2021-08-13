@@ -10,7 +10,7 @@ export default class CardInfo extends Component {
     if (this.testInput.value <=1){
       this.testInput.value = 1;
     } else {
-      this.testInput.value = this.testInput.value - 1;
+      this.testInput.value = Number(this.testInput.value) - 1;
     }
   }
 
@@ -29,7 +29,7 @@ export default class CardInfo extends Component {
         <span className="card__count-text">Количество</span>
         <span className="card__count-switch">
           <button onClick={this.delCount.bind(this)} className="card__count-btn">−</button>
-          <input className="card__count" disabled type="text" ref={(input) => this.testInput = input} value="1" min="1" max="10" />
+          <input className="card__count" disabled type="text" ref={(input) => this.testInput = input} value="1" />
           <button onClick={this.addCount.bind(this)} className="card__count-btn" >+</button>
         </span>
         <button className="card__btn">В корзину</button>

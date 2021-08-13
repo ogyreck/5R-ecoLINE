@@ -18,7 +18,7 @@
 }
 
 .products__card-description {
-  max-width: 187px;
+  width: 187px;
   font-weight: normal;
   font-size: 16px;
   line-height: 190%;
@@ -35,6 +35,8 @@
 
 .products__card-count {
   padding-left: 139px;
+  border: none;
+  background-color: transparent;
 }
 
 .products__card-total {
