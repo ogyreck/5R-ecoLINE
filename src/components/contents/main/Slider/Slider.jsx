@@ -18,7 +18,8 @@ const Slider = () => {
                 <Swiper
                     navigation={true}
                     pagination={true}
-                    slidesPerView={1} 
+                    // slidesPerView={1}
+                    className="mainSlider"
                     loop={true}
                 >
                     <SwiperSlide>

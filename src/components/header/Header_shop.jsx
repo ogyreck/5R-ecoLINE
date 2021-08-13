@@ -9,14 +9,14 @@ const HeaderShop = (props) => {
             <header id="header">
                 <div className="container">
                     <div className="header">
-                        <div className="logo">
+                        <div className="header__logo">
                             <Link to="/">
-                                <img src="/img/header_logo.svg" alt="Логотип" />
-                                <span className="logo__name">5R. <span>эко</span>портал</span>
+                                {/* <img src="/img/header_logo.svg" alt="Логотип" /> */}
+                                <span className="logo__name">5R. <span>экоline</span></span>
                             </Link>
                         </div>
 
-                        <nav className="navbar">
+                        <nav className="header__navbar">
                             <ul className="nav__links">
                                 <li className="nav__link-shop">
                                     <Link to="/shop" className="nav__link-item">

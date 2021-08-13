@@ -22,7 +22,7 @@ const Shop = (props) => {
           <h2 className="main-heading main-heading-catalog">Каталог товаров</h2>
           <BlogTopics />
           <ShopCardsContainer />
-         <Subscribe/>
+          <Subscribe/>
         </div>
       </main>
       <Footer/>

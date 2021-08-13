@@ -30,6 +30,8 @@
 }
 
 .shop-card__title {
+  cursor: pointer;
+  height: 52px;
   font-weight: normal;
   font-size: 16px;
   line-height: 130%;
@@ -38,6 +40,7 @@
 }
 
 .shop-card__price {
+  cursor: pointer;
   font-weight: 500;
   font-size: 24px;
   line-height: 130%;

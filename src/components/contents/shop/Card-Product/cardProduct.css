@@ -30,15 +30,12 @@
 }
 .card__img{
   background-color: #fff;
-  filter: drop-shadow(2px 2px 40px rgba(67, 41, 41, 0.1));
-  /* height: 600px; */
-  /* width: 600px; */
-  /* object-fit: contain; */
+  filter: drop-shadow(2px 2px 12px rgba(67, 41, 41, 0.1));
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  color: #000 !important;
+.cardSlide .swiper-button-prev,
+.cardSlide .swiper-button-next {
+  color: #C28686;
 }
 
 .card__wrapper {
@@ -128,6 +125,8 @@
 }
 
 .card__btn{
+  font-family: 'Montserrat',
+  sans-serif;
   margin-top: 48px;
   font-weight: 500;
   font-size: 18px;
@@ -178,27 +177,28 @@
   padding-left: 35px;
 }
 
-.card__description h3{
+.card__description span{
+  display: block;
+  font-size: 32px;
+  line-height: 128%;
+
   font-size: 32px;
   line-height: 128%;
   color: #585858;
 }
 
 .card__description-text {
-  width: 780px;
+  width: 700px;
   padding-top: 40px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 190%;
   color: #6A6A6A;
 }
 
-.card__composition p{
-  font-size: 18px;
-  line-height: 190%;
-  padding-top: 4px;
-  color: #6A6A6A;
-}
-.card__composition h4{
+
+.card__composition span ,
+.card__prameters span {
+  display: block;
   padding-top: 40px;
   font-weight: 500;
   font-size: 18px;
@@ -208,25 +208,23 @@
 }
 
 .card__prameters p{
-  font-size: 18px;
+  padding-bottom: 152px;
+}
+
+.card__prameters p,
+.card__composition p {
+  font-size: 16px;
   line-height: 190%;
   padding-top: 4px;
   color: #6A6A6A;
-  padding-bottom: 152px;
-}
-.card__prameters h4{
-  padding-top: 40px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 190%;
-  color: #585858;
 }
 
 .card__favorite{
   fill: none;
   cursor: pointer;
   stroke: #878787;
-  margin-left: 32px;
+  margin-left: 40px;
+  margin-bottom: -2px;
 }
 
 .card__favorite:hover{
@@ -245,8 +243,22 @@
   fill: #878787;
   stroke: #878787;
 }
-.swiper-pagination{
+
+
+
+.customized-swiper-pagination{
+  bottom:120px;
   display: flex;
-  bottom: 136px !important;
-  left: 0px !important;
+  height: 130px;
+}
+
+.cardSlide .swiper-pagination {
+  display: flex;
+  bottom: 20px ;
+  /* left: 0px; */
+  padding-left: 24px;
+}
+
+.cardSlide .swiper-button-disabled {
+  opacity: 0;
 }
