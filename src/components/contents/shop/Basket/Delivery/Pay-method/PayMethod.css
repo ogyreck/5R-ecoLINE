@@ -6,14 +6,6 @@
   padding-bottom: 28px;
 }
 
-.flex-wrapper-input {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 .radio-border {
   border: none;
   padding: 0;

@@ -1,0 +1,8 @@
+.wrapper-input{
+   padding-bottom: 20px;
+}
+
+.input-wrapper + .input-wrapper{
+   margin-left: 30px;
+}
+
