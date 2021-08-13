@@ -5,12 +5,13 @@
   width: 100%;
   padding-top: 192px;
   padding-bottom: 300px;
+  background-size: cover;
 }
 
 
 .main__title {
   font-size: 60px;
-  width: 50%;
+  width: 60%;
   color: #fff;
   font-weight: bold;
   line-height: 114%;

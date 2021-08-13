@@ -1,13 +1,13 @@
 import React from "react";
 import ShopCard from "./ShopCard";
 import "./ShopCards.css";
-import cardImage from "../../../../img/shop-image.png";
-import {Link} from "react-router-dom";
-import {addBasketAction} from "../../../../redux/card-reducer";
+// import cardImage from "../../../../img/shop-image.png";
+// import {Link} from "react-router-dom";
+// import {addBasketAction} from "../../../../redux/card-reducer";
 
 const ShopCards = (props) => {
 
-    let cards = props.cardsData.map(card => <ShopCard name={card.nameCard}
+    let cards = props.cardsData.map(card => <ShopCard key={card.id} name={card.nameCard}
                                                             cost={card.cost}
                                                             img={card.img}
                                                             new={card.sale}

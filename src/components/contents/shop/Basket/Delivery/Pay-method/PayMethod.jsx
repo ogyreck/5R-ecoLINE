@@ -10,7 +10,7 @@ const PayMethod = () => {
             <div className="radio radio-border">
                <form action="#" method="GET">
                   <label>
-                     <input type="radio" name="react-tips" value="Оплата картой (Visa, MasterCard, МИР)" checked={true} className="form-check-input" />
+                     <input type="radio" name="react-tips" value="Оплата картой (Visa, MasterCard, МИР)" defaultChecked className="form-check-input" />
                      Оплата картой (Visa, MasterCard, МИР)
                   </label>
                </form>
@@ -18,10 +18,9 @@ const PayMethod = () => {
          </div>
          <PersonalInfo/>
          <DeliveryInfo />
-         <p className="offer">Нажимая на кнопку «Оформить заказ», я принимаю
-            условия<a className="offer__link" href="#"> публичной оферты и политики конфиденциальности</a></p>
+         <p className="offer">Нажимая на кнопку «Оформить заказ», я принимаю условия<a className="offer__link" href="/"> публичной оферты и политики конфиденциальности</a></p>
          <label className="input-checkbox-text">
-            <input className="input-checkbox" type="checkbox" />
+            <input className="input-checkbox" type="checkbox" defaultChecked />
             Перезвонить мне для уточнения деталей заказа
          </label>
          <div className="button-container">

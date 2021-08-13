@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "./ShopCards.css";
 import {connect} from "react-redux";
 import ShopCards from "./ShopCards";

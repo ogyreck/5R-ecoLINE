@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import HeaderMain from "../../header/Header_main";
+// import HeaderMain from "../../header/Header_main";
+import { Link } from "react-router-dom";
 import Slider from "./Slider/Slider";
 import Footer from "../../footer/Footer";
 import Quiz from "../main/Quiz/Quiz"
@@ -15,9 +16,11 @@ import HeaderShopContainer from "../../header/Header_shopContainer";
 
 export default class Main extends Component {
 
-  click() {
-    window.location.assign("./shop");
-  }
+  // click() {
+  //   window.location.assign("./shop");
+  // }
+
+
 
 
 
@@ -32,7 +35,7 @@ export default class Main extends Component {
                 <span className="main__subtitle">Поможем сформировать твой персональный план по “спасению мира”</span>
                 <div className="main__btn">
                   <button className="main__btn-info">Читать</button>
-                  <button className="main__btn-shop">В магазин</button>
+                  <Link to="/shop"> <button className="main__btn-shop">В магазин</button></Link>
                 </div>
               </div>
             </section>

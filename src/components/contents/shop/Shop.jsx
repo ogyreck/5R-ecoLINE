@@ -1,11 +1,11 @@
 import React from "react";
 
 import "./shop.css";
-import ShopCards from "./Shop-cards/ShopCards";
+// import ShopCards from "./Shop-cards/ShopCards";
 import BlogTopics from "./Blog-topics/BlogTopics";
-import ShopDescription from "./Shop-description/ShopDescription";
+// import ShopDescription from "./Shop-description/ShopDescription";
 import Discount from "./Discount/Discount";
-import HeaderShop from "../../header/Header_shop";
+// import HeaderShop from "../../header/Header_shop";
 import Footer from "../../footer/Footer";
 import Subscribe from "./Subscribe/Subscribe";
 import ShopCardsContainer from "./Shop-cards/ShopCardsContainer";

@@ -6,7 +6,7 @@ import Products from "./Products/Products";
 import HeaderShopContainer from "../../../header/Header_shopContainer";
 
 const Basket = (props) => {
-    console.log(props, 'props - Basket')
+   console.log(props, 'props - Basket')
    return (
       <>
          <HeaderShopContainer />

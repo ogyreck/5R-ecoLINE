@@ -8,8 +8,8 @@ const Noting =  () =>{
 }
 
 const Products = (props) => {
-    console.log(props)
-    let productBasKet = props.basket.map(product => <Product
+   console.log(props)
+   let productBasKet = props.basket.map(product => <Product key={product.id}
                                                             nameCard={product.nameCard}
                                                             cost={product.cost} id={product.id}
                                                             deleteBascket={props.deleteBascet}/>)
@@ -17,7 +17,7 @@ const Products = (props) => {
    return (
       <div className="products">
          <div className="products__cards">
-             {productBasKet.length >= 1 ? productBasKet: <Noting/> }
+            {productBasKet.length >= 1 ? productBasKet: <Noting/> }
          </div>
          <hr className="products__line" />
          <div className="flex-wrapper">

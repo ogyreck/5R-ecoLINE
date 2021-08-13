@@ -70,18 +70,18 @@ const HeaderShop = (props) => {
                         </nav>
 
                         <div className="navigation__shop">
-                            <div className="search">
+                            <div className="header-search">
                                 <svg width="21" height="21" className="navigation__search-icon">
                                     <use xlinkHref="/sprite.svg#search"></use>
                                 </svg>
                             </div>
-                            <div className="favorites">
+                            <div className="header-favorites">
                                 <svg width="23" height="20" fill="red" className="navigation__favorites-icon">
                                     <use xlinkHref="/sprite.svg#favorites"></use>
                                 </svg>
                             </div>
                             <Link to="/shop/basket">
-                                <div className="basket">
+                                <div className="header-basket">
                                     <svg width="23" height="20" className="navigation__basket-icon">
                                         <use xlinkHref="/sprite.svg#basket"></use>
                                     </svg>

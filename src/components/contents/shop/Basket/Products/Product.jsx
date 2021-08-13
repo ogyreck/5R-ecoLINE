@@ -15,7 +15,7 @@ const Product = (props) => {
          <div className="products__card-count">1</div>{/* до бавить чтоб улетало на стейт*/}
 
          <div className="products__card-total">{props.cost} ₽</div>
-         <span class="close" onClick={deleteBascet}></span>
+         <span className="close" onClick={deleteBascet}></span>
       </div>
    );
 };

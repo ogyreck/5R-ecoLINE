@@ -45,9 +45,10 @@
   position: absolute;
   right: 39px;
   top: 86px;
-  width: 12px;
+  width: 21px;
   height: 12px;
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .close:hover {

@@ -3,7 +3,7 @@ import "./ShopCard.css";
 import { Link } from "react-router-dom";
 import favorites from "../../../../img/favorites-icon.svg"
 import cardImage from "../../../../img/shop-image.png"
-import { cardAddActionCreator } from "../../../../redux/card-reducer";
+// import { cardAddActionCreator } from "../../../../redux/card-reducer";
 
 const NEW = (props) => {
     if (props.sale) {

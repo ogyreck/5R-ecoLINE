@@ -1,17 +1,17 @@
-import Footer from "../../../footer/Footer";
+// import Footer from "../../../footer/Footer";
 
 import "./Basket.css";
-import Delivery from "./Delivery/Delivery";
+// import Delivery from "./Delivery/Delivery";
 
-
+// import Products from "./Products/Products";
+// import HeaderShopContainer from "../../../header/Header_shopContainer";
 import {connect} from "react-redux";
-import Basket from "./Basket";
-import {deleteBascetAction} from "../../../../redux/card-reducer";
+import Basket from "./Basket"; 
+import { deleteBascetAction } from "../../../../redux/card-reducer";
 
 
 
 let mapStateToProps = (state) => {
-
 
 
     return{

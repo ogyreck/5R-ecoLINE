@@ -5,10 +5,10 @@ import PayMethod from "./Pay-method/PayMethod"
 const Delivery = () => {
    return (
       <div className="delivery">
-         <form action="#" className="delivery-form" method="GET">
+         <div  className="delivery-form" >
             <DeliveryMethod/>
             <PayMethod/>
-         </form>
+         </div>
       </div>
    );
 };
