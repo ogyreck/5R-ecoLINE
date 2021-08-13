@@ -1,5 +1,5 @@
 import React from "react";
-import HeaderShop from "../../../header/Header_shop";
+// import HeaderShop from "../../../header/Header_shop";
 import Footer from "../../../footer/Footer";
 import { Link } from "react-router-dom";
 import CardInfo from "./CardInfo"
@@ -7,6 +7,7 @@ import "./cardProduct.css";
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
+import HeaderShopContainer from "../../../header/Header_shopContainer";
 
 // import "swiper/swiper.min.css";
 // import "swiper/components/navigation/navigation.min.css"
@@ -31,7 +32,7 @@ const CardProduct = () => {
 
   return (
     <>
-      <HeaderShop />
+      <HeaderShopContainer/>
       <div className="card__bg">
 
         <section className="navigation">
