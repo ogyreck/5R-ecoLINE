@@ -8,8 +8,14 @@
 }
 
 .main-heading-catalog {
-  color: #c28686;
-  padding-top: 100px;
+  padding-top: 68px;
   text-align: left;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 148%;
+  color: #c28686;
 }
 
+.shop-navigation__links{
+  padding-top: 68px;
+}

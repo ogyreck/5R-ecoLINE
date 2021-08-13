@@ -4,7 +4,7 @@ const DeliveryInfo = () => {
    return (
       <>
          <div className="delivery-info">
-            <p className="form-heading">Данные о доставке:</p>
+            <p className="form-heading form-heading-info">Данные о доставке:</p>
             <div className="wrapper-input">
                <input className="form-input input-wrapper" type="text" placeholder="Город *" />
                <input className="form-input input-wrapper" type="text" placeholder="Индекс *" />

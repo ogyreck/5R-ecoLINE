@@ -4,17 +4,35 @@
   line-height: 140%;
   color: #51774e;
   padding-bottom: 28px;
+}
+
+.form-heading-delivery{
   padding-top: 93px;
+}
+
+.form-heading-pay{
+  padding-top: 80px;
+}
+
+.form-heading-info{
+  padding-top: 68px;
+}
+
+.form-heading:nth-child(2){
+  
+}
+
+.form-heading:nth-child(3){
+  
+}
+
+.form-heading:nth-child(4){
+  padding-top: 68px;
 }
 
 .radio-border {
   border: none;
   padding: 0;
-  padding-bottom: 68px;
-}
-
-.personal-info {
-  padding-bottom: 68px;
 }
 
 .form-input {

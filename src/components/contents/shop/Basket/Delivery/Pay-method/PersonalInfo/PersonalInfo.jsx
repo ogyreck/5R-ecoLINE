@@ -4,7 +4,7 @@ const PersonalInfo = () => {
    return (
       <>
          <div className="personal-info">
-            <p className="form-heading">Ваши данные:</p>
+            <p className="form-heading form-heading-info">Ваши данные:</p>
                <div className="wrapper-input">
                   <input className="form-input input-wrapper" type="text" placeholder="Имя *" />
                   <input className="form-input input-wrapper" type="text" placeholder="Фамилия *" />

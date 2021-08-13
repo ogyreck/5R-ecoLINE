@@ -6,7 +6,7 @@ const PayMethod = () => {
    return (
       <>
          <div className="pay-method">
-            <p className="form-heading">Способ оплаты:</p>
+            <p className="form-heading form-heading-pay">Способ оплаты:</p>
             <div className="radio radio-border">
                <form action="#" method="GET">
                   <label>

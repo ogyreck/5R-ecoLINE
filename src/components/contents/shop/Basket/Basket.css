@@ -2,24 +2,32 @@
   position: relative;
 }
 
-.basket-image {
+.basket-navigation__links {
+  padding-top: 153px;
+}
+
+/* .basket-image {
   position: absolute;
   right: 86px;
   bottom: 0px;
   background-image: url("../../../.././img/basket-image.jpg");
   width: 356px;
   height: 334px;
-}
+} */
 
 .main-heading-basket {
   text-align: left;
-  padding-left: 376px;
-  padding-top: 156px;
+  padding-top: 68px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 148%;
+  color: #c28686;
 }
 
 .basket-container {
   width: 1033px;
   margin: 0 auto;
+  padding-bottom: 232px;
 }
 
 .basket__information {

@@ -43,21 +43,13 @@ const About = () => {
                             <div className='container'>
                                 <div className='about-founder'>
                                     <div className='block-1'>
-<<<<<<< HEAD
                                         <img src="img/founder.png" alt="фото"/>
-=======
-                                        <img src="img/founder.png"/>
->>>>>>> dev4
                                     </div>
                                     <div className='block-2'>
                                         <p className='citata'>“Мы хотим стать магазином, который будет создавать
                                             стиль и гармонию в Вашем доме, а не мусор”</p>
                                         <p className='founder-subscribe'>
-<<<<<<< HEAD
                                             <span>Диана</span>
-=======
-                                            <div>Диана</div>
->>>>>>> dev4
                                             <span>Основатель магазина</span>
                                         </p>
                                     </div>

@@ -1,3 +1,9 @@
+.flex-product-total-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+
 .products__line {
   background: #c4c4c4;
   border: 1px solid #c9c9c9;
@@ -15,7 +21,7 @@
   outline: none;
   border: 1px solid #d3d3d3;
   border-radius: 4px;
-  width: 300px;
+  width: 274px;
   height: 56px;
   font-weight: normal;
   font-size: 18px;
@@ -34,11 +40,23 @@
   font-weight: 500;
 }
 
+.products__sale {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 140%;
+  color: #c28686;
+}
+
+.products__sale span {
+  font-weight: 500;
+  padding-left: 65px;
+}
+
 .products__promocode button {
   border: none;
   width: 185px;
   height: 55px;
-  margin-left: -1px;
+  margin-left: -3px;
   background: #c28686;
   border-radius: 0px 4px 4px 0px;
   font-weight: 500;
@@ -48,7 +66,7 @@
   color: #ffffff;
 }
 
-.noting{
+.noting {
   font-weight: normal;
   font-size: 25px;
   line-height: 140%;
