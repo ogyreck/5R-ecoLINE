@@ -80,13 +80,11 @@ const HeaderShop = (props) => {
                                     <use xlinkHref="/sprite.svg#favorites"></use>
                                 </svg>
                             </div>
-                            <Link to="/shop/basket">
-                                <div className="header-basket">
+                            <Link to="/shop/basket" className="header-basket">
                                     <svg width="23" height="20" className="navigation__basket-icon">
                                         <use xlinkHref="/sprite.svg#basket"></use>
                                     </svg>
                                     <label className="goods__number" htmlFor="goods__btn">{props.inBasket}</label>
-                                </div>
                             </Link>
 
                         </div>
