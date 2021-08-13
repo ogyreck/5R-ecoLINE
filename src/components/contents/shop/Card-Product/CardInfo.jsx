@@ -1,48 +1,18 @@
 import React, { Component} from "react";
 import "./cardProduct.css";
 
-import AddCount from "./AddCount.js";
-import DelCount from "./DelCount.js";
-
-// const CardInfo = (props) =>{
 export default class CardInfo extends Component {
 
-  // constructor(props) {
-  //   super(props);
-  //   this.myRef = React.createRef();
-  // }
-
-  // addProduct() {
-  //   // this.myRef.current.focusTextInput();
-  //   // const node = this.myRef.current;
-  //   console.log(this.myRef.current);
-  // }
-  
-  // const textInput = useRef(null);
-
-  // function handleClick() {
-  //   textInput.current.focus();
-  // }
-
-  // constructor(props) {
-  //   super(props);
-
-  //   this.state = {
-  //     username: ''
-  //   }
-
-  //   this.updateInput = this.updateInput.bind(this);
-  //   this.handleSubmit = this.handleSubmit.bind(this);
-  // }
-
-  // updateInput(event) {
-  //   this.setState({ username: event.target.value })
-  // }
-
-  // handleSubmit() {
-  //   console.log('Your input value is: ' + this.state.username)
-  //   //Send state to the server code
-  // }
+  addCount() {
+    this.testInput.value = Number(this.testInput.value) + 1;
+  }
+  delCount() {
+    if (this.testInput.value <=1){
+      this.testInput.value = 1;
+    } else {
+      this.testInput.value = this.testInput.value - 1;
+    }
+  }
 
   render(){
     return (
@@ -58,9 +28,9 @@ export default class CardInfo extends Component {
         </div>
         <span className="card__count-text">Количество</span>
         <span className="card__count-switch">
-          <span onClick={DelCount} className="card__count-btn">−</span>
-          <input className="card__count" disabled type="type" value="1" min="1" max="10" />
-          <span onClick={AddCount} className="card__count-btn" >+</span>
+          <button onClick={this.delCount.bind(this)} className="card__count-btn">−</button>
+          <input className="card__count" disabled type="text" ref={(input) => this.testInput = input} value="1" min="1" max="10" />
+          <button onClick={this.addCount.bind(this)} className="card__count-btn" >+</button>
         </span>
         <button className="card__btn">В корзину</button>
         
@@ -80,4 +50,3 @@ export default class CardInfo extends Component {
   }
 };
 
-// export default CardInfo;

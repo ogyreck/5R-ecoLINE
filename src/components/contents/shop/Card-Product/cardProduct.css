@@ -143,6 +143,7 @@
 }
 
 .card__count-btn{
+  border: none;
   font-size: 20px;
   line-height: 130%;
   color: #6A6A6A;
