@@ -3,7 +3,7 @@ import "./DeliveryMethod.css"
 const DeliveryMethod = () => {
    return (
       <div className="delivery-method">
-         <p className="form-heading">Выберите способ доставки:</p>
+         <p className="form-heading form-heading-delivery">Выберите способ доставки:</p>
          <div className="radio">
             <label>
                <input type="radio" name="react-tips" value="Почта России до пункта выдачи" defaultChecked className="form-check-input" />

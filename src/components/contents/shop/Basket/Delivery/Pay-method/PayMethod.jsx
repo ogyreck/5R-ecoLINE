@@ -1,12 +1,13 @@
 import DeliveryInfo from "./DeliveryInfo/DeliveryInfo";
 import "./PayMethod.css"
 import PersonalInfo from "./PersonalInfo/PersonalInfo";
+import { Link } from "react-router-dom";
 
 const PayMethod = () => {
    return (
       <>
          <div className="pay-method">
-            <p className="form-heading">Способ оплаты:</p>
+            <p className="form-heading form-heading-pay">Способ оплаты:</p>
             <div className="radio radio-border">
                <form action="#" method="GET">
                   <label>
@@ -16,7 +17,7 @@ const PayMethod = () => {
                </form>
             </div>
          </div>
-         <PersonalInfo/>
+         <PersonalInfo />
          <DeliveryInfo />
          <p className="offer">Нажимая на кнопку «Оформить заказ», я принимаю условия<a className="offer__link" href="/"> публичной оферты и политики конфиденциальности</a></p>
          <label className="input-checkbox-text">
@@ -24,7 +25,8 @@ const PayMethod = () => {
             Перезвонить мне для уточнения деталей заказа
          </label>
          <div className="button-container">
-            <button type="submit" className="form-button">Оформить заказ</button>
+            
+            <Link to="/thanks"><button type="submit" className="form-button">Оформить заказ</button></Link>
          </div>
       </>
    );

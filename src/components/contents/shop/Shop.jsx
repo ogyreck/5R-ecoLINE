@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 import "./shop.css";
 // import ShopCards from "./Shop-cards/ShopCards";
 import BlogTopics from "./Blog-topics/BlogTopics";
@@ -7,7 +7,6 @@ import BlogTopics from "./Blog-topics/BlogTopics";
 import Discount from "./Discount/Discount";
 // import HeaderShop from "../../header/Header_shop";
 import Footer from "../../footer/Footer";
-import Subscribe from "./Subscribe/Subscribe";
 import ShopCardsContainer from "./Shop-cards/ShopCardsContainer";
 import HeaderShopContainer from "../../header/Header_shopContainer";
 
@@ -19,10 +18,14 @@ const Shop = (props) => {
         <Discount/>
         <div className="container-shop">
           {/* <ShopDescription/> */}
+          <div className="navigation__links shop-navigation__links">
+               <Link to="/" className="navigation__links-item">Главная</Link>
+               <img src="/img/arrow_left.svg" alt="Стрелка" />
+               <Link to="/shop" className="navigation__links-item">Каталог</Link>
+            </div>
           <h2 className="main-heading main-heading-catalog">Каталог товаров</h2>
           <BlogTopics />
           <ShopCardsContainer />
-          <Subscribe/>
         </div>
       </main>
       <Footer/>

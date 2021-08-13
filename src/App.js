@@ -9,6 +9,7 @@ import Shop from './components/contents/shop/Shop';
 import ScrollToTop from "./ScrollToTop";
 import CardProduct from "./components/contents/shop/Card-Product/CardProduct";
 import BasketContainer from "./components/contents/shop/Basket/BasketContainer";
+import ThankYou from './components/contents/shop/Basket/ThankYou/ThankYou';
 
 const App = (props) => {
     // debugger;
@@ -24,6 +25,7 @@ const App = (props) => {
                 <Route exact path='/shop' render={()=><Shop />}/>
                 <Route exact path='/shop/basket' render={()=><BasketContainer />}/>
                 <Route exact path='/shop/card' component={CardProduct}/>
+                <Route exact path='/thanks' component={ThankYou}/>
             </ScrollToTop>
             </BrowserRouter>
         </>
