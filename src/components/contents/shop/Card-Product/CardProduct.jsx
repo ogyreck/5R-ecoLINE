@@ -1,5 +1,4 @@
 import React from "react";
-// import HeaderShop from "../../../header/Header_shop";
 import Footer from "../../../footer/Footer";
 import { Link } from "react-router-dom";
 import CardInfo from "./CardInfo"
@@ -9,9 +8,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import HeaderShopContainer from "../../../header/Header_shopContainer";
 
-// import "swiper/swiper.min.css";
-// import "swiper/components/navigation/navigation.min.css"
-// import "swiper/components/pagination/pagination.min.css"
 
 const CardProduct = () => {
 
@@ -82,7 +78,7 @@ const CardProduct = () => {
             </div>
 
             <div className="card__description">
-              <h3>Описание</h3>
+              <span>Описание</span>
               <p className="card__description-text">Складной стакан из пищевого силикона, гибкого и долговечного материала,
                 который легко моется. Удобно носить с собой в сложенном виде.
                 Корпус выполнен
@@ -94,13 +90,13 @@ const CardProduct = () => {
               </p>
 
               <div className="card__composition">
-                <h4>Состав</h4>
+                <span>Состав</span>
                 <p>Стакан: Силикон;<br />
                   Крышка, держатель стакана: Пластик — PP 5
                 </p>
               </div>
               <div className="card__prameters">
-                <h4>Параметры</h4>
+                <span>Параметры</span>
                 <p>Вес	200 g<br />
                   Объём: 355 мл;<br />
                   Диаметр крышки: 9 см;<br />

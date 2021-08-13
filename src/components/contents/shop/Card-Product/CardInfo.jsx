@@ -1,6 +1,8 @@
 import React, { Component} from "react";
 import "./cardProduct.css";
 
+
+
 export default class CardInfo extends Component {
 
   addCount() {
@@ -14,7 +16,8 @@ export default class CardInfo extends Component {
     }
   }
 
-  render(){
+
+  render() {
     return (
       <div className="card-info">
         <p className="card__name">Стакан скланой Stojo</p>
@@ -37,8 +40,9 @@ export default class CardInfo extends Component {
         {/* <svg width="23" height="20" className="card__favorite">
           <use xlinkHref="sprite.svg#favorites"></use>
         </svg> */}
+        
         <svg width="23" height="20" className="card__favorite">
-          <use xlinkHref="/sprite.svg#favorites"></use>
+          <use  xlinkHref="/sprite.svg#favorites"></use>
         </svg>
 
         {/* <img className="card__favorites" src="/img/svg/favorites.svg" alt="" /> */}
