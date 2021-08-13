@@ -1,32 +1,38 @@
 /* */
 
+main{
+  padding-top: 85px;
+}
+
 .main {
-  background: url(../../../img/main_bg.jpg) no-repeat center center;
+  background: url(../../../img/main_bg.png) no-repeat center center;
   width: 100%;
-  padding-top: 192px;
-  padding-bottom: 300px;
+  padding-top: 151px;
+  padding-bottom: 224px;
   background-size: cover;
 }
 
 
 .main__title {
-  font-size: 60px;
-  width: 60%;
-  color: #fff;
-  font-weight: bold;
-  line-height: 114%;
+  /* font-size: 60px; */
+  width: 410px;
+  font-size: 28px;
+  line-height: 140%;
+  color: #6C5F53;
+  font-weight: normal;
+  /* line-height: 114%; */
 }
 
-.main__subtitle {
+/* .main__subtitle {
   display: block;
   margin-top: 16px;
   font-size: 20px;
   line-height: 128%;
   color: rgba(255, 255, 255, 0.7);
-}
+} */
 
-.main__btn {
-  margin-top: 49px;
+/* .main__btn {
+  margin-top: 48px;
 }
 
 .main__btn button {
@@ -34,9 +40,9 @@
   line-height: 128%;
   color: #fff;
   border-radius: 4px;
-}
+} */
 
-.main__btn-info {
+/* .main__btn-info {
   background-color: #387732;
   padding: 18px 70px;
   border: none;
@@ -47,6 +53,21 @@
   padding: 17px 54px;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.8);
+} */
+
+.main__btn-shop{
+  font-family: 'Montserrat',
+  sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #6E8254;
+  padding: 16px 38px;
+  border: none;
+  margin-top: 48px;
+  box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.25);
 }
 
 /* секция с цифрами */
