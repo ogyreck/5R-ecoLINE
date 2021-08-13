@@ -55,7 +55,10 @@
     color: #FFFFFF;
 }
 .founder-subscribe span{
+<<<<<<< HEAD
     display: block;
+=======
+>>>>>>> dev4
     color: rgba(255, 255, 255, 0.8);
 
 }
@@ -89,6 +92,9 @@
     padding-bottom: 150px;
     text-align: center;
 }
+<<<<<<< HEAD
 .concept-list__item{
   text-align: left;
 }
+=======
+>>>>>>> dev4
