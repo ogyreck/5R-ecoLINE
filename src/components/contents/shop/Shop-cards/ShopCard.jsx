@@ -23,25 +23,31 @@ const ShopCard = (props) => {
     }
 
     return (
-        <Link to="/shop/card">
+        // <Link to="/shop/card">
             <div className="shop-card__item">
-                <img src={cardImage} alt="" className="shop-card__image" />
+                <Link to="/shop/card">
+                    <img src={cardImage} alt="" className="shop-card__image" />
+                </Link>
                 <div className="shop-card__content">
-                    <p className="shop-card__title">{props.name}</p>
-                    <div className="shop-card__price">{props.cost} ₽</div>
+                    <Link to="/shop/card">
+                        <p className="shop-card__title">{props.name}</p>
+                        <div className="shop-card__price">{props.cost} ₽</div>
+                    </Link>
                     <div className="card-basket">
                         <button className="shop-card-button"  disabled={props.disable} onClick={addBasket}>{props.inButton}</button>
                     </div>
                 </div>
                 <div className="shop-card__icons">
                     {/* <Link to="/"> */}
+                    <Link to="/shop/bascet">
                         <img src={favorites} alt="избранное" className="shop-basket" />
+                    </Link>
                     {/* </Link> */}
                 </div>
                 <NEW sale={props.new}/>
                 <div className='id'>{props.id}</div>
             </div>
-        </Link>
+        // </Link>
 
         
 
