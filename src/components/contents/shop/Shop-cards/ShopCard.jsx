@@ -39,7 +39,7 @@ const ShopCard = (props) => {
                 </div>
                 <div className="shop-card__icons">
                     {/* <Link to="/"> */}
-                    <Link to="/shop/basket">
+                    <Link to="/shop/favorites">
                         <img src={favorites} alt="избранное" className="shop-basket" />
                     </Link>
                     {/* </Link> */}

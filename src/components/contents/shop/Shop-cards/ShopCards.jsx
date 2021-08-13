@@ -6,7 +6,6 @@ import "./ShopCards.css";
 // import {addBasketAction} from "../../../../redux/card-reducer";
 
 const ShopCards = (props) => {
-
     let cards = props.cardsData.map(card => <ShopCard key={card.id} name={card.nameCard}
                                                             cost={card.cost}
                                                             img={card.img}
