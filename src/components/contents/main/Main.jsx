@@ -3,15 +3,17 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Slider from "./Slider/Slider";
 import Footer from "../../footer/Footer";
-import Quiz from "../main/Quiz/Quiz"
+// import Quiz from "../main/Quiz/Quiz"
 import "./main.css";
 
-import Subscribe from "../shop/Subscribe/Subscribe";
+// import Subscribe from "../shop/Subscribe/Subscribe";
 // import Numbers from "./Numbers/Numbers";
 import Purpose from "./Purpose/Purpose";
-import Concept from "./Concept/Concept";
+// import Concept from "./Concept/Concept";
 import Blog from "./Blog/Blog";
 import HeaderShopContainer from "../../header/Header_shopContainer";
+import Catalog from "./Catalog/Catalog";
+import Test from "./Test/Test";
 
 
 export default class Main extends Component {
@@ -19,10 +21,6 @@ export default class Main extends Component {
   // click() {
   //   window.location.assign("./shop");
   // }
-
-
-
-
 
   render() {
     return (
@@ -35,17 +33,20 @@ export default class Main extends Component {
                 {/* <span className="main__subtitle">Поможем сформировать твой персональный план по “спасению мира”</span> */}
                 {/* <div className="main__btn"> */}
                   {/* <button className="main__btn-info">Читать</button> */}
-                  <Link to="/shop"><button className="main__btn-shop">В магазин</button></Link>
+                  <Link to="/shop"><button className="main__btn-shop">В каталог</button></Link>
                 {/* </div> */}
               </div>
             </section>
           {/* <Numbers /> */}
           <Slider />
-          <Quiz />
+          {/* <Quiz /> */}
+          <Catalog/>
           <Purpose />
-          <Concept />
+          <Test/>
+
+          {/* <Concept /> */}
           <Blog />
-          <Subscribe />
+          {/* <Subscribe /> */}
         </main>
         <Footer />
       </>
