@@ -22,7 +22,10 @@ const Basket = (props) => {
             <h2 className="main-heading main-heading-basket">Корзина</h2>
             </div>
             <div className="basket-container">
-               <Products basket={props.basket} deleteBascet={props.deleteBascket} />
+               <Products basket={props.basket}
+                         deleteBascet={props.deleteBascket}
+                         countPlius={props.countPlius}
+                         countMines={props.countMines}/>
                <Delivery />
             </div>
             {/* <div className="basket-image"></div> */}
