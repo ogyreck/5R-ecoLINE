@@ -26,7 +26,7 @@
 }
 
 .blog__topic-active {
-  background-color: #c28686 !important;
+  background-color: #c28686 ;
   color: #fff !important;
   font-weight: 500 !important;
 }
@@ -75,7 +75,7 @@
 
 .blog__card-visible {
   display: block;
-  transition: all 0.3;
+  transition: all   ;
 }
 
 .blog__card-visible img {
@@ -94,7 +94,7 @@
   background-color: #fff;
   border-radius: 4px;
   text-align: center;
-  transition: all 0.3;
+  transition: all;
 }
 
 .card__title-hover {

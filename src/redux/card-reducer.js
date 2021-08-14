@@ -1,5 +1,6 @@
 const ADD_CARD = "CARD-ADD"
 const DELETE_CARD = 'DELETE-CARD'
+const COUNT_PLUS_BASKET = 'COUNT_PLUS_BASKET'
 
 let initialState = {
 
@@ -72,7 +73,8 @@ export const cardReducer = (state = initialState, action)=>{
                     cost: stateCopy.cardsData[action.idCard-1].cost,
                     id: action.idCard,
                     disable: true,
-                    inButton: 'Добавлено'
+                    inButton: 'Добавлено',
+                    count: 1
             }
 
             stateCopy.basket.push(newCard)
@@ -138,6 +140,12 @@ export const deleteBascetAction =  (idCardValueDelete) =>{
     return{
         type: DELETE_CARD,
         idCardDelete: idCardValueDelete
+    }
+}
+
+export const countPlusBasketAction = () =>{
+    return{
+        type: COUNT_PLUS_BASKET
     }
 }
 
