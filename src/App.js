@@ -11,6 +11,10 @@ import CardProduct from "./components/contents/shop/Card-Product/CardProduct";
 import BasketContainer from "./components/contents/shop/Basket/BasketContainer";
 import ThankYou from './components/contents/shop/Basket/ThankYou/ThankYou';
 import Favotites from './components/contents/shop/Favorites/Favotites';
+import Home from "./components/contents/shop/Catalogs/Home";
+import Cosmetics from "./components/contents/shop/Catalogs/Cosmetics";
+import Hygiene from "./components/contents/shop/Catalogs/Hygiene";
+import ZeroWaste from "./components/contents/shop/Catalogs/ZeroWaste";
 
 const App = (props) => {
     // debugger;
@@ -29,6 +33,10 @@ const App = (props) => {
                 <Route exact path='/thanks' component={ThankYou}/>
                 <Route exact path='/shop/favorites' component={Favotites}/>
             </ScrollToTop>
+                <Route exact path='/shop/home' component={Home}/>
+                <Route exact path='/shop/cosmetics' component={Cosmetics}/>
+                <Route exact path='/shop/hygiene' component={Hygiene}/>
+                <Route exact path='/shop/zero-waste' component={ZeroWaste}/>
             </BrowserRouter>
         </>
     );
