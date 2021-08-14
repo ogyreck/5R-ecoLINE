@@ -10,7 +10,7 @@ import ScrollToTop from "./ScrollToTop";
 import CardProduct from "./components/contents/shop/Card-Product/CardProduct";
 import BasketContainer from "./components/contents/shop/Basket/BasketContainer";
 import ThankYou from './components/contents/shop/Basket/ThankYou/ThankYou';
-import Favotites from './components/contents/shop/Favorites/Favotites';
+import Favorites from './components/contents/shop/Favorites/Favorites';
 
 const App = (props) => {
     // debugger;
@@ -27,7 +27,7 @@ const App = (props) => {
                 <Route exact path='/shop/basket' render={()=><BasketContainer />}/>
                 <Route exact path='/shop/card' component={CardProduct}/>
                 <Route exact path='/thanks' component={ThankYou}/>
-                <Route exact path='/shop/favorites' component={Favotites}/>
+                <Route exact path='/shop/favorites' component={Favorites}/>
             </ScrollToTop>
             </BrowserRouter>
         </>

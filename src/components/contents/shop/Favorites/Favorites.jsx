@@ -1,11 +1,11 @@
-import "./favotites.css"
+import "./Favorites.css"
 import { Link } from "react-router-dom";
 import Footer from "../../../footer/Footer";
 import HeaderShopContainer from "../../../header/Header_shopContainer";
 
 
 
-const Favotites = () => {
+const Favorites = () => {
    return (
       <>
          <HeaderShopContainer />
@@ -19,12 +19,12 @@ const Favotites = () => {
                   <Link to="/shop/basket" className="navigation__links-item">Корзина</Link>
                </div>
                <h2 className="main-heading main-heading-liked">Избранное</h2>
-               <div className="thank__button-container">
+               <div className="button-container">
                   <Link to="/shop">
-                     <button className="thank__button">В каталог</button>
+                     <button className="button button--default">В каталог</button>
                   </Link>
                   <Link to="/">
-                     <button className="thank__button">На главную</button>
+                     <button className="button button--main">На главную</button>
                   </Link>
                </div>
             </div>
@@ -34,4 +34,4 @@ const Favotites = () => {
    );
 };
 
-export default Favotites;
+export default Favorites;

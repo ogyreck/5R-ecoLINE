@@ -20,26 +20,41 @@
   padding-bottom: 40px;
 }
 
-.thank__button-container {
+.button-container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 40px;
 }
 
-.thank__button {
+.button {
   width: 174px;
   height: 56px;
   border: 1px solid rgba(194, 134, 134, 0.8);
   border-radius: 4px;
-  background: #fff;
-  color: #c28686;
+  color: #ffffff;
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
 }
 
-.thank__button:hover {
-  background: #c28686;
+.button--main {
+  border: 1px solid rgba(194, 134, 134, 0.8);
+  background: #ffffff;
+  color: #C28686;
+}
+
+.button--main:hover{
+  background: #9E6A6A;
+  color: #ffffff;
+}
+
+.button--default{
+  background: #C28686;
+}
+
+.button--default:hover {
+  background: #9E6A6A;
+  border: 1.2px solid #ffffff;
   color: #ffffff;
 }
