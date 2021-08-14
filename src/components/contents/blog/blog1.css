@@ -14,3 +14,9 @@
     color: #fff !important;
     font-weight: 500 !important;
 }
+.flex-blog__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+

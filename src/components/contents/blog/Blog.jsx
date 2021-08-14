@@ -1,7 +1,10 @@
 import React from "react";
-import "./blog.css";
+import "./blog1.css";
 import HeaderShopContainer from "../../header/Header_shopContainer";
 import {Link} from "react-router-dom";
+import BlogCard from "./Blog-crad/BlogCard";
+import Subscribe from "../shop/Subscribe/Subscribe";
+import Footer from "../../footer/Footer";
 
 const Blog = () => {
     return (
@@ -34,8 +37,30 @@ const Blog = () => {
                             </div>
                         </div>
                     </section>
+                    <section>
+                        <div className='container'>
+                            <div className='flex-blog__wrapper'>
+                                <BlogCard/>
+                                <BlogCard/>
+                                <BlogCard/>
+                                <BlogCard/>
+                                <BlogCard/>
+                                <BlogCard/>
+                                <BlogCard/>
+                                <BlogCard/>
+
+                            </div>
+                            <div className="blog__btns">
+                                <Link to="/shop" className="blog__btn-catalog">В каталог</Link>
+                                <Link to="/" className="blog__btn-more">На главную</Link>
+                            </div>
+                            <Subscribe/>
+
+                        </div>
+                    </section>
                 </div>
             </main>
+            <Footer/>
         </>
     )
 }

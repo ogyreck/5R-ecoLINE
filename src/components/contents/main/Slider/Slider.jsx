@@ -25,7 +25,9 @@ const Slider = () => {
                     <SwiperSlide>
                         <div className="slider-wrapper">
                             <span className="slider__new">NEW</span>
-                            <Link to="/shop"><span className="slider__more">Смотреть еще<img src="img/slider/arrow.svg" alt="" /></span></Link>
+                            <Link to="/shop">
+                                <span className="slider__more">Смотреть еще<img src="img/slider/arrow.svg" alt="" /></span>
+                            </Link>
                         </div>
                         <div className="slider-info__wrapper">
                             <img className="slide__img" src="/img/slider/slide_2.png" alt="" />
@@ -39,7 +41,9 @@ const Slider = () => {
                     <SwiperSlide>
                         <div className="slider-wrapper">
                             <span className="slider__new">NEW</span>
-                            <span className="slider__more">Смотреть еще<img src="img/slider/arrow.svg" alt="" /></span>
+                            <Link to="/shop">
+                                <span className="slider__more">Смотреть еще<img src="img/slider/arrow.svg" alt="" /></span>
+                            </Link>
                         </div>
                         <div className="slider-info__wrapper">
                             <img className="slide__img" src="/img/slider/slide_2.png" alt="" />
@@ -53,7 +57,9 @@ const Slider = () => {
                     <SwiperSlide>
                         <div className="slider-wrapper">
                             <span className="slider__new">NEW</span>
-                            <span className="slider__more">Смотреть еще<img src="img/slider/arrow.svg" alt="" /></span>
+                            <Link to="/shop">
+                                <span className="slider__more">Смотреть еще<img src="img/slider/arrow.svg" alt="" /></span>
+                            </Link>
                         </div>
                         <div className="slider-info__wrapper">
                             <img className="slide__img" src="/img/slider/slide_2.png" alt="" />
