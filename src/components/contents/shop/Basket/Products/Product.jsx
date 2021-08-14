@@ -1,6 +1,6 @@
-import React, {useRef} from "react"
+// import React, {useRef} from "react"
 import "./Product.css"
-import productCardImage from "../../../.././../img/product-image.jpg"
+// import productCardImage from "../../../.././../img/product-image.jpg"
 
 const Product = (props) => {
     console.log(props)
