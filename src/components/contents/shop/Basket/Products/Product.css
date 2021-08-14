@@ -15,6 +15,8 @@
 
 .products__card-image {
   padding-right: 43px;
+  width: 184px;
+
 }
 
 .products__card-description {
@@ -26,7 +28,8 @@
 }
 
 .products__card-price {
-  padding-left: 83px;
+  width: 91px;
+  margin-left: 91px;
   font-weight: normal;
   font-size: 18px;
   line-height: 130%;
@@ -34,13 +37,13 @@
 }
 
 .products__card-count {
-  padding-left: 139px;
+  margin-left: 96px;
   border: none;
   background-color: transparent;
 }
 
 .products__card-total {
-  padding-left: 131px;
+  margin-left: 134px;
   font-weight: 500;
   color: #6a6a6a;
 }
@@ -48,7 +51,7 @@
 .close {
   position: absolute;
   right: 39px;
-  top: 86px;
+  top: 45%;
   width: 21px;
   height: 12px;
   opacity: 0.6;

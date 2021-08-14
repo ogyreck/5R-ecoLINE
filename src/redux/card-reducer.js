@@ -1,35 +1,64 @@
 const ADD_CARD = "CARD-ADD"
 const DELETE_CARD = 'DELETE-CARD'
+const COUNT_PLUS_BASKET = 'COUNT_PLUS_BASKET'
+const COUNT_MINESE_BASKET = "COUNT_MINESE_BASKET"
 
 let initialState = {
 
     cardsData: [
-        {sale:false, img:"shop-image.png",
-        nameCard:'Ершик кокосовый для чистки бутылочек', cost:"299", id:1, disable: false, inButton: 'В корзину'},
-        {sale:true, img:"shop-image.png", 
-        nameCard:'Щетка для посуды с ручкой', cost:"440", id:2, disable: false, inButton: 'В корзину'},
-        {sale:true, img:"shop-image.png", 
-        nameCard:'Миска для салата из массива бука', cost:"150" , id:3, disable: false, inButton: 'В корзину'},
-        {sale:true, img:"shop-image.png", 
-        nameCard:'Скалка из цельного массива бука', cost:"440" , id:4, disable: false, inButton: 'В корзину'},
-        {sale:false, img:"shop-image.png", 
-        nameCard:'Разделочная доска из цельного массива бука', cost:"690" , id:5, disable: false, inButton: 'В корзину'},
-        {sale:true, img:"shop-image.png", 
-        nameCard:'Фартук из необеленного хлопка', cost:"500" , id:6, disable: false, inButton: 'В корзину'},
-        {sale:false, img:"shop-image.png", 
-        nameCard:'Изделие №1 4 цвета', cost:"210" , id:7, disable: false, inButton: 'В корзину'},
-        {sale:true, img:"shop-image.png", 
-        nameCard:'Набор из муслина 3 предмета', cost:"300" , id:8, disable: false, inButton: 'В корзину'},
-        {sale:true, img:"shop-image.png", 
-        nameCard:'Мочалка для тела из люффы', cost:"250" , id:9, disable: false, inButton: 'В корзину'},
-        {sale:false, img:"shop-image.png", 
-        nameCard:'Губка из целлюлозы и люффы', cost:"270" , id:10, disable: false, inButton: 'В корзину'},
-        {sale:true, img:"shop-image.png", 
-        nameCard:'Совочек для муки и круп', cost:"240" , id:11, disable: false, inButton: 'В корзину'},
+        {
+            sale: false, img: "img/cards-in-shop/card1.png",
+            nameCard: 'Ершик кокосовый для чистки бутылок', cost: "299", id: 1, disable: false, inButton: 'В корзину'
+        },
+        {
+            sale: true, img: "img/cards-in-shop/card2.png",
+            nameCard: 'Щетка для посуды с ручкой', cost: "440", id: 2, disable: false, inButton: 'В корзину'
+        },
+        {
+            sale: true, img: "img/cards-in-shop/card3.png",
+            nameCard: 'Миска для салата из массива бука', cost: "150", id: 3, disable: false, inButton: 'В корзину'
+        },
+        {
+            sale: true, img: "img/cards-in-shop/card4.png",
+            nameCard: 'Скалка из цельного массива бука', cost: "440", id: 4, disable: false, inButton: 'В корзину'
+        },
+        {
+            sale: false,
+            img: "img/cards-in-shop/card5.png",
+            nameCard: 'Разделочная доска из цельного массива бука',
+            cost: "690",
+            id: 5,
+            disable: false,
+            inButton: 'В корзину'
+        },
+        {
+            sale: true, img: "img/cards-in-shop/card6.png",
+            nameCard: 'Фартук из необеленного хлопка', cost: "500", id: 6, disable: false, inButton: 'В корзину'
+        },
+        {
+            sale: false, img: "img/cards-in-shop/crad7.png",
+            nameCard: 'Изделие №1 4 цвета', cost: "210", id: 7, disable: false, inButton: 'В корзину'
+        },
+        {
+            sale: true, img: "img/cards-in-shop/crad8.png",
+            nameCard: 'Набор из муслина 3 предмета', cost: "300", id: 8, disable: false, inButton: 'В корзину'
+        },
+        {
+            sale: true, img: "img/cards-in-shop/card9.png",
+            nameCard: 'Мочалка для тела из люффы', cost: "250", id: 9, disable: false, inButton: 'В корзину'
+        },
+        {
+            sale: false, img: "img/cards-in-shop/card10.png",
+            nameCard: 'Губка из целлюлозы и люффы', cost: "270", id: 10, disable: false, inButton: 'В корзину'
+        },
+        {
+            sale: true, img: "img/cards-in-shop/card11.png",
+            nameCard: 'Совочек для муки и круп', cost: "240", id: 11, disable: false, inButton: 'В корзину'
+        },
     ],
-    basket: [
-    ],
-    basketLenght: 0
+    basket: [],
+    basketLenght: 0,
+    sum: 0
 }
 
 let productsJson = JSON.parse(localStorage.getItem('basket'))
@@ -48,7 +77,7 @@ if (products.length) {
 
 }
 
-export const cardReducer = (state = initialState, action)=>{
+export const cardReducer = (state = initialState, action) => {
     // console.log(state)
 
     let stateCopy = {
@@ -62,20 +91,24 @@ export const cardReducer = (state = initialState, action)=>{
     //console.log(stateCopy, 'stateCopy')
 
 
-    switch (action.type){
-        case ADD_CARD:{
+    switch (action.type) {
 
-            let newCard = stateCopy.cardsData[action.idCard-1] = {
-                    sale:stateCopy.cardsData[action.idCard-1].sale,
-                    img:"shop-image.png",
-                    nameCard: stateCopy.cardsData[action.idCard-1].nameCard,
-                    cost: stateCopy.cardsData[action.idCard-1].cost,
-                    id: action.idCard,
-                    disable: true,
-                    inButton: 'Добавлено'
+        case ADD_CARD: {
+
+            let newCard = stateCopy.cardsData[action.idCard - 1] = {
+                sale: stateCopy.cardsData[action.idCard - 1].sale,
+                img: stateCopy.cardsData[action.idCard - 1].img,
+                nameCard: stateCopy.cardsData[action.idCard - 1].nameCard,
+                cost: stateCopy.cardsData[action.idCard - 1].cost,
+                id: action.idCard,
+                disable: true,
+                inButton: 'Добавлено',
+                count: 1,
+
             }
 
             stateCopy.basket.push(newCard)
+
 
             stateCopy.basketLenght = stateCopy.basket.length
             localStorage.setItem('basket', JSON.stringify(stateCopy.basket))
@@ -84,32 +117,48 @@ export const cardReducer = (state = initialState, action)=>{
 
             return stateCopy;
         }
-        case DELETE_CARD:{
+        case DELETE_CARD: {
 
-                let bask = [...stateCopy.basket]
-                let card = [...stateCopy.cardsData]
-                let newBask;
-                let newCard;
-                for (let i =0; i<bask.length; i++){
-                    console.log(bask[i].id, '1')
-                    console.log(action.idCardDelete)
+            let bask = [...stateCopy.basket]
+            let card = [...stateCopy.cardsData]
+            let newBask;
+            let newCard;
+            for (let i = 0; i < bask.length; i++) {
+                console.log(bask[i].id, '1')
+                console.log(action.idCardDelete)
                     // if(bask[i].id === action.idCardDelete){
 
-                        newBask = bask.filter(item => item!==bask[i])
-                        newCard = card.map((item) => item!==bask[i]? item: {...item, disable: false,inButton: 'В корзину'}
-                        )
-                }
+                newBask = bask.filter(item => item !== bask[i])
+                newCard = card.map((item) => item !== bask[i] ? item : {...item, disable: false, inButton: 'В корзину'}
+                )
+            }
 
-                // console.log(newBask)
-                stateCopy.basket = [...newBask]
-                stateCopy.cardsData = [...newCard]
-                stateCopy.basketLenght = stateCopy.basket.length
-                localStorage.setItem('basket', JSON.stringify([...newBask]))
+            // console.log(newBask)
+            stateCopy.basket = [...newBask]
+            stateCopy.cardsData = [...newCard]
+            stateCopy.basketLenght = stateCopy.basket.length
+            localStorage.setItem('basket', JSON.stringify([...newBask]))
 
-                    localStorage.setItem('cardsData', JSON.stringify([...newCard]))
-                localStorage.setItem('baskLength', JSON.stringify([...newBask].length))
-                return stateCopy
+            localStorage.setItem('cardsData', JSON.stringify([...newCard]))
+            localStorage.setItem('baskLength', JSON.stringify([...newBask].length))
+            return stateCopy
         }
+        case COUNT_PLUS_BASKET:
+            console.log(action.idCard)
+            let bask = [...stateCopy.basket]
+            bask[action.idCard].count++
+            stateCopy.basket = bask
+            return stateCopy
+        case COUNT_MINESE_BASKET:
+            let bask2 = [...stateCopy.basket]
+            if (bask2[action.idCard].count <= 1) {
+                bask2[action.idCard].count = 1;
+            } else {
+                bask2[action.idCard].count--
+            }
+
+            stateCopy.basket = bask2
+            return stateCopy
 
         default:
             return state;
@@ -117,27 +166,39 @@ export const cardReducer = (state = initialState, action)=>{
 
 
     // return state
-    
+
 }
 
 
-
 export const addBasketAction = (idCardValue) => {
-    return{
+    return {
         type: ADD_CARD,
         idCard: idCardValue
     }
 }
 
-export const cardAddActionCreator = () =>{
-    return{
+export const cardAddActionCreator = () => {
+    return {
         type: "RENDER-CARD"
     }
 }
-export const deleteBascetAction =  (idCardValueDelete) =>{
-    return{
+export const deleteBascetAction = (idCardValueDelete) => {
+    return {
         type: DELETE_CARD,
         idCardDelete: idCardValueDelete
+    }
+}
+
+export const countPlusBasketAction = (idCardValue) => {
+    return {
+        type: COUNT_PLUS_BASKET,
+        idCard: idCardValue
+    }
+}
+export const countMinuseBasketAction = (idCardValue) => {
+    return {
+        type: COUNT_MINESE_BASKET,
+        idCard: idCardValue,
     }
 }
 

@@ -11,12 +11,12 @@ const ThankYou = () => {
             <div className="container">
                <h2 className="main-heading main-heading-thank">Спасибо!</h2>
                <p className="thank-text">Заказ успешно оформлен! Мы свяжемся с Вами в ближайшее время. <br /> Номер вашего заказа #10932</p>
-               <div className="thank__button-container">
+               <div className="button-container">
                   <Link to="/shop"> 
-                  <button className="thank__button">В каталог</button>
+                  <button className="button button--default">В каталог</button>
                   </Link>
                   <Link to="/"> 
-                  <button className="thank__button">На главную</button>
+                  <button className="button button--main">На главную</button>
                   </Link>
                </div>
             </div>

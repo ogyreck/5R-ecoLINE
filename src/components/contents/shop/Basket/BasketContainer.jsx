@@ -7,7 +7,7 @@ import "./Basket.css";
 // import HeaderShopContainer from "../../../header/Header_shopContainer";
 import {connect} from "react-redux";
 import Basket from "./Basket"; 
-import { deleteBascetAction } from "../../../../redux/card-reducer";
+import {countMinuseBasketAction, countPlusBasketAction, deleteBascetAction} from "../../../../redux/card-reducer";
 
 
 
@@ -22,7 +22,14 @@ let mapDispatchToProps = (dispatch) =>{
     return{
         deleteBascket : (id) =>{
             dispatch(deleteBascetAction(id))
+        },
+        countPlius: (id) =>{
+            dispatch(countPlusBasketAction(id))
+        },
+        countMines: (id) =>{
+            dispatch(countMinuseBasketAction(id))
         }
+
     }
 }
 
