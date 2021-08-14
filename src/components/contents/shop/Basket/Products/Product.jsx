@@ -24,7 +24,7 @@ const Product = (props) => {
 
    return (
       <div className="products__card">
-         <img src={productCardImage} alt="" className="products__card-image" />
+         <img src={props.img} alt="" className="products__card-image" />
          <div className="products__card-description">{props.nameCard}</div>
          <div className="products__card-price">{props.cost} ₽</div>
          <div className="products__card-count">

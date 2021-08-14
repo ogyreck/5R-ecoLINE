@@ -8,11 +8,12 @@ const Noting = () => {
 }
 
 const Products = (props) => {
-   console.log(props)
+   console.log(props, "bascket")
    let productBasKet = props.basket.map(product => <Product key={product.id}
       nameCard={product.nameCard}
       cost={product.cost} id={product.id}
-      deleteBascket={props.deleteBascet} />)
+      deleteBascket={props.deleteBascet}
+   img={product.img}/>)
 
    return (
       <div className="products">

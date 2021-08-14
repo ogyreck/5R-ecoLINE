@@ -15,6 +15,8 @@
 
 .products__card-image {
   padding-right: 43px;
+  width: 184px;
+
 }
 
 .products__card-description {
@@ -48,7 +50,7 @@
 .close {
   position: absolute;
   right: 39px;
-  top: 86px;
+  top: 45%;
   width: 21px;
   height: 12px;
   opacity: 0.6;
