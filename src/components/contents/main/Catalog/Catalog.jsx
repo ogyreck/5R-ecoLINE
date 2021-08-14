@@ -15,7 +15,7 @@ const Catalog = () => {
         
       </div>
       <Swiper
-        slidesPerView={3} 
+        slidesPerView={4}
         spaceBetween={30}
         freeMode={true}
         // slidesPerView={1}
