@@ -6,7 +6,7 @@ const Concept = () => {
   return (
     <section className="concept">
       <div className="container">
-        <h2 className="concept__title">Концепция</h2>
+
         <div className="flex-wrapper-concept">
           <div className="concept-text">5R</div>
           <ul className="concept-list">
@@ -27,7 +27,7 @@ const Concept = () => {
             </li>
           </ul>
         </div>
-        <button className="concept__btn">Читать</button>
+
       </div>
     </section>
   )
