@@ -1,3 +1,5 @@
+import {remove} from "./util";
+
 const ADD_CARD = "CARD-ADD"
 const DELETE_CARD = 'DELETE-CARD'
 const COUNT_PLUS_BASKET = 'COUNT_PLUS_BASKET'
@@ -123,24 +125,34 @@ export const cardReducer = (state = initialState, action) => {
             let card = [...stateCopy.cardsData]
             let newBask;
             let newCard;
-            for (let i = 0; i < bask.length; i++) {
-                console.log(bask[i].id, '1')
-                console.log(action.idCardDelete)
-                    // if(bask[i].id === action.idCardDelete){
+            console.log(action.idCardDelete)
+            let deletedCard = bask[action.idCardDelete]
+            newBask = remove(bask, action.idCardDelete)
 
-                newBask = bask.filter(item => item !== bask[i])
-                newCard = card.map((item) => item !== bask[i] ? item : {...item, disable: false, inButton: 'В корзину'}
-                )
-            }
+            // newCard = card.map((item) => item === deletedCard ? {
+            //         ...item,
+            //         disable: false,
+            //         inButton: 'В корзину'
+            //     } : item
+            // )
+            newCard = card.map((item) => {
 
-            // console.log(newBask)
+                if (item.id === deletedCard.id) {
+                    return {
+                        ...item,
+                        disable: false,
+                        inButton: 'В корзину'
+                    }
+                }
+                return item
+            })
             stateCopy.basket = [...newBask]
             stateCopy.cardsData = [...newCard]
             stateCopy.basketLenght = stateCopy.basket.length
-            localStorage.setItem('basket', JSON.stringify([...newBask]))
+             localStorage.setItem('basket', JSON.stringify([...newBask]))
 
-            localStorage.setItem('cardsData', JSON.stringify([...newCard]))
-            localStorage.setItem('baskLength', JSON.stringify([...newBask].length))
+             localStorage.setItem('cardsData', JSON.stringify([...newCard]))
+             localStorage.setItem('baskLength', JSON.stringify([...newBask].length))
             return stateCopy
         }
         case COUNT_PLUS_BASKET:
