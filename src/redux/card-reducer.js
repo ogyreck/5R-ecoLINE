@@ -9,22 +9,27 @@ let initialState = {
 
     cardsData: [
         {
+            type: "home",
             sale: false, img: "img/cards-in-shop/card1.png",
             nameCard: 'Ершик кокосовый для чистки бутылок', cost: "299", id: 1, disable: false, inButton: 'В корзину'
         },
         {
+            type: "home",
             sale: true, img: "img/cards-in-shop/card2.png",
             nameCard: 'Щетка для посуды с ручкой', cost: "440", id: 2, disable: false, inButton: 'В корзину'
         },
         {
+            type: "home",
             sale: true, img: "img/cards-in-shop/card3.png",
             nameCard: 'Миска для салата из массива бука', cost: "150", id: 3, disable: false, inButton: 'В корзину'
         },
         {
+            type: "home",
             sale: true, img: "img/cards-in-shop/card4.png",
             nameCard: 'Скалка из цельного массива бука', cost: "440", id: 4, disable: false, inButton: 'В корзину'
         },
         {
+            type: "home",
             sale: false,
             img: "img/cards-in-shop/card5.png",
             nameCard: 'Разделочная доска из цельного массива бука',
@@ -34,26 +39,32 @@ let initialState = {
             inButton: 'В корзину'
         },
         {
+            type: "zero",
             sale: true, img: "img/cards-in-shop/card6.png",
             nameCard: 'Фартук из необеленного хлопка', cost: "500", id: 6, disable: false, inButton: 'В корзину'
         },
         {
+            type: "zero",
             sale: false, img: "img/cards-in-shop/crad7.png",
             nameCard: 'Изделие №1 4 цвета', cost: "210", id: 7, disable: false, inButton: 'В корзину'
         },
         {
+            type: "zero",
             sale: true, img: "img/cards-in-shop/crad8.png",
             nameCard: 'Набор из муслина 3 предмета', cost: "300", id: 8, disable: false, inButton: 'В корзину'
         },
         {
+            type: "zero",
             sale: true, img: "img/cards-in-shop/card9.png",
             nameCard: 'Мочалка для тела из люффы', cost: "250", id: 9, disable: false, inButton: 'В корзину'
         },
         {
+            type: "zero",
             sale: false, img: "img/cards-in-shop/card10.png",
             nameCard: 'Губка из целлюлозы и люффы', cost: "270", id: 10, disable: false, inButton: 'В корзину'
         },
         {
+            type: "zero",
             sale: true, img: "img/cards-in-shop/card11.png",
             nameCard: 'Совочек для муки и круп', cost: "240", id: 11, disable: false, inButton: 'В корзину'
         },

@@ -5,6 +5,7 @@ import "./cardProduct.css";
 
 export default class CardInfo extends Component {
 
+
   addCount() {
     this.testInput.value = Number(this.testInput.value) + 1;
   }

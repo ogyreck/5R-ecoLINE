@@ -14,6 +14,7 @@ const ShopCards = (props) => {
                                                             addBasket={props.addBasket}
                                                             disable={card.disable}
                                                             inButton={card.inButton}
+                                                            type={card.type}
     />)
 
     return (

@@ -13,16 +13,20 @@ import Purpose from "./Purpose/Purpose";
 import Blog from "./Blog/Blog";
 import HeaderShopContainer from "../../header/Header_shopContainer";
 import Catalog from "./Catalog/Catalog";
-import Test from "./Test/Test";
+// import Test from "./Test/Test";
+import Quizz from "./Quizz/Quizz";
 
 
-export default class Main extends Component {
+const Main = ()=> {
+    let active = 0
+    const quizStart = () =>{
+        active=1
 
-  // click() {
-  //   window.location.assign("./shop");
-  // }
 
-  render() {
+    }
+
+
+
     return (
       <>
         <HeaderShopContainer />
@@ -42,7 +46,12 @@ export default class Main extends Component {
           {/* <Quiz /> */}
           <Catalog/>
           <Purpose />
-          <Test/>
+          {/* <Test/> */}
+            {console.log(active)}
+            {active? <Quizz/> : <button onClick={quizStart}>Начать</button>}
+           {/*<button onClick={quizStart()}>Начать</button>*/}
+
+          {/*<Quizz/>*/}
 
           {/* <Concept /> */}
           <Blog />
@@ -51,8 +60,7 @@ export default class Main extends Component {
         <Footer />
       </>
     )
-  }
+
 }
 
-
-// export default Main;
+export default Main;

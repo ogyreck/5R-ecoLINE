@@ -2,7 +2,7 @@ import React from "react";
 import "./ShopCard.css";
 import { Link } from "react-router-dom";
 import favorites from "../../../../img/favorites-icon.svg"
-import cardImage from "../../../../img/shop-image.png"
+// import cardImage from "../../../../img/shop-image.png"
 // import { cardAddActionCreator } from "../../../../redux/card-reducer";
 
 const NEW = (props) => {
@@ -22,9 +22,10 @@ const ShopCard = (props) => {
         props.addBasket(props.id)
     }
 
-    console.log(props.img)
+    console.log(props.type)
     return (
         // <Link to="/shop/card">
+        
             <div className="shop-card__item">
                 <Link to="/shop/card">
                     <img src= {props.img} alt="" className="shop-card__image" />

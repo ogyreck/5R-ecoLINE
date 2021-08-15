@@ -1,3 +1,4 @@
+import React from "react"
 import "./Favorites.css"
 import { Link } from "react-router-dom";
 import Footer from "../../../footer/Footer";
