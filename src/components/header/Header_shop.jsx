@@ -62,7 +62,7 @@ const HeaderShop = (props) => {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="/" className="nav__link-item">
+                                    <Link to="/contacts" className="nav__link-item">
                                         Контакты
                                     </Link>
                                 </li>
