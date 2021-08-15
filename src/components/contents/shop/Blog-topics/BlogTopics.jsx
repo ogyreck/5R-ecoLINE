@@ -4,6 +4,11 @@ import { NavLink } from "react-router-dom";
 const BlogTopics = () => {
    return (
       <div className="blog__topics">
+         {/* <button className="blog__topic-active" >Все</button >
+         <button >Для дома</button >
+         <button >Zero Waste</button>
+         <button >Косметика</button >
+         <button >Личная гигена</button > */}
          <NavLink exact to="/shop" activeClassName="blog__topic-active" >Все</NavLink >
          <NavLink exact to="/shop/home" activeClassName="blog__topic-active" >Для дома</NavLink >
          <NavLink exact to="/shop/zero-waste" activeClassName="blog__topic-active" >Zero Waste</NavLink>
