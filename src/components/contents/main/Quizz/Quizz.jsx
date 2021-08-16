@@ -15,7 +15,8 @@ class Quizz extends Component {
       quizEnd: false,
       quizStart: false,
       score: 0,
-      disabled: true
+      disabled: true,
+      result: "Вам стоит задуматься над своими действиями и изучить побольше информации.Все получится!"
     }
   }
   
@@ -45,9 +46,17 @@ class Quizz extends Component {
   //Handles Click event for the next button
   nextQuestionHander = () => {
     const { userAnswer, points3, points2, points0, score } = this.state
-    
+    // if (score >= 12) {
+    //   this.setState({
+    //     result: "Неплохо! Вы на верном пути, но можно еще немного постараться!"
+    //   })
+    // } else if (score >= 16) {
+    //   this.setState({
+    //     result: "Супер! Ваш образ жизни экологичен! Продолжайте в том же духе!"
+    //   })
+    // }
     // console.log(score);
-    //Check for correct answer and increment score
+
     if (userAnswer === points3) {
       this.setState({
         score: score + 3
@@ -62,10 +71,10 @@ class Quizz extends Component {
         score: score + 0
       })
     }
+
     this.setState({
       currentIndex: this.state.currentIndex + 1
     })
-    
   }
 
   //Load the quiz once the component mounts
@@ -102,6 +111,8 @@ class Quizz extends Component {
   finishHandler = () => {
     const { userAnswer, points3, points2, points0, score } = this.state
 
+    
+
     if (userAnswer === points3) {
       this.setState({
         score: score + 3
@@ -117,11 +128,25 @@ class Quizz extends Component {
       })
     }
 
+    if (score >= 12) {
+      this.setState({
+        result: `Неплохо! Вы на верном пути, но можно еще немного постараться!`
+      })
+    }
+    if (score >= 16) {
+      this.setState({
+        result: "Супер! Ваш образ жизни экологичен! Продолжайте в том же духе!"
+      })
+    }
+    console.log(this.state.score);
+
     if (this.state.currentIndex === QuizData.length - 1) {
       this.setState({
         quizEnd: true
       })
     }
+
+
   }
 
 
@@ -137,7 +162,7 @@ class Quizz extends Component {
               <div className="container">
                 <span className="quiz_result-text">Ваш результат:</span>
                 <span className="quiz_score">{this.state.score} из 18 баллов!</span>
-                <p className="quiz_score-text">Неплохо! Вы на верном пути, но можно еще немного постараться! </p>
+                <p className="quiz_score-text">{this.state.result}</p>
                 <img src="img/quiz/arrow_long.svg" alt="" />
               </div>
             </div>

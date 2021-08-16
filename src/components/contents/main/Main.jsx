@@ -49,6 +49,7 @@ export default class Main extends Component {
           {/* <Concept /> */}
           <Blog />
           {/* <Subscribe /> */}
+
         </main>
         <Footer />
       </>
