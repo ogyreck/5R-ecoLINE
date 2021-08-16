@@ -9,12 +9,12 @@ const PayMethod = () => {
          <div className="pay-method">
             <p className="form-heading form-heading-pay">Способ оплаты:</p>
             <div className="radio radio-border">
-               <form action="#" method="GET">
+               <div>
                   <label>
                      <input type="radio" name="react-tips" value="Оплата картой (Visa, MasterCard, МИР)" defaultChecked className="form-check-input" />
                      Оплата картой (Visa, MasterCard, МИР)
                   </label>
-               </form>
+               </div>
             </div>
          </div>
          <PersonalInfo />
@@ -25,8 +25,8 @@ const PayMethod = () => {
             Перезвонить мне для уточнения деталей заказа
          </label>
          <div className="button-container">
-            
-            <Link to="/thanks"><button type="submit" className="form-button">Оформить заказ</button></Link>
+
+            <input type="submit" value="Оформить заказ" className="form-button"/>
          </div>
       </>
    );

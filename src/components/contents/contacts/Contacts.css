@@ -1,0 +1,14 @@
+.contacts-bg {
+  background: url("../../../../src/img/contacts-bg.jpg");
+  padding-top: 153px;
+}
+
+.main-heading-contacts {
+  text-align: left;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 148%;
+  color: #c28686;
+  padding-top: 68px;
+}
+
