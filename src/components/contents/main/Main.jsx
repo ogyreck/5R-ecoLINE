@@ -47,8 +47,7 @@ const Main = ()=> {
           <Catalog/>
           <Purpose />
           {/* <Test/> */}
-            {console.log(active)}
-            {active? <Quizz/> : <button onClick={quizStart}>Начать</button>}
+            <Quizz/>
            {/*<button onClick={quizStart()}>Начать</button>*/}
 
           {/*<Quizz/>*/}

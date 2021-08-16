@@ -136,16 +136,9 @@ export const cardReducer = (state = initialState, action) => {
             let card = [...stateCopy.cardsData]
             let newBask;
             let newCard;
-            console.log(action.idCardDelete)
             let deletedCard = bask[action.idCardDelete]
             newBask = remove(bask, action.idCardDelete)
 
-            // newCard = card.map((item) => item === deletedCard ? {
-            //         ...item,
-            //         disable: false,
-            //         inButton: 'В корзину'
-            //     } : item
-            // )
             newCard = card.map((item) => {
 
                 if (item.id === deletedCard.id) {
