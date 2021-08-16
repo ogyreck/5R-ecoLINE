@@ -1,7 +1,7 @@
 import DeliveryInfo from "./DeliveryInfo/DeliveryInfo";
 import "./PayMethod.css"
 import PersonalInfo from "./PersonalInfo/PersonalInfo";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 const PayMethod = () => {
    return (

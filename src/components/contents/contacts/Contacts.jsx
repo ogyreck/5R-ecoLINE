@@ -22,7 +22,7 @@ const Contacts = () => {
                </div>
                <ContactsForm />
                <div className="contacts__map">
-                  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7159c0a2b22d27336e521d2cc084842740df6b9bc544e713e418c15bf2a9b1d2&amp;source=constructor" width="100%" height="440" frameborder="0"></iframe>
+                  <iframe title="iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A7159c0a2b22d27336e521d2cc084842740df6b9bc544e713e418c15bf2a9b1d2&amp;source=constructor" width="100%" height="440" frameBorder="0"></iframe>
                </div>
             </div>
          </section>
