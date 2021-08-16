@@ -8,10 +8,13 @@ const Noting = () => {
 }
 
 const Products = (props) => {
-    console.log(props, "bascket")
+
     let scet = 0;
+    let allSum= 0;
     let productBasKet = props.basket.map((product) => {
         let basketId = scet++
+        let SumCost = product.cost * product.count
+        allSum += SumCost
         return(<Product key={product.id}
                                                              id={basketId}
                                                              nameCard={product.nameCard}
@@ -45,7 +48,7 @@ const Products = (props) => {
                 </div>
                 <div className="flex-product-total-wrapper">
                     <p className="products__sale">Скидка: <span>150 ₽</span></p>
-                    <p className="products__total">Сумма заказа: <span>1 500 ₽</span></p>
+                    <p className="products__total">Сумма заказа: <span>{allSum} ₽</span></p>
                 </div>
             </div>
         </div>

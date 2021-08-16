@@ -9,6 +9,7 @@ import BlogTopics from "../Blog-topics/BlogTopics";
 import Footer from "../../../footer/Footer"
 // import ShopCardsContainer from "../Shop-cards/ShopCardsContainer";
 import HeaderShopContainer from "../../../header/Header_shopContainer";
+import ShopCardsContainer from "../Shop-cards/ShopCardsContainer";
 
 const Shop = (props) => {
   return (
@@ -26,6 +27,7 @@ const Shop = (props) => {
           <h2 className="main-heading main-heading-catalog">Каталог товаров</h2>
           <BlogTopics />
           <h1>Home</h1>
+            <ShopCardsContainer />
         </div>
       </main>
       <Footer/>

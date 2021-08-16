@@ -25,6 +25,7 @@ const Shop = (props) => {
           </div>
           <h2 className="main-heading main-heading-catalog">Каталог товаров</h2>
           <BlogTopics />
+
           <h1>Zero Waste</h1>
         </div>
       </main>

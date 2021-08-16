@@ -54,11 +54,20 @@
   line-height: 22px;
 }
 
+.form__btn:hover {
+  background-color: #4E5D3B;
+}
+
+.form__btn:active {
+  background-color: #344025;
+}
+
 .form__btn {
+  margin-top: -1px;
   margin-left: -1px;
   width: 206px;
   height: 62px;
-  background-color: #387732;
+  background-color: #6E8254;
   border-radius: 0px 4px 4px 0px;
   border: none;
   font-size: 20px;

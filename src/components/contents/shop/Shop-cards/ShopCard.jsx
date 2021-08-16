@@ -1,7 +1,7 @@
 import React from "react";
 import "./ShopCard.css";
 import { Link } from "react-router-dom";
-import favorites from "../../../../img/favorites-icon.svg"
+// import favorites from "../../../../img/favorites-icon.svg"
 // import cardImage from "../../../../img/shop-image.png"
 // import { cardAddActionCreator } from "../../../../redux/card-reducer";
 
@@ -24,7 +24,6 @@ const ShopCard = (props) => {
 
     console.log(props.type)
     return (
-        // <Link to="/shop/card">
         
             <div className="shop-card__item">
                 <Link to="/shop/card">
@@ -40,11 +39,11 @@ const ShopCard = (props) => {
                     </div>
                 </div>
                 <div className="shop-card__icons">
-                    {/* <Link to="/"> */}
                     <Link to="/shop/favorites">
-                        <img src={favorites} alt="избранное" className="shop-basket" />
+                        <svg className='shop_favorite' width="23" height="20" >
+                            <use xlinkHref="/sprite.svg#favorites"></use>
+                        </svg>
                     </Link>
-                    {/* </Link> */}
                 </div>
                 <NEW sale={props.new}/>
                 <div className='id'>{props.id}</div>

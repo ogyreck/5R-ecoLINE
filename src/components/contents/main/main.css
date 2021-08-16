@@ -1,11 +1,9 @@
-/* */
-
 main{
   padding-top: 85px;
 }
 
 .main {
-  background: url(../../../img/main_bg.png) no-repeat center center;
+  background: url(../../../img/main_bg.jpg) no-repeat center center;
   width: 100%;
   padding-top: 151px;
   padding-bottom: 224px;
@@ -23,38 +21,12 @@ main{
   /* line-height: 114%; */
 }
 
-/* .main__subtitle {
-  display: block;
-  margin-top: 16px;
-  font-size: 20px;
-  line-height: 128%;
-  color: rgba(255, 255, 255, 0.7);
-} */
-
-/* .main__btn {
-  margin-top: 48px;
+.main__btn-shop:hover{
+  background-color: #4E5E3B;
 }
-
-.main__btn button {
-  font-size: 20px;
-  line-height: 128%;
-  color: #fff;
-  border-radius: 4px;
-} */
-
-/* .main__btn-info {
-  background-color: #387732;
-  padding: 18px 70px;
-  border: none;
-  margin-right: 60px;
+.main__btn-shop:active{
+  background-color: #344025;
 }
-
-.main__btn-shop {
-  padding: 17px 54px;
-  background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-} */
-
 .main__btn-shop{
   font-family: 'Montserrat',
   sans-serif;

@@ -28,12 +28,12 @@ const Blog = () => {
                         <div className='container'>
                             <h2 className='blog-title'>Блог</h2>
                             <div className="blog__topics blog__topics-blog">
-                                <button className=" blog__topic-active1">Все</button>
-                                <button>Для дома</button>
-                                <button>Zero Waste</button>
-                                <button>Косметика</button>
-                                <button>Личная гигена</button>
-                                <button>Личная гигена</button>
+                                <button className=" blog__topic-active1">Популярные</button>
+                                <button>Ресурсы</button>
+                                <button >Отходы</button>
+                                <button>Климат</button>
+                                <button>Экотехнологии</button>
+                                <button>Эко-проблемы</button>
                             </div>
                         </div>
                     </section>

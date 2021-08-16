@@ -50,6 +50,14 @@
   padding-top: 15px;
 }
 
+.contacts-button:hover {
+  background-color: #4E5E3B;
+}
+
+.contacts-button:active {
+  background-color: #344025;
+}
+
 .contacts-button {
   width: 178px;
   height: 56px;

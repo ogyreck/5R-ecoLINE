@@ -130,6 +130,14 @@
   color: #C28686;
 }
 
+.slide__btn:hover{
+  background-color: #9E6A6A;
+}
+
+.slide__btn:active{
+  background-color: #865454;
+}
+
 .slide__btn{
   font-weight: 500;
   font-size: 18px;

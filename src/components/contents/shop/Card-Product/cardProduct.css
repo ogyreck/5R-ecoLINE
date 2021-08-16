@@ -9,7 +9,7 @@
 }
 
 .navigation{
-  padding-top: 70px;
+  padding-top: 153px;
 }
 
 .navigation__links-item{
@@ -88,6 +88,9 @@
   color: #6A6A6A;
 }
 
+.card__color:hover{
+  border: 2px solid #878787;
+}
 .card__color{
   cursor: pointer;
   display: inline-block;
@@ -106,10 +109,6 @@
 }
 .card__3{
   background-color: #463E3B;
-}
-
-.color__active{
-  border: 2px solid #878787;
 }
 
 .card__count-text {

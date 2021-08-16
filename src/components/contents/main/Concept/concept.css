@@ -66,8 +66,16 @@
   color: rgba(33, 60, 31, 0.9);
 }
 
+.concept__btn:hover {
+  background-color: #4E5E3B;
+}
+
+.concept__btn:active{
+  background-color: #344025;
+}
+
 .concept__btn {
-  background-color: #387732;
+  background-color: #6E8254;
   padding: 18px 70px;
   border: none;
   margin-right: auto;

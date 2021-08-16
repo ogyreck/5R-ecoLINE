@@ -38,7 +38,7 @@ export default class CardInfo extends Component {
         <p className="card__text">Складной стакан из пищевого силикона, гибкого и долговечного материала, который легко моется.</p>
         <span className="card__text-color">Цвет</span>
         <div className="card__colors">
-          <span className="card__color card__1 color__active"></span>
+          <span className="card__color card__1 "></span>
           <span className="card__color card__2"></span>
           <span className="card__color card__3"></span>
         </div>

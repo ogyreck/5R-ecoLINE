@@ -3,7 +3,7 @@ import "./Product.css"
 // import productCardImage from "../../../.././../img/product-image.jpg"
 
 const Product = (props) => {
-    console.log(props)
+
 
    let deleteBascet = () =>{
       props.deleteBascket(props.id)
@@ -23,7 +23,7 @@ const Product = (props) => {
    }
 
 
-    console.log(props.count)
+
 
    return (
       <div className="products__card">

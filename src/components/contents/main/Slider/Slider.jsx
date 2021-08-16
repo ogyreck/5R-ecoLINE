@@ -46,7 +46,7 @@ const Slider = () => {
                             </Link>
                         </div>
                         <div className="slider-info__wrapper">
-                            <img className="slide__img" src="/img/slider/slide_2.png" alt="" />
+                            <img className="slide__img" src="/img/slider/slide_3.png" alt="" />
                             <div className="slide__info">
                                 <p className="slide__text">Стакан складной Stojo</p>
                                 <p className="slide__price">1 200 ₽</p>
@@ -62,7 +62,7 @@ const Slider = () => {
                             </Link>
                         </div>
                         <div className="slider-info__wrapper">
-                            <img className="slide__img" src="/img/slider/slide_2.png" alt="" />
+                            <img className="slide__img" src="/img/slider/slide_4.png" alt="" />
                             <div className="slide__info">
                                 <p className="slide__text">Стакан складной Stojo</p>
                                 <p className="slide__price">1 200 ₽</p>

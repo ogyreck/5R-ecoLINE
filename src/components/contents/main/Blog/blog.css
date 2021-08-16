@@ -28,6 +28,10 @@
   padding-bottom: 52px;
 }
 
+.blog__topic-active:hover {
+  background-color: #9E6A6A !important;
+}
+
 .blog__topic-active {
   background-color: #c28686 !important;
   color: #fff !important;
@@ -206,16 +210,34 @@
   justify-content: center;
 }
 
+.blog__btn-catalog:hover{
+  background-color: #4E5E3B;
+}
+
+.blog__btn-catalog:active{
+  background-color: #344025;
+}
+
 .blog__btn-catalog{
   background-color: #6E8254;
   color: #fff;
   margin-right: 33px;
-} 
+}
+
+.blog__btn-more:hover{
+  background-color: #4E5E3B;
+  color: #fff;
+}
+
+.blog__btn-more:active{
+  background-color: #344025;
+  color: #fff;
+}
+
 .blog__btn-more{
   color: #6E8254;
   background-color: transparent;
 }
-
 
 .blog-up span{
   font-weight: 500;
