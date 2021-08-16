@@ -15,3 +15,53 @@
     margin-top: 40px;
     margin-bottom: 20px;
 }
+.blog-data-div{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.main-text-blog{
+    padding-left: 96px;
+    width: 50%;
+    margin: auto;
+}
+.citata-blog{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 190%;
+    color: #585858;
+    position: relative;
+    width: 95%;
+    margin: auto;
+
+}
+.citata-blog::after{
+    content: '';
+    position: absolute;
+    width: 207px;
+    height: 2px;
+
+
+background: #6E8254;
+    top: 107px;
+    left: -120px;
+    transform: rotate(90deg);
+}
+
+.citata-blog p+p{
+    margin-top:32px;
+}
+.title_blog{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 190%;
+    color: #585858;
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+.main-text__blog{
+    font-size: 16px;
+    line-height: 190%;
+    color: #585858;
+}
