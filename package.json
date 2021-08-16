@@ -40,7 +40,6 @@
   },
   "devDependencies": {
     "react-id-swiper": "^4.0.0",
-    "react-quiz-component": "^0.3.8",
     "swiper": "^6.8.1"
   }
 }

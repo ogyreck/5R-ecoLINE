@@ -1,10 +1,11 @@
 import "./quizz.css"
 import React, { Component } from 'react'
 import { QuizData } from './QuizData';
+import { Link } from 'react-router-dom'
 
 
 class Quizz extends Component {
-
+  
   constructor(props) {
     super(props)
     this.state = {
@@ -35,6 +36,7 @@ class Quizz extends Component {
         points3: QuizData[currentIndex].points3,
         points2: QuizData[currentIndex].points2,
         points0: QuizData[currentIndex].points0,
+        img: QuizData[currentIndex].img,
       }
     }
     )
@@ -82,7 +84,8 @@ class Quizz extends Component {
           options: QuizData[currentIndex].options,
           points3: QuizData[currentIndex].points3,
           points2: QuizData[currentIndex].points2,
-          points0: QuizData[currentIndex].points0,
+          points0: QuizData[currentIndex].points0, 
+          img: QuizData[currentIndex].img,
         }
       });
     }
@@ -122,129 +125,76 @@ class Quizz extends Component {
   }
 
 
-
-
-
-  
   render() {
-    const { question, options, currentIndex, userAnswer, quizEnd, quizStart } = this.state //get the current state
+    const { question, options, currentIndex, userAnswer, quizEnd, quizStart, img } = this.state //get the current state
     if (quizEnd) {
       return (
-        <div className="container">
-          <h1>Ваш результат: {this.state.score} из 18 баллов</h1>
-          <p>Неплохо! Вы на верном пути, но можно еще немного постараться! </p>
-          {/* <ul>
-            {QuizData.map((item, index) => (
-              <li className='options'
-                key={index}>
-                {item.answer}
-              </li>
-            ))}
-          </ul> */}
+        <div className="quiz">
+          <div className="quiz_result-page">
+            
+
+            <div className="quiz_result">
+              <div className="container">
+                <span className="quiz_result-text">Ваш результат:</span>
+                <span className="quiz_score">{this.state.score} из 18 баллов!</span>
+                <p className="quiz_score-text">Неплохо! Вы на верном пути, но можно еще немного постараться! </p>
+                <img src="img/quiz/arrow_long.svg" alt="" />
+              </div>
+            </div>
+            <div className="quiz_sale">
+              <div className="container">
+                <p className="quiz_sale-text">Мы дарим вам скидку 10% на всю продукцию магазина по промокоду “ECOLIFE” </p>
+                <Link to="/shop" className="quiz_sale-btn">В каталог</Link>
+                <p className="quiz_sale-date">Акция действует до 20.09.21</p>
+              </div>
+            </div>
+          </div>
         </div>
       )
     }
 
-    // if (quizStart) {
-    //   return (
-
-    //     <div className="container">
-
-    //       <h2>{question}</h2>
-    //       <span>{`Question ${currentIndex + 1} of ${QuizData.length}`}</span>
-    //       {options.map(option => (  //for each option, new paragraph
-    //         <p key={option}
-    //           className={`options ${userAnswer === option ? "selected" : null}`}
-    //           onClick={() => this.checkAnswer(option)}>
-    //           {option}
-    //         </p>
-    //       ))}
-    //       {currentIndex < QuizData.length - 1 &&
-    //         // Next button only displays if the above is true
-    //         <button
-    //           className="quiz_button"
-    //           disabled={this.state.disabled}
-    //           onClick={this.nextQuestionHander}
-    //         >Дальше</button>
-    //       }
-    //       {currentIndex === QuizData.length - 1 &&
-    //         <button
-    //           className="quiz_button"
-    //           disabled={this.state.disabled}
-    //           onClick={this.finishHandler}
-    //         >Конец</button>
-    //       }
-
-    //     </div>
-
-    //   )
-    // }
-
-
 
     return (
-        <div className="container">
+      <div className="quiz">
           {
             quizStart 
             ?
-            
-            <div className="container">
-
-              <h2>{question}</h2>
-              <span>{`Question ${currentIndex + 1} of ${QuizData.length}`}</span>
-              {options.map(option => (  //for each option, new paragraph
-                <p key={option}
-                  className={`options ${userAnswer === option ? "selected" : null}`}
-                  onClick={() => this.checkAnswer(option)}>
-                  {option}
-                </p>
-              ))}
-              {currentIndex < QuizData.length - 1 &&
-                // Next button only displays if the above is true
-                <button
-                  className="quiz_button"
-                  disabled={this.state.disabled}
-                  onClick={this.nextQuestionHander}
-                >Дальше</button>
-              }
-              {currentIndex === QuizData.length - 1 &&
-                <button
-                  className="quiz_button"
-                  disabled={this.state.disabled}
-                  onClick={this.finishHandler}
-                >Конец</button>
-              }
-
+            <div className={img}>
+              <div className="quiz_test">
+                <span className="quiz_count">{`${currentIndex + 1} / ${QuizData.length}`}</span>
+                <h2 className="quiz_question">{question}</h2>
+                {options.map(option => (  
+                  <p key={option}
+                    className={`quiz_options ${userAnswer === option ? "quiz_selected" : null}`}
+                    onClick={() => this.checkAnswer(option)}>
+                    {option}
+                  </p>
+                ))}
+                {currentIndex < QuizData.length - 1 &&
+                  <button
+                    className="quiz_button"
+                    disabled={this.state.disabled}
+                    onClick={this.nextQuestionHander}
+                  >Далее<img src="img/quiz/arrow.svg" alt="стрелка" /></button>
+                }
+                {currentIndex === QuizData.length - 1 &&
+                  <button
+                    className="quiz_button"
+                    disabled={this.state.disabled}
+                    onClick={this.finishHandler}
+                  >Далее<img src="img/quiz/arrow.svg" alt="" /></button>
+                }
+              </div>
             </div>
             :
-            <button onClick={this.quizStart}>Старт</button>
-            
-
+            <div className="quiz_wrapper-bg">
+              <div className="quiz_start">
+                <h2 className="main-heading quiz__title">Пройди опрос и получи промокод на скидку!</h2>
+                <p className="quiz__text">Ответь на 6 вопросов и узнай,<br />насколько экологично ты живешь!</p>
+                <button onClick={this.quizStart} className="quiz__btn">Начать</button>
+              </div>
+            </div>
           }
-        {/* <h2>{question}</h2>
-        <span>{`Question ${currentIndex + 1} of ${QuizData.length}`}</span>
-        {options.map(option => (  //for each option, new paragraph
-          <p key={option}
-            className={`options ${userAnswer === option ? "selected" : null}`}
-            onClick={() => this.checkAnswer(option)}>
-            {option}
-          </p>
-        ))}
-        {currentIndex < QuizData.length - 1 &&
-          // Next button only displays if the above is true
-          <button
-            className="quiz_button"
-            disabled={this.state.disabled}
-            onClick={this.nextQuestionHander}
-          >Дальше</button>
-        }
-        {currentIndex === QuizData.length - 1 &&
-          <button
-            className="quiz_button"
-            disabled={this.state.disabled}
-            onClick={this.finishHandler}
-          >Конец</button>
-        } */}
       </div>
       
     )
