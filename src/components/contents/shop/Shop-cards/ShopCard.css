@@ -60,16 +60,6 @@
   height: 240px;
 }
 
-.shop-card-button:hover{
-  background-color: #9E6A6A;
-  color: #fff;
-}
-
-.shop-card-button:active{
-  background-color: #865454;
-  color: #fff;
-}
-
 .shop-card-button {
   border: 1px solid rgba(194, 134, 134, 0.6);
   border-radius: 4px;
@@ -108,6 +98,12 @@
   background: #C28686;
   color: #FFFFFF;
 }
+
+.shop-card__item:active button{
+  background: #865454;
+  color: #FFFFFF;
+}
+
 .id{
   display: none;
 }

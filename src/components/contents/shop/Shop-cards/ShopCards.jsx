@@ -17,10 +17,18 @@ const ShopCards = (props) => {
                                                             type={card.type}
     />)
 
+    const scrollTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
     return (
         <>
             <div className="shop-cards">
                 {cards}
+            </div>
+            <div className="blog-up">
+                <span onClick={scrollTop} >Наверх</span>
+                <img src="img/blog/arrow.svg" alt="" />
             </div>
         </>
     )

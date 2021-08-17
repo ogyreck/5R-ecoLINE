@@ -201,6 +201,7 @@
   /* background-size: cover; */
   background-repeat: no-repeat;
   background-position: center center;
+  /* background-position: -70% 0; */
 }
 
 .quiz_sale {

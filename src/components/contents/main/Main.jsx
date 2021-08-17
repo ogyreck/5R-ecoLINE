@@ -15,6 +15,7 @@ import HeaderShopContainer from "../../header/Header_shopContainer";
 import Catalog from "./Catalog/Catalog";
 // import Test from "./Test/Test";
 import Quizz from "./Quizz/Quizz";
+import Animation from "./Animation/Animation";
 
 
 const Main = ()=> {
@@ -45,9 +46,12 @@ const Main = ()=> {
 
           {/* <Concept /> */}
           <Blog />
+          
           {/* <Subscribe /> */}
 
+          <Animation/>
         </main>
+        
         <Footer />
       </>
     )

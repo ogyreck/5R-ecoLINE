@@ -52,10 +52,12 @@
 
 .contacts-button:hover {
   background-color: #4E5E3B;
+  border-color: #000;
 }
 
 .contacts-button:active {
   background-color: #344025;
+  border-color: #000;
 }
 
 .contacts-button {

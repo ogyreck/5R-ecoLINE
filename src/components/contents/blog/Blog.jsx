@@ -7,6 +7,9 @@ import Subscribe from "../shop/Subscribe/Subscribe";
 import Footer from "../../footer/Footer";
 
 const Blog = () => {
+    const scrollTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
     return (
         <>
             <HeaderShopContainer/>
@@ -55,6 +58,10 @@ const Blog = () => {
                                 <Link to="/" className="blog__btn-more">На главную</Link>
                             </div>
                             <Subscribe/>
+                            <div className="blog-scroll-up">
+                                <span onClick={scrollTop}>Наверх</span>
+                                <img src="/img/blog/arrow.svg" alt="" />
+                            </div>
 
                         </div>
                     </section>

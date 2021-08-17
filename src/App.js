@@ -12,12 +12,12 @@ import BasketContainer from "./components/contents/shop/Basket/BasketContainer";
 import ThankYou from './components/contents/shop/Basket/ThankYou/ThankYou';
 // import Favotites from './components/contents/shop/Favorites/Favotites';
 import Favorites from './components/contents/shop/Favorites/Favorites'
-import Contacts from "./components/contents/contacts/Contacts";
 import BlogPage from "./components/contents/blog/BlogPage/BlogPage";
 import Home from "./components/contents/shop/Catalogs/Home";
 import Cosmetics from "./components/contents/shop/Catalogs/Cosmetics";
 import Hygiene from "./components/contents/shop/Catalogs/Hygiene";
 import ZeroWaste from "./components/contents/shop/Catalogs/ZeroWaste";
+import Contacts from "./components/contents/contacts/Contacts";
 
 const App = (props) => {
     // debugger;
