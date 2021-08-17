@@ -6,7 +6,12 @@ import BlogCard from "./Blog-crad/BlogCard";
 import Subscribe from "../shop/Subscribe/Subscribe";
 import Footer from "../../footer/Footer";
 
-const Blog = () => {
+const Blog1 = (props) => {
+    console.log(props)
+    let blogCrad = props.blogData.map(card => <BlogCard img={card.img}
+                                                       title={card.title}
+                                                        view={card.view}
+                                                        data={card.data} />)
     return (
         <>
             <HeaderShopContainer/>
@@ -40,14 +45,7 @@ const Blog = () => {
                     <section>
                         <div className='container'>
                             <div className='flex-blog__wrapper'>
-                                <BlogCard/>
-                                <BlogCard/>
-                                <BlogCard/>
-                                <BlogCard/>
-                                <BlogCard/>
-                                <BlogCard/>
-                                <BlogCard/>
-                                <BlogCard/>
+                                {blogCrad}
 
                             </div>
                             <div className="blog__btns">
@@ -65,4 +63,4 @@ const Blog = () => {
     )
 }
 
-export default Blog;
+export default Blog1;

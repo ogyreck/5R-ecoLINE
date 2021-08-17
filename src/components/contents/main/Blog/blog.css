@@ -65,9 +65,24 @@
   /* margin-right: 24px; */
   /* background-color: #fff; */
   border-radius: 4px;
-  background-image: none;
+
   opacity: 1;
   position: relative;
+
+
+
+}
+.img-blog{
+  position: relative;
+}
+.img-blog::after{
+  content: "";
+  position: absolute;
+  width: 370px;
+  height: 370px;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(26, 23, 23, 0.31) 57.03%, rgba(23, 22, 22, 0.6) 100%);
 
 }
 
