@@ -239,6 +239,14 @@
   fill: #C28686;
   stroke: #C28686;
 }
+
+.card__favorite-active{
+  fill: #C28686;
+  margin-left: 40px;
+  margin-bottom: -2px;
+  cursor: pointer;
+  stroke: #C28686;
+}
 /*  */
 
 .basket__svg{

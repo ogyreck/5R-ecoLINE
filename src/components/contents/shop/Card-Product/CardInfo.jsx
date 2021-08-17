@@ -4,6 +4,19 @@ import "./cardProduct.css";
 
 
 export default class CardInfo extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { isToggleOn: true };
+
+    // Эта привязка обязательна для работы `this` в колбэке.
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState(prevState => ({
+      isToggleOn: !prevState.isToggleOn
+    }));
+  }
 
   addCount() {
     this.testInput.value = Number(this.testInput.value) + 1;
@@ -41,7 +54,7 @@ export default class CardInfo extends Component {
           <use xlinkHref="sprite.svg#favorites"></use>
         </svg> */}
         
-        <svg width="23" height="20" className="card__favorite">
+        <svg onClick={this.handleClick} className={this.state.isToggleOn ? 'card__favorite' : 'card__favorite-active'} width="23" height="20" >
           <use  xlinkHref="/sprite.svg#favorites"></use>
         </svg>
 

@@ -1,0 +1,231 @@
+.quiz {
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+  /* padding-top: 212px; */
+  /* padding-bottom: 260px; */
+  
+  /* background-image: url(../../../../img/quiz/quiz_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.quiz__title {
+  padding-top: 212px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.quiz__text {
+  
+  padding-top: 40px;
+  padding-bottom: 52px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.quiz__btn {
+  font-family: "Montserrat",
+    sans-serif;
+  padding: 16px 38px;
+  background-color: #6E8254;
+  border-radius: 4px;
+  border: none;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.quiz_count{
+  padding-top: 139px;
+  font-size: 18px;
+  line-height: 130%;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.quiz_question {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  width: 460px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.quiz_button img{
+  margin-left: 8px;
+}
+.quiz_button {
+  margin-top: 42px;
+  background-color: transparent;
+  border: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 124%;
+  color: #FFFFFF;
+}
+
+.quiz_selected {
+  background-color: #7BB970;
+}
+
+.quiz_options {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #fff;
+  width: 416px;
+  padding: 9.5px 0px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 48px;
+}
+
+.quiz_test{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quiz_wrapper-bg{
+  background-image: url(../../../../img/quiz/quiz_bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.quiz_wrapper-1{
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../../img/quiz/1.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.quiz_wrapper-2{
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../../img/quiz/2.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.quiz_wrapper-3{
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../../img/quiz/3.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.quiz_wrapper-4{
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../../img/quiz/4.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.quiz_wrapper-5{
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../../img/quiz/5.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.quiz_wrapper-6{
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../../img/quiz/6.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.quiz_result img{
+  padding-top: 42px;
+  padding-left: 100px;
+}
+
+.quiz_result{
+  text-align: left;
+}
+
+.quiz_result-text{
+  padding-top: 198px;
+  display: block;
+  font-size: 20px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.quiz_score {
+  padding-top: 4px;
+  display: block;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 140%;
+  color: #FFFFFF;
+}
+
+.quiz_score-text{
+  padding-top: 32px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: rgba(255, 255, 255, 0.8);
+  width: 229px;
+}
+
+
+.quiz_result-page{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../../img/quiz/fon.jpg);
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  /* background-position: -70% 0; */
+}
+
+.quiz_sale {
+  text-align: left;
+}
+
+.quiz_sale-text {
+  padding-top: 198px;
+  text-align: left;
+  font-size: 32px;
+  line-height: 140%;
+  color: #C28686;
+  width: 490px;
+}
+
+.quiz_sale-btn {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 16px 36px;
+  background-color: #C28686;
+  border-radius: 4px;
+  border: none;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.quiz_sale-date{
+  padding-top: 68px;
+  font-size: 16px;
+  line-height: 140%;
+  color: #878787;
+}

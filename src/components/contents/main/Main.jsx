@@ -13,7 +13,9 @@ import Purpose from "./Purpose/Purpose";
 import Blog from "./Blog/Blog";
 import HeaderShopContainer from "../../header/Header_shopContainer";
 import Catalog from "./Catalog/Catalog";
-import Test from "./Test/Test";
+// import Test from "./Test/Test";
+import Quizz from "./Quizz/Quizz";
+import Animation from "./Animation/Animation";
 
 
 export default class Main extends Component {
@@ -42,12 +44,16 @@ export default class Main extends Component {
           {/* <Quiz /> */}
           <Catalog/>
           <Purpose />
-          <Test/>
+          {/* <Test/> */}
+          <Quizz/>
 
           {/* <Concept /> */}
           <Blog />
+          
           {/* <Subscribe /> */}
+          <Animation/>
         </main>
+        
         <Footer />
       </>
     )
