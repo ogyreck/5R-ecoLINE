@@ -77,8 +77,8 @@ const Blog = () => {
 
           </div>
           <div className="blog__btns">
-            <Link to="/shop" className="blog__btn-catalog">В каталог</Link>
-            <Link to="/blog" className="blog__btn-more">Читать дальше</Link>
+            <Link to="/shop" className="blog__btn-catalog">Читать больше</Link>
+            {/* <Link to="/blog" className="blog__btn-more">Читать дальше</Link> */}
           </div>
           
           <div className="blog-up">

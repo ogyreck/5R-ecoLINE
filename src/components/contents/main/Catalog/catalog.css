@@ -10,11 +10,7 @@
   filter: drop-shadow(2px 2px 40px rgba(107, 64, 64, 0.1));
 }
 
-.slider-catalog__img:hover{
-  filter:blur(2px);
-}
 .slider-catalog__img{
-  filter: blur(0);
   width: 570px;
   height: 352px;
   border-radius: 4px;

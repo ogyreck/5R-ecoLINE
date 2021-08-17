@@ -70,10 +70,11 @@
   animation: textEnd 0.4s forwards;
 }
 
+
 .animation__text-second {
   padding-left: 0;
   left: 170px;
-  /* white-space: nowrap; */
+  /* white-space: wrap; */
 }
 
 .animation__image-first:hover .animation__text {
@@ -110,7 +111,7 @@
   width: 270px;
   height: 18px;
   position: absolute;
-  top: 54%;
+  top: 60%;
   right: 100px;
 }
 

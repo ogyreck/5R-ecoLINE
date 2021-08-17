@@ -38,13 +38,23 @@ const ShopCard = (props) => {
                         <button className="shop-card-button"  disabled={props.disable} onClick={addBasket}>{props.inButton}</button>
                     </div>
                 </div>
-                <div className="shop-card__icons">
-                    <Link to="/shop/favorites">
+
+                <input type="checkbox" class="checkbox_img" id="svg" name=""/>
+                <label for="svg" className="checkbox_img-label">
+                    <div className="shop-card__icons">
                         <svg className='shop_favorite' width="23" height="20" >
                             <use xlinkHref="/sprite.svg#favorites"></use>
                         </svg>
+                    </div>
+                </label>
+                
+                {/* <div className="shop-card__icons">
+                    <Link to="/shop/favorites">
+                    <svg className='shop_favorite' width="23" height="20" >
+                        <use xlinkHref="/sprite.svg#favorites"></use>
+                    </svg>
                     </Link>
-                </div>
+                </div> */}
                 <NEW sale={props.new}/>
                 <div className='id'>{props.id}</div>
             </div>

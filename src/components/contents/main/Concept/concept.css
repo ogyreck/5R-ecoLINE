@@ -26,7 +26,7 @@
   background: url("../../../../img/leaves.png");
   color: transparent;
   -webkit-background-clip: text;
-  animation: animate 50s infinite linear;
+  animation: animate 100s infinite linear;
   animation-direction: alternate;
 }
 
@@ -76,7 +76,7 @@
 
 .concept__btn {
   background-color: #6E8254;
-  padding: 18px 70px;
+  padding: 16px 38px;
   border: none;
   margin-right: auto;
   margin-left: auto;

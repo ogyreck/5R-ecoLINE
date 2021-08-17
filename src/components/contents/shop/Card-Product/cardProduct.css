@@ -29,7 +29,7 @@
 }
 
 .card{
-  padding-top: 80px;
+  padding-top: 40px;
 }
 .card__img{
   border-radius: 4px;
@@ -64,6 +64,7 @@
   padding-top: 80px;
 }
 .card__name{
+  font-weight: 500;
   font-size: 32px;
   line-height: 110%;
   color: #6B4040;

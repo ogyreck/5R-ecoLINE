@@ -25,7 +25,6 @@ const PayMethod = () => {
             Перезвонить мне для уточнения деталей заказа
          </label>
          <div className="button-container">
-
             <input type="submit" value="Оформить заказ" className="form-button"/>
          </div>
       </>

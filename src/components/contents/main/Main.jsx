@@ -25,12 +25,10 @@ const Main = ()=> {
         <main>
             <section className="main">
               <div className="container">
-              <h1 className="main__title">“Мы хотим стать магазином, который будет создавать стиль и гармонию в Вашем доме, а не мусор”</h1>
-                {/* <span className="main__subtitle">Поможем сформировать твой персональный план по “спасению мира”</span> */}
-                {/* <div className="main__btn"> */}
-                  {/* <button className="main__btn-info">Читать</button> */}
+                <div className="main__wrapper">
+                  <h1 className="main__title">“Мы хотим стать магазином, который будет создавать стиль и гармонию в Вашем доме, а не мусор”</h1>
                   <Link to="/shop"><button className="main__btn-shop">В каталог</button></Link>
-                {/* </div> */}
+                </div>
               </div>
             </section>
           {/* <Numbers /> */}
