@@ -4,19 +4,16 @@ import { Link } from "react-router-dom";
 // import ShopCards from "./Shop-cards/ShopCards";
 import BlogTopics from "../Blog-topics/BlogTopics";
 // import ShopDescription from "./Shop-description/ShopDescription";
-// import Discount from "../Discount/Discount";
 // import HeaderShop from "../../header/Header_shop";
 import Footer from "../../../footer/Footer"
 // import ShopCardsContainer from "../Shop-cards/ShopCardsContainer";
 import HeaderShopContainer from "../../../header/Header_shopContainer";
-import ShopCardsContainer from "../Shop-cards/ShopCardsContainer";
 
 const Shop = (props) => {
   return (
     <>
       <HeaderShopContainer />
       <main>
-        {/* <Discount /> */}
         <div className="container-shop">
           {/* <ShopDescription/> */}
           <div className="navigation__links shop-navigation__links">
@@ -27,7 +24,6 @@ const Shop = (props) => {
           <h2 className="main-heading main-heading-catalog">Каталог товаров</h2>
           <BlogTopics />
           <h1>Home</h1>
-            <ShopCardsContainer />
         </div>
       </main>
       <Footer/>

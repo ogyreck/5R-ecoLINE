@@ -4,7 +4,7 @@
   /* background-color: transparent; */
   background-color: #fff;
   /* background-color: rgba(255, 255, 255, 0.9); */
-  z-index: 31;
+  z-index: 110;
   border-bottom: 1px solid#DFDFDF;
 }
 
@@ -52,7 +52,7 @@ nav ul{
 
 .nav__link-item:hover {
   padding-bottom: 2px;
-  border-bottom: 2px solid #6E8254;
+  border-bottom: 2px solid #387732;
   cursor: pointer;
 }
 
