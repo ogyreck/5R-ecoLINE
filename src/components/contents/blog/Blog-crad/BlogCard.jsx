@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 
 const BlogCard = (props) => {
     return (
-        <Link to='/blog/statia'>
+
             <div className="blog__card-item">
 
                 <div className="blog__card-visible">
@@ -18,9 +18,15 @@ const BlogCard = (props) => {
                         </div>
                         <span className="card__info-date">{props.data}</span>
                     </div>
+
+                </div>
+                <div className='Hover-blog'>
+                    <Link to='/blog/statia'>
+                        <button className='blog-btn'>Читать</button>
+                    </Link>
                 </div>
             </div>
-        </Link>
+
     )
 }
 
