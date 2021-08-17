@@ -18,6 +18,10 @@ const NEW = (props) => {
 
 const ShopCard = (props) => {
 
+    let addFavorite = () =>{
+        console.log('любимое')
+    }
+
     let addBasket = () => {
         props.addBasket(props.id)
     }
@@ -39,11 +43,15 @@ const ShopCard = (props) => {
                     </div>
                 </div>
                 <div className="shop-card__icons">
-                    <Link to="/shop/favorites">
-                        <svg className='shop_favorite' width="23" height="20" >
-                            <use xlinkHref="/sprite.svg#favorites"></use>
-                        </svg>
-                    </Link>
+                    {/*<Link to="/shop/favorites">*/}
+                    <input type='checkbox' className='custom-checkbox' id="happy" name="happy" value="yes"/>
+                    <label  for="happy">
+                    {/*    <svg className='shop_favorite' width="23" height="20" onClick={addFavorite}>*/}
+                    {/*    <use xlinkHref="/sprite.svg#favorites"></use>*/}
+                    {/*</svg>*/}
+                    </label>
+
+                    {/*</Link>*/}
                 </div>
                 <NEW sale={props.new}/>
                 <div className='id'>{props.id}</div>
