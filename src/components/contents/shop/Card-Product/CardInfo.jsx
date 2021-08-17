@@ -50,18 +50,10 @@ export default class CardInfo extends Component {
         </span>
         <button className="card__btn">В корзину</button>
         
-        {/* <svg width="23" height="20" className="card__favorite">
-          <use xlinkHref="sprite.svg#favorites"></use>
-        </svg> */}
-        
         <svg onClick={this.handleClick} className={this.state.isToggleOn ? 'card__favorite' : 'card__favorite-active'} width="23" height="20" >
           <use  xlinkHref="/sprite.svg#favorites"></use>
         </svg>
 
-        {/* <img className="card__favorites" src="/img/svg/favorites.svg" alt="" /> */}
-        {/* <svg width="23" height="20" fill="red" className="navigation__favorites-icon">
-            <use xlinkHref="header.svg#favorites"></use>
-          </svg> */}
       </div>
     );
   }
