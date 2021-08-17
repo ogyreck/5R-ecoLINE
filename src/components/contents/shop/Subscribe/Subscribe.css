@@ -10,7 +10,7 @@
   background: url("../../../../img/leaves.png");
   color: transparent;
   -webkit-background-clip: text;
-  animation: animate 40s infinite linear;
+  animation: animate 100s infinite linear;
   animation-direction: alternate;
 }
 

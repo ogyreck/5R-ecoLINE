@@ -39,22 +39,22 @@ const ShopCard = (props) => {
                     </div>
                 </div>
 
-                <input type="checkbox" class="checkbox_img" id="svg" name=""/>
+                {/* <input type="checkbox" class="checkbox_img" id="svg" name=""/>
                 <label for="svg" className="checkbox_img-label">
                     <div className="shop-card__icons">
                         <svg className='shop_favorite' width="23" height="20" >
                             <use xlinkHref="/sprite.svg#favorites"></use>
                         </svg>
                     </div>
-                </label>
+                </label> */}
                 
-                {/* <div className="shop-card__icons">
-                    <Link to="/shop/favorites">
+                <button className="shop-card__icons">
+                    {/* <Link to="/shop/favorites"> */}
                     <svg className='shop_favorite' width="23" height="20" >
                         <use xlinkHref="/sprite.svg#favorites"></use>
                     </svg>
-                    </Link>
-                </div> */}
+                    {/* </Link> */}
+                </button>
                 <NEW sale={props.new}/>
                 <div className='id'>{props.id}</div>
             </div>

@@ -22,15 +22,13 @@ const Blog = () => {
                                 <Link to="/" className="navigation__links-item">Главная</Link>
                                 <img src="/img/arrow_left.svg" alt="Стрелка"/>
                                 <Link to="/" className="navigation__links-item">Блог</Link>
-
-
                             </div>
                         </div>
                     </section>
                     <section className='main-blog'>
                         <div className='container'>
                             <h2 className='blog-title'>Блог</h2>
-                            <div className="blog__topics blog__topics-blog">
+                            <div className="blog__topics-blog blog__topics ">
                                 <button className=" blog__topic-active1">Популярные</button>
                                 <button>Ресурсы</button>
                                 <button >Отходы</button>

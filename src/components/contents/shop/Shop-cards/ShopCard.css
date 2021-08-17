@@ -31,12 +31,13 @@
 .shop-card__icons {
   text-align: center;
   position: absolute;
-  /* top: 12px; */
-  /* right: 12px; */
+  top: 12px;
+  right: 12px;
   width: 45px;
   height: 45px;
   background-color: #fff;
   border-radius: 50%;
+  border: none;
   opacity: 0;
 }
 
@@ -97,16 +98,16 @@
   padding-top: 16px;
 }
 
-.shop-card__item:hover p{
+/* .shop-card__item:hover p{
   color: #6B4040;
-}
+} */
 
-.shop-card__item:hover button{
+.shop-card__item:hover .shop-card-button {
   background: #C28686;
   color: #FFFFFF;
 }
 
-.shop-card__item:active button{
+.shop-card__item:active .shop-card-button {
   background: #865454;
   color: #FFFFFF;
 }
@@ -124,7 +125,7 @@
   stroke: #C28686;
 }
 .shop_favorite{
-  margin-top: 13px;
+  margin-top: 5px;
   fill: none;
   cursor: pointer;
   stroke: #878787;

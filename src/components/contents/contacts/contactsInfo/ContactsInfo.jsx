@@ -16,7 +16,7 @@ const ContactsInfo = () => {
                   <p>Пушкинская 282, г. Ижевск, Россия</p>
                </div>
             </div>
-            <div className="contacts__info-item">
+            <div className="contacts__info-item contacts__tel">
                <img src={imageTel} alt="" />
                <div className="item-text">
                   <span>Телефон:</span>

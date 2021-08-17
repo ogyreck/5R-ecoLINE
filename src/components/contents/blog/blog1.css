@@ -5,6 +5,9 @@
     line-height: 148%;
     color: #6E8254;
 }
+.blog__topics-blog {
+    padding-top: 38px;
+}
 .blog__topics-blog button{
     color: #6E8254;
     border: 1px solid #6E8254;

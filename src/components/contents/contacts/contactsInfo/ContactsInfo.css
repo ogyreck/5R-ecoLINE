@@ -19,6 +19,10 @@
   padding-top: 66px;
 }
 
+.contacts__tel{
+  margin-left: -108px;
+}
+
 .contacts__info-item {
   display: flex;
   align-items: center;

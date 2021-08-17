@@ -10,6 +10,7 @@ const BlogPage = () => {
     return (
         <>
             <HeaderShopContainer/>
+            <main>
             <div className="card__bg">
                 <section className="navigation">
                     <div className="container">
@@ -20,8 +21,6 @@ const BlogPage = () => {
                             <img src="/img/arrow_left.svg" alt="Стрелка"/>
                             <Link to="/blog/statia" className="navigation__links-item">5R. Как жить по принципу ноль
                                 отходов</Link>
-
-
                         </div>
                     </div>
                 </section>
@@ -126,6 +125,7 @@ const BlogPage = () => {
                 </div>
             </section>
             <Subscribe/>
+            </main>
             <Footer/>
         </>
     )
