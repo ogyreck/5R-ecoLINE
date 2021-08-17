@@ -6,12 +6,18 @@ import BlogCard from "./Blog-crad/BlogCard";
 import Subscribe from "../shop/Subscribe/Subscribe";
 import Footer from "../../footer/Footer";
 
-const Blog1 = (props) => {
+const Blog = (props) => {
     console.log(props)
     let blogCrad = props.blogData.map(card => <BlogCard img={card.img}
-                                                       title={card.title}
+                                                        title={card.title}
                                                         view={card.view}
                                                         data={card.data} />)
+
+
+
+    const scrollTop = () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
     return (
         <>
             <HeaderShopContainer/>
@@ -53,7 +59,10 @@ const Blog1 = (props) => {
                                 <Link to="/" className="blog__btn-more">На главную</Link>
                             </div>
                             <Subscribe/>
-
+                            <div className="blog-scroll-up">
+                                <span onClick={scrollTop}>Наверх</span>
+                                <img src="/img/blog/arrow.svg" alt="" />
+                            </div>
                         </div>
                     </section>
                 </div>
@@ -63,4 +72,4 @@ const Blog1 = (props) => {
     )
 }
 
-export default Blog1;
+export default Blog;

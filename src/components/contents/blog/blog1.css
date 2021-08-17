@@ -20,3 +20,17 @@
     gap: 30px;
 }
 
+.blog-scroll-up span{
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 128%;
+    color: rgba(194, 134, 134, 0.8);
+    padding-right: 10px;
+}
+
+.blog-scroll-up{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 48px;
+}

@@ -1,17 +1,18 @@
+
 .animation {
-  display: flex;
-  position: relative;
-}
-
-.animation-wrapp {
   height: 800px;
-  width: 1920px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  margin-top: -9px;
+  /* width: 1920px; */
 }
 
-main {
+/* main {
   overflow-x: hidden;
   overflow-y: hidden;
-}
+} */
 
 .animation__image-first {
   width: 50%;
@@ -57,19 +58,22 @@ main {
 }
 
 .animation__text {
+  padding-left: 25px;
   position: absolute;
   top: 358px;
-  left: 100px;
+  right: 100px;
   opacity: 0;
   font-weight: normal;
   font-size: 32px;
-  line-height: 24px;
+  line-height: 52px;
   color: #ffffff;
   animation: textEnd 0.4s forwards;
 }
 
 .animation__text-second {
-  left: 200px;
+  padding-left: 0;
+  left: 170px;
+  /* white-space: nowrap; */
 }
 
 .animation__image-first:hover .animation__text {
@@ -107,13 +111,24 @@ main {
   height: 18px;
   position: absolute;
   top: 54%;
-  left: 52%;
+  right: 100px;
+}
+
+.animation__button:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.animation__button:active {
+  color: #ffffff;
+  background-color: transparent;
 }
 
 .animation__button {
+  padding: 0;
   position: absolute;
   top: 53%;
-  left: 205px;
+  left: 170px;
   border: 1.2px solid rgba(255, 255, 255, 0.8);
   box-sizing: border-box;
   border-radius: 4px;

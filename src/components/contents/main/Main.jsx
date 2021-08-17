@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 // import HeaderMain from "../../header/Header_main";
 import { Link } from "react-router-dom";
 import Slider from "./Slider/Slider";
@@ -18,13 +18,7 @@ import Quizz from "./Quizz/Quizz";
 import Animation from "./Animation/Animation";
 
 
-export default class Main extends Component {
-
-  // click() {
-  //   window.location.assign("./shop");
-  // }
-
-  render() {
+const Main = ()=> {
     return (
       <>
         <HeaderShopContainer />
@@ -45,20 +39,23 @@ export default class Main extends Component {
           <Catalog/>
           <Purpose />
           {/* <Test/> */}
-          <Quizz/>
+            <Quizz/>
+          {/*<button onClick={quizStart()}>Начать</button>*/}
+
+          {/*<Quizz/>*/}
 
           {/* <Concept /> */}
           <Blog />
           
           {/* <Subscribe /> */}
+
           <Animation/>
         </main>
         
         <Footer />
       </>
     )
-  }
+
 }
 
-
-// export default Main;
+export default Main;

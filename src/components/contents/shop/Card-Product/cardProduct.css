@@ -9,8 +9,9 @@
 }
 
 .navigation{
-  padding-top: 153px;
+  padding-top: 68px;
 }
+
 
 .navigation__links-item{
   font-size: 16px;
@@ -31,13 +32,18 @@
   padding-top: 80px;
 }
 .card__img{
+  border-radius: 4px;
   background-color: #fff;
   filter: drop-shadow(2px 2px 12px rgba(67, 41, 41, 0.1));
 }
 
+.cardSlide .swiper-pagination-bullet img{
+  border-radius: 4px;
+}
 .cardSlide .swiper-button-prev,
 .cardSlide .swiper-button-next {
-  color: #C28686;
+  color: #878787;
+  margin-top: -45px;
 }
 
 .card__wrapper {

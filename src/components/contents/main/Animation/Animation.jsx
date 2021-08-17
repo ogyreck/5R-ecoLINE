@@ -7,20 +7,18 @@ import { Link } from "react-router-dom";
 
 const Animation = () => {
    return (
-      <div className="animation-wrapp">
-         <section class="animation">
-            <div class="animation__image-first">
-               <img class="image__bad animation__image" src={Bad} alt="" />
-               <p class="animation__text">Сделай правильный выбор ради лучшего будущего</p>
-               <img class="animation__text animation__arrow" src={Arrow} alt="" />
-            </div>
-            <div class="animation__image-second">
-               <img class="image__good animation__image" src={Good} alt="" />
-               <p class="animation__text animation__text-second">Стань частью больших изменений</p>
-               <Link to ="/shop"><button class="animation__text animation__button">В каталог</button></Link>
-            </div>
-         </section>
-      </div>
+      <section className="animation">
+         <div className="animation__image-first">
+            <img className="image__bad animation__image" src={Bad} alt="" />
+            <p className="animation__text">Сделай правильный выбор ради лучшего будущего</p>
+            <img className="animation__text animation__arrow" src={Arrow} alt="" />
+         </div>
+         <div className="animation__image-second">
+            <img className="image__good animation__image" src={Good} alt="" />
+            <p className="animation__text animation__text-second">Стань частью больших изменений</p>
+            <Link to="/shop"><button className="animation__text animation__button">В каталог</button></Link>
+         </div>
+      </section>
    );
 };
 

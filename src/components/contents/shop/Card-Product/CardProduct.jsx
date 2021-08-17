@@ -7,6 +7,7 @@ import "./cardProduct.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import HeaderShopContainer from "../../../header/Header_shopContainer";
+import Suggestions from "./Suggestions";
 
 
 const CardProduct = () => {
@@ -14,9 +15,9 @@ const CardProduct = () => {
   SwiperCore.use([Navigation, Pagination]);
 
   const cardImg = [
-    "/img/shop-cards/card-1.jpg",
-    "/img/shop-cards/card-2.jpg",
     "/img/shop-cards/card-3.jpg",
+    "/img/shop-cards/card-4.jpg",
+    "/img/shop-cards/card-5.jpg",
   ]
 
   const pagination = {
@@ -28,7 +29,9 @@ const CardProduct = () => {
 
   return (
     <>
+    
       <HeaderShopContainer/>
+      <main>
       <div className="card__bg">
 
         <section className="navigation">
@@ -64,12 +67,12 @@ const CardProduct = () => {
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="card">
-                      <img className="card__img" src="/img/shop-cards/card-0.jpg" alt="Карточка товара" />
+                      <img className="card__img" src="/img/shop-cards/card-2.jpg" alt="Карточка товара" />
                     </div>
                   </SwiperSlide>
                   <SwiperSlide>
                     <div className="card">
-                      <img className="card__img" src="/img/shop-cards/card-0.jpg" alt="Карточка товара" />
+                      <img className="card__img" src="/img/shop-cards/card-1.jpg" alt="Карточка товара" />
                     </div>
                   </SwiperSlide>
                 </Swiper>
@@ -111,14 +114,15 @@ const CardProduct = () => {
               </div>
 
             </div>
-
-
-
           </div>
         </section>
-      </div>
-      <Footer />
 
+
+      </div>
+      <Suggestions/>
+      </main>
+      <Footer />
+    
     </>
   );
 };

@@ -60,16 +60,6 @@
   height: 240px;
 }
 
-.shop-card-button:hover{
-  background-color: #9E6A6A;
-  color: #fff;
-}
-
-.shop-card-button:active{
-  background-color: #865454;
-  color: #fff;
-}
-
 .shop-card-button {
   border: 1px solid rgba(194, 134, 134, 0.6);
   border-radius: 4px;
@@ -108,6 +98,12 @@
   background: #C28686;
   color: #FFFFFF;
 }
+
+.shop-card__item:active button{
+  background: #865454;
+  color: #FFFFFF;
+}
+
 .id{
   display: none;
 }
@@ -115,16 +111,44 @@
 .shop_favorite:hover {
   stroke: #C28686;
 }
-.shop_favorite:active ,
-.shop_favorite:focus {
-  fill: #C28686;
-  stroke: #C28686;
+/*.custom-checkbox:checked+label::before {*/
+/*  fill: #C28686;*/
+/*  stroke: #C28686;*/
+/*}*/
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url(../../../../img/favorites-icon.svg);
+  flex-shrink: 0;
+  flex-grow: 0;
+
+  
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
 }
+
 .shop_favorite{
   margin-top: 13px;
   fill: none;
   cursor: pointer;
   stroke: #878787;
 }
+.custom-checkbox{
+  top: 29%;
+  right: 26%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checkbox-favorite:before{
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
 
 

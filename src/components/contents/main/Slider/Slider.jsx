@@ -48,8 +48,8 @@ const Slider = () => {
                         <div className="slider-info__wrapper">
                             <img className="slide__img" src="/img/slider/slide_3.png" alt="" />
                             <div className="slide__info">
-                                <p className="slide__text">Стакан складной Stojo</p>
-                                <p className="slide__price">1 200 ₽</p>
+                                <p className="slide__text">Чехол для телефона <br/>“No plastic it’s fantastic”</p>
+                                <p className="slide__price">1 390 ₽</p>
                                 <Link to="/shop" className="slide__btn">Смотреть</Link>
                             </div>
                         </div>
@@ -64,8 +64,8 @@ const Slider = () => {
                         <div className="slider-info__wrapper">
                             <img className="slide__img" src="/img/slider/slide_4.png" alt="" />
                             <div className="slide__info">
-                                <p className="slide__text">Стакан складной Stojo</p>
-                                <p className="slide__price">1 200 ₽</p>
+                                <p className="slide__text">Дезодорант “Chom Chom”</p>
+                                <p className="slide__price">1 100 ₽</p>
                                 <Link to="/shop" className="slide__btn">Смотреть</Link>
                             </div>
                         </div>
