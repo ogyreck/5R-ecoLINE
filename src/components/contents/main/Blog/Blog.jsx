@@ -36,6 +36,12 @@ const Blog = () => {
                   </div>
                   <span className="card__info-date">05.07.2021</span>
                 </div>
+
+                <div className='Hover-blog'>
+                  <Link to='/blog/statia'>
+                    <button className='blog-btn'>Читать</button>
+                  </Link>
+                </div>
               </div>
 
               {/* <div className="blog__card-hover">
@@ -56,6 +62,11 @@ const Blog = () => {
                   </div>
                   <span className="card__info-date">05.07.2021</span>
                 </div>
+                <div className='Hover-blog'>
+                  <Link to='/blog/statia'>
+                    <button className='blog-btn'>Читать</button>
+                  </Link>
+                </div>
               </div>
 
               {/* <div className="blog__card-hover">
@@ -74,6 +85,11 @@ const Blog = () => {
                     <span>304</span>
                   </div>
                   <span className="card__info-date">05.07.2021</span>
+                </div>
+                <div className='Hover-blog'>
+                  <Link to='/blog/statia'>
+                    <button className='blog-btn'>Читать</button>
+                  </Link>
                 </div>
               </div>
 
