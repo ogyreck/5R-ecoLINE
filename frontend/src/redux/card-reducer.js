@@ -1,9 +1,13 @@
 import {remove} from "./util";
+import axios from 'axios'
 
 const ADD_CARD = "CARD-ADD"
 const DELETE_CARD = 'DELETE-CARD'
 const COUNT_PLUS_BASKET = 'COUNT_PLUS_BASKET'
 const COUNT_MINESE_BASKET = "COUNT_MINESE_BASKET"
+
+const _initialState = () => {return axios.get("/shop/get").then(response => response.data[0].initialState)}
+console.log(_initialState())
 
 let initialState = {
 
