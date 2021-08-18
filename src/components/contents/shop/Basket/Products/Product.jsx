@@ -39,6 +39,6 @@ const Product = (props) => {
          <span className="close" onClick={deleteBascet}></span>
       </div>
    );
-};
+}
 
 export default Product;
