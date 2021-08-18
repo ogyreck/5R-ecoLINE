@@ -119,17 +119,45 @@
 .shop_favorite:hover {
   stroke: #C28686;
 }
-.shop_favorite:active ,
-.shop_favorite:focus {
-  fill: #C28686;
-  stroke: #C28686;
+/*.custom-checkbox:checked+label::before {*/
+/*  fill: #C28686;*/
+/*  stroke: #C28686;*/
+/*}*/
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background-image: url(../../../../img/favorites-icon.svg);
+  flex-shrink: 0;
+  flex-grow: 0;
+
+  
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
 }
+
 .shop_favorite{
   margin-top: 5px;
   fill: none;
   cursor: pointer;
   stroke: #878787;
 }
+.custom-checkbox{
+  top: 29%;
+  right: 26%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checkbox-favorite:before{
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+}
+
 
 
 

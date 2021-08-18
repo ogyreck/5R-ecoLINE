@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
 
 import Main from './components/contents/main/Main';
-import Blog from './components/contents/blog/Blog';
+// import Blog1 from './components/contents/blog/Blog1';
 import About from './components/contents/about/About';
 import Shop from './components/contents/shop/Shop';
 // import Basket from "./components/contents/shop/Basket/Basket";
@@ -12,12 +12,13 @@ import BasketContainer from "./components/contents/shop/Basket/BasketContainer";
 import ThankYou from './components/contents/shop/Basket/ThankYou/ThankYou';
 // import Favotites from './components/contents/shop/Favorites/Favotites';
 import Favorites from './components/contents/shop/Favorites/Favorites'
+import Contacts from "./components/contents/contacts/Contacts";
 import BlogPage from "./components/contents/blog/BlogPage/BlogPage";
 import Home from "./components/contents/shop/Catalogs/Home";
 import Cosmetics from "./components/contents/shop/Catalogs/Cosmetics";
 import Hygiene from "./components/contents/shop/Catalogs/Hygiene";
 import ZeroWaste from "./components/contents/shop/Catalogs/ZeroWaste";
-import Contacts from "./components/contents/contacts/Contacts";
+import BlogContainer from "./components/contents/blog/BlogContainer";
 
 const App = (props) => {
     // debugger;
@@ -28,7 +29,7 @@ const App = (props) => {
             <BrowserRouter>
             <ScrollToTop>
                 <Route exact path='/' component={Main}/>
-                <Route exact path='/blog' component={Blog}/>
+                <Route exact path='/blog' render={()=><BlogContainer />}/>
                 <Route exact path='/about' component={About}/>
                 <Route exact path='/shop' render={()=><Shop />}/>
                 <Route exact path='/shop/basket' render={()=><BasketContainer />}/>

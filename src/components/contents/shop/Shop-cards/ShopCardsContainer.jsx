@@ -8,7 +8,7 @@ import {addBasketAction} from "../../../../redux/card-reducer";
 
 let mapStateToProps = (state) =>{
     return{
-        cardsData: state.cardsData
+        cardsData: state.cardReducer.cardsData
     }
 }
 let mapDispatchToProps = (dispatch) => {

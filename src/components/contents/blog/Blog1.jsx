@@ -6,7 +6,15 @@ import BlogCard from "./Blog-crad/BlogCard";
 import Subscribe from "../shop/Subscribe/Subscribe";
 import Footer from "../../footer/Footer";
 
-const Blog = () => {
+const Blog = (props) => {
+    console.log(props)
+    let blogCrad = props.blogData.map(card => <BlogCard img={card.img}
+                                                        title={card.title}
+                                                        view={card.view}
+                                                        data={card.data} />)
+
+
+
     const scrollTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
@@ -41,14 +49,7 @@ const Blog = () => {
                     <section>
                         <div className='container'>
                             <div className='flex-blog__wrapper'>
-                                <BlogCard/>
-                                <BlogCard/>
-                                <BlogCard/>
-                                <BlogCard/>
-                                <BlogCard/>
-                                <BlogCard/>
-                                <BlogCard/>
-                                <BlogCard/>
+                                {blogCrad}
 
                             </div>
                             <div className="blog__btns">
@@ -60,7 +61,6 @@ const Blog = () => {
                                 <span onClick={scrollTop}>Наверх</span>
                                 <img src="/img/blog/arrow.svg" alt="" />
                             </div>
-
                         </div>
                     </section>
                 </div>

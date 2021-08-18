@@ -24,7 +24,12 @@
     align-items: center;
     padding-bottom: 60px;
 }
+
+.blog-container{
+    padding-right: 100px;
+}
 .main-text-blog{
+    /* padding-right: 200px; */
     padding-left: 96px;
     width: 85%;
     margin: auto;
@@ -47,7 +52,7 @@
 
 
 background: #6E8254;
-    top: 107px;
+    top: 51%;
     left: -120px;
     transform: rotate(90deg);
 }

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 // import ShopCards from "./Shop-cards/ShopCards";
 import BlogTopics from "../Blog-topics/BlogTopics";
 // import ShopDescription from "./Shop-description/ShopDescription";
-// import Discount from "../Discount/Discount";
 // import HeaderShop from "../../header/Header_shop";
 import Footer from "../../../footer/Footer";
 // import ShopCardsContainer from "../Shop-cards/ShopCardsContainer";
@@ -15,7 +14,6 @@ const Shop = (props) => {
     <>
       <HeaderShopContainer />
       <main>
-        {/* <Discount /> */}
         <div className="container-shop">
           {/* <ShopDescription/> */}
           <div className="navigation__links shop-navigation__links">
@@ -23,7 +21,7 @@ const Shop = (props) => {
             <img src="/img/arrow_left.svg" alt="Стрелка" />
             <Link to="/shop" className="navigation__links-item">Каталог</Link>
           </div>
-          <h2 className="main-heading main-heading-catalog">Каталог товаров</h2>
+          <h2 className="main-heading main-heading-catalog">Каталог</h2>
           <BlogTopics />
           <h1>Cosmetics</h1>
         </div>
