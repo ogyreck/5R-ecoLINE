@@ -122,7 +122,7 @@ if (products.length) {
 
 export const cardReducer = (state = initialState, action) => {
     // console.log(state)
-
+    
     let stateCopy = {
         ...state,
         cardsData: [...state.cardsData],
