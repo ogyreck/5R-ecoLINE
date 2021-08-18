@@ -252,6 +252,12 @@ nav ul{
   position: relative;
 }
 
+.header-input input::placeholder{
+  color:#c9c9c9;
+  font-size: 16px;
+  line-height: 128%;
+}
+
 .header-input input{
   width: 270px;
   height: 40px;
@@ -263,8 +269,8 @@ nav ul{
   padding-left: 20px;
   outline: none;
   position: relative;
-  
 }
+
 .header-input{
   display: none;
   position: absolute;

@@ -15,7 +15,7 @@ const Animation = () => {
          </div>
          <div className="animation__image-second">
             <img className="image__good animation__image" src={Good} alt="" />
-            <p className="animation__text animation__text-second">Стань частью больших изменений</p>
+            <p className="animation__text animation__text-second">Стань частью больших <br/>изменений</p>
             <Link to="/shop"><button className="animation__text animation__button">В каталог</button></Link>
          </div>
       </section>

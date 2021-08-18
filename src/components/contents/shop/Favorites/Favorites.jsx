@@ -3,6 +3,7 @@ import "./Favorites.css"
 import { Link } from "react-router-dom";
 import Footer from "../../../footer/Footer";
 import HeaderShopContainer from "../../../header/Header_shopContainer";
+import ShopCard from "../Shop-cards/ShopCard";
 
 
 
@@ -20,7 +21,15 @@ const Favorites = () => {
                   <Link to="/shop/basket" className="navigation__links-item">Корзина</Link>
                </div>
                <h2 className="main-heading main-heading-liked">Избранное</h2>
-               <div className="button-container">
+
+               <div className="shop-cards">
+                  <ShopCard />
+                  <ShopCard />
+                  <ShopCard />
+                  <ShopCard />
+               </div>
+
+               <div className="button-container favorites_buttons">
                   <Link to="/shop">
                      <button className="button button--default">В каталог</button>
                   </Link>
@@ -30,6 +39,7 @@ const Favorites = () => {
                </div>
             </div>
          </section>
+         
          <Footer />
       </>
    );
