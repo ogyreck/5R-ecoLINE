@@ -107,7 +107,7 @@ const Products = (props) => {
                 <p className="radio__price">300 ₽</p>
             </div>
             <div className="delivery__price">
-                <p>Сумма к оплате: <span ref={price}>{allSum}</span> ₽</p>
+                <p>Сумма к оплате: <strong><span ref={price}>{allSum}</span> ₽</strong></p>
             </div>
         </div>
         </>
