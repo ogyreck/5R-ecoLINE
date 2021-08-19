@@ -1,14 +1,10 @@
 import React, { Component} from "react";
 import "./cardProduct.css";
 
-
-
 export default class CardInfo extends Component {
   constructor(props) {
     super(props);
     this.state = { isToggleOn: true };
-
-    // Эта привязка обязательна для работы `this` в колбэке.
     this.handleClick = this.handleClick.bind(this);
   }
 
@@ -49,11 +45,9 @@ export default class CardInfo extends Component {
           <button onClick={this.addCount.bind(this)} className="card__count-btn" >+</button>
         </span>
         <button className="card__btn">В корзину</button>
-        
         <svg onClick={this.handleClick} className={this.state.isToggleOn ? 'card__favorite' : 'card__favorite-active'} width="23" height="20" >
           <use  xlinkHref="/sprite.svg#favorites"></use>
         </svg>
-
       </div>
     );
   }

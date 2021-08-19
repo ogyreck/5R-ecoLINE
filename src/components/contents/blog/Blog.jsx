@@ -1,5 +1,5 @@
 import React from "react";
-import "./blog1.css";
+import "./blog.css";
 import HeaderShopContainer from "../../header/Header_shopContainer";
 import {Link, NavLink} from "react-router-dom";
 import BlogCard from "./Blog-crad/BlogCard";
@@ -7,14 +7,11 @@ import Subscribe from "../shop/Subscribe/Subscribe";
 import Footer from "../../footer/Footer";
 
 const Blog = (props) => {
-    console.log(props)
     let blogCrad = props.blogData.map(card => <BlogCard key={card.title}
                                                         img={card.img}
                                                         title={card.title}
                                                         view={card.view}
                                                         data={card.data} />)
-
-
 
     const scrollTop = () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -24,7 +21,6 @@ const Blog = (props) => {
             <HeaderShopContainer/>
             <main>
                 <div className="card__bg">
-
                     <section className="navigation">
                         <div className="container">
                             <div className="navigation__links">
@@ -51,7 +47,6 @@ const Blog = (props) => {
                         <div className='container'>
                             <div className='flex-blog__wrapper'>
                                 {blogCrad}
-
                             </div>
                             <div className="blog__btns">
                                 <Link to="/shop" className="blog__btn-catalog">В каталог</Link>

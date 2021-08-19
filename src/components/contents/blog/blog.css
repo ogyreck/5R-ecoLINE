@@ -5,18 +5,22 @@
     line-height: 148%;
     color: #6E8254;
 }
+
 .blog__topics-blog {
     padding-top: 38px;
 }
+
 .blog__topics-blog button{
     color: #6E8254;
     border: 1px solid rgba(106, 122, 86, 0.5);
 }
+
 .blog__topic-active1 {
     background-color: #6E8254 !important;
     color: #fff !important;
     font-weight: 500 !important;
 }
+
 .flex-blog__wrapper{
     display: flex;
     flex-wrap: wrap;

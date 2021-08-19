@@ -72,45 +72,21 @@ let initialState = {
     basket: [],
     basketLenght: 0,
     sum: 0,
-
-    favorites: [],
-    favoritesLength: 0
 }
 
 let productsJson = JSON.parse(localStorage.getItem('basket'))
 let productsLenghtJson = JSON.parse(localStorage.getItem('baskLength'))
-
-// let favoritesJson = JSON.parse(localStorage.getItem('favorites'))
-// let favoritesLengthJson = JSON.parse(localStorage.getItem('favoritesLength'))
-
-
 let productsLenght = productsLenghtJson ? productsLenghtJson : 0;
 let products = productsJson ? productsJson : []
-
-
-// let favorites = favoritesJson ? favoritesJson : []
-// let favoritesLength = favoritesLengthJson ? favoritesLengthJson : 0;
-
-
 let catalog = JSON.parse(localStorage.getItem('cardsData'))
 
 if (products.length) {
     initialState.basket = [...products]
     initialState.basketLenght = productsLenght
     initialState.cardsData = [...catalog]
-
 }
 
-// if (favorites.length) {
-//     initialState.favorites = [...favorites]
-//     initialState.favoritesLength = favoritesLength
-//     initialState.cardsData = [...catalog]
-
-// }
-
 export const cardReducer = (state = initialState, action) => {
-    // console.log(state)
-
     let stateCopy = {
         ...state,
         cardsData: [...state.cardsData],
@@ -118,14 +94,8 @@ export const cardReducer = (state = initialState, action) => {
         disable: {...state.cardsData.disable},
         inButton: {...state.cardsData.inButton}
     }
-
-    //console.log(stateCopy, 'stateCopy')
-
-
     switch (action.type) {
-
         case ADD_CARD: {
-
             let newCard = stateCopy.cardsData[action.idCard - 1] = {
                 sale: stateCopy.cardsData[action.idCard - 1].sale,
                 img: stateCopy.cardsData[action.idCard - 1].img,
@@ -136,28 +106,21 @@ export const cardReducer = (state = initialState, action) => {
                 inButton: 'Добавлено',
                 count: 1,
             }
-
             stateCopy.basket.push(newCard)
-
-
             stateCopy.basketLenght = stateCopy.basket.length
             localStorage.setItem('basket', JSON.stringify(stateCopy.basket))
             localStorage.setItem('cardsData', JSON.stringify(stateCopy.cardsData))
             localStorage.setItem('baskLength', JSON.stringify(stateCopy.basket.length))
-
             return stateCopy;
         }
         case DELETE_CARD: {
-
             let bask = [...stateCopy.basket]
             let card = [...stateCopy.cardsData]
             let newBask;
             let newCard;
             let deletedCard = bask[action.idCardDelete]
             newBask = remove(bask, action.idCardDelete)
-
             newCard = card.map((item) => {
-
                 if (item.id === deletedCard.id) {
                     return {
                         ...item,
@@ -170,14 +133,12 @@ export const cardReducer = (state = initialState, action) => {
             stateCopy.basket = [...newBask]
             stateCopy.cardsData = [...newCard]
             stateCopy.basketLenght = stateCopy.basket.length
-             localStorage.setItem('basket', JSON.stringify([...newBask]))
-
-             localStorage.setItem('cardsData', JSON.stringify([...newCard]))
-             localStorage.setItem('baskLength', JSON.stringify([...newBask].length))
+            localStorage.setItem('basket', JSON.stringify([...newBask]))
+            localStorage.setItem('cardsData', JSON.stringify([...newCard]))
+            localStorage.setItem('baskLength', JSON.stringify([...newBask].length))
             return stateCopy
         }
         case COUNT_PLUS_BASKET:
-            console.log(action.idCard)
             let bask = [...stateCopy.basket]
             bask[action.idCard].count++
             stateCopy.basket = bask
@@ -189,19 +150,12 @@ export const cardReducer = (state = initialState, action) => {
             } else {
                 bask2[action.idCard].count--
             }
-
             stateCopy.basket = bask2
             return stateCopy
-
         default:
             return state;
     }
-
-
-    // return state
-
 }
-
 
 export const addBasketAction = (idCardValue) => {
     return {

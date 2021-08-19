@@ -1,30 +1,16 @@
-// import React, {useRef} from "react"
 import "./Product.css"
 import {Link} from "react-router-dom"
 
 const Product = (props) => {
-
-
    let deleteBascet = () =>{
       props.deleteBascket(props.id)
    }
-
-
-
-
    function addCount() {
-       props.countPlius(props.id)
-
+      props.countPlius(props.id)
    }
-   
    function delCount() {
-       props.countMines(props.id)
-
+      props.countMines(props.id)
    }
-
-
-
-
    return (
       <div className="products__card">
          <img src={props.img} alt="" className="products__card-image" />

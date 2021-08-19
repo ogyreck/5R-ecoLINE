@@ -1,21 +1,8 @@
 import React from "react";
-// import "./ShopCard.css";
 import { Link } from "react-router-dom";
 
-
 const FavoriteCard = () => {
-
-  // let addBasket = () => {
-  //   props.addBasket(props.id)
-  // }
-
-  // const favorites = () => {
-  //   console.log("click");
-  // }
-
-
   return (
-
     <div className="shop-card__item">
       <Link to="/shop/card">
         <img src="img/cards-in-shop/card1.png" alt="" className="shop-card__image" />
@@ -35,14 +22,8 @@ const FavoriteCard = () => {
           <use xlinkHref="/sprite.svg#favorites"></use>
         </svg>
       </button>
-
-      {/* <NEW sale={props.new} /> */}
       <div className='id'></div>
     </div>
-    // </Link>
-
-
-
   )
 }
 

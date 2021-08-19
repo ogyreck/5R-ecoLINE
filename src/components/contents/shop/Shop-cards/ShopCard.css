@@ -121,19 +121,10 @@
   padding-top: 16px;
 }
 
-/* .shop-card__item:hover p{
-  color: #6B4040;
-} */
-
 .shop-card__item:hover .shop-card-button {
   background: #C28686;
   color: #FFFFFF;
 }
-
-/* .shop-card__item:active .shop-card-button {
-  background: #865454;
-  color: #FFFFFF;
-} */
 
 .id{
   display: none;
@@ -147,17 +138,10 @@
   stroke: #C28686;
 }
 
-
 .shop-card-button:disabled{
   background-color: #C28686;
   color: #fff;
 }
-/*.custom-checkbox:checked+label::before {*/
-/*  fill: #C28686;*/
-/*  stroke: #C28686;*/
-/*}*/
-
-
 
 .custom-checkbox+label::before {
   content: '';
@@ -167,8 +151,6 @@
   background-image: url(../../../../img/favorites-icon.svg);
   flex-shrink: 0;
   flex-grow: 0;
-
-  
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 50% 50%;
@@ -180,6 +162,7 @@
   cursor: pointer;
   stroke: #878787;
 }
+
 .custom-checkbox{
   top: 29%;
   right: 26%;
@@ -187,15 +170,13 @@
   z-index: -1;
   opacity: 0;
 }
+
 .checkbox-favorite:before{
   content: '';
   display: inline-block;
   width: 1em;
   height: 1em;
 }
-
-
-
 
 /* чекбокс */
 

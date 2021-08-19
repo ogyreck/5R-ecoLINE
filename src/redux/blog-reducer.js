@@ -11,11 +11,8 @@ let initialState = {
                     "“энергетическая бумага”", view: 289, data: "19.07.2021", img:'/img/blog/blog_7.jpg'},
             {title:"10 экологичных фактов \n" +
                     "об алкоголе.", view: 386, data: "06.16.2021", img:'/img/blog/blog_8.jpg'},
-
         ]
 }
-
-
 
 export const blogReducer = (state = initialState, action) => {
 return state

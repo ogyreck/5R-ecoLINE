@@ -128,8 +128,6 @@ const BlogPage = () => {
             <Footer/>
         </>
     )
-
-
 }
 
 export default BlogPage;

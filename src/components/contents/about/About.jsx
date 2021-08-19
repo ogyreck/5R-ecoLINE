@@ -1,5 +1,4 @@
 import React from "react";
-
 import "./about.css";
 import HeaderShopContainer from "../../header/Header_shopContainer";
 import { Link, NavLink} from "react-router-dom";
@@ -12,15 +11,12 @@ const About = () => {
             <HeaderShopContainer/>
             <main>
                 <div className="card__bg">
-
                     <section className="navigation">
                         <div className="container">
                             <div className="navigation__links">
                                 <NavLink exact activeClassName="navigation__links-active" to="/" className="navigation__links-item">Главная</NavLink>
                                 <img src="/img/arrow_left.svg" alt="Стрелка"/>
                                 <NavLink exact activeClassName="navigation__links-active" to="/about" className="navigation__links-item">O нас</NavLink>
-
-
                             </div>
                         </div>
                     </section>
@@ -61,15 +57,12 @@ const About = () => {
                     <section className='section-5r'>
                         <div className='container'>
                             <p className='section-5r__title'>В основе нашей идеи лежит концепция 5R:</p>
-
                             <div className="container">
-
                                 <Concept/>
                                 <Link to='/shop'>
                                     <button className="concept__btn">В каталог</button>
                                 </Link>
                             </div>
-
                         </div>
                     </section>
                 </div>

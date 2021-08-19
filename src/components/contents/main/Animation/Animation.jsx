@@ -4,7 +4,6 @@ import Arrow from "../../../../../src/img/animation/arrl.PNG"
 import Good from "../../../../../src/img/animation/good.png"
 import { Link } from "react-router-dom";
 
-
 const Animation = () => {
    return (
       <section className="animation">

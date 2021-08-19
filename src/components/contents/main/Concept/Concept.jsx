@@ -2,11 +2,9 @@ import React from "react"
 import "./concept.css"
 
 const Concept = () => {
-
   return (
     <section className="concept">
       <div className="container">
-
         <div className="flex-wrapper-concept">
           <div className="concept-text">5R</div>
           <ul className="concept-list">
@@ -27,7 +25,6 @@ const Concept = () => {
             </li>
           </ul>
         </div>
-
       </div>
     </section>
   )

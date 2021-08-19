@@ -1,5 +1,4 @@
 footer {
-  /* height: 383px; */
   background-color: #6B4040;
 }
 
@@ -12,12 +11,10 @@ footer {
 }
 
 .footer__logo-text {
-  /* margin-left: 9px; */
   font-weight: bold;
   font-size: 28px;
   line-height: 130%;
   color: rgba(255, 255, 255, 0.9);
-
 }
 
 .footer__logo-text span {
@@ -43,9 +40,6 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   padding-bottom: 16px;
 }
-
-
-
 
 .footer__social {
   display: flex;

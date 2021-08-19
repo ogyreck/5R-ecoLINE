@@ -21,8 +21,6 @@ import ZeroWaste from "./components/contents/shop/Catalogs/ZeroWaste";
 import BlogContainer from "./components/contents/blog/BlogContainer";
 
 const App = (props) => {
-    // debugger;
-    console.log(props)
     return (
         
         <>

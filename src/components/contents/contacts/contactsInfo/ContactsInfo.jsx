@@ -1,5 +1,4 @@
 import "./ContactsInfo.css"
-
 import imageGeo from "../../../../../src/img/geo.svg";
 import imageTel from "../../../../../src/img/tel.svg";
 import imageEmail from "../../../../../src/img/email.svg";
@@ -34,21 +33,16 @@ const ContactsInfo = () => {
          <div className="contacts__social">
             <p>Подписывайтесь на наши соцсети:</p>
             <div className="contacts__social-icon">
-               {/* <a href="https://vk.com/" target="_blank"> */}
                <Link target="_blank" to="https://vk.com/">
                   <svg width="55" height="55">
                      <use xlinkHref="sprite.svg#vk"></use>
                   </svg>
                </Link>
-               {/* </a> */}
-               {/* <a href="https://www.instagram.com/" target="_blank"> */}
                <Link target="_blank" to="https://www.instagram.com/">
                   <svg width="55" height="55">
                      <use xlinkHref="sprite.svg#instagram"></use>
                   </svg>
                </Link>
-               {/* </a> */}
-               {/* <a href="https://web.telegram.org/" target="_blank"></a> */}
                <Link target="_blank" to="https://web.telegram.org/">
                   <svg width="55" height="55">
                      <use xlinkHref="sprite.svg#telegram"></use>

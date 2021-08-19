@@ -3,10 +3,7 @@ import "./Favorites.css"
 import { Link, NavLink } from "react-router-dom";
 import Footer from "../../../footer/Footer";
 import HeaderShopContainer from "../../../header/Header_shopContainer";
-// import ShopCard from "../Shop-cards/ShopCard";
 import FavoriteCard from "./FavoriteCard";
-
-
 
 const Favorites = () => {
    return (
@@ -22,7 +19,6 @@ const Favorites = () => {
                   <NavLink exact activeClassName="navigation__links-active" to="/shop/favorites" className="navigation__links-item">Избранное</NavLink>
                </div>
                <h2 className="main-heading main-heading-liked">Избранное</h2>
-
                <div className="shop-cards">
                   <FavoriteCard/>
                   <FavoriteCard/>
@@ -32,7 +28,6 @@ const Favorites = () => {
                   {/* <ShopCard /> */}
                   {/* <ShopCard /> */}
                </div>
-
                <div className="button-container favorites_buttons">
                   <Link to="/shop">
                      <button className="button button--default">В каталог</button>
@@ -43,7 +38,6 @@ const Favorites = () => {
                </div>
             </div>
          </section>
-         
          <Footer />
       </>
    );

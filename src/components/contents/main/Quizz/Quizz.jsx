@@ -3,15 +3,13 @@ import React, { Component } from 'react'
 import { QuizData } from './QuizData';
 import { Link } from 'react-router-dom'
 
-
 class Quizz extends Component {
-  
   constructor(props) {
     super(props)
     this.state = {
-      userAnswer: null,    //current users answer
-      currentIndex: 0,  //current questions index
-      options: [],       //the four options
+      userAnswer: null,
+      currentIndex: 0,
+      options: [],
       quizEnd: false,
       quizStart: false,
       score: 0,
@@ -21,15 +19,13 @@ class Quizz extends Component {
   }
   
   quizStart = () => {
-    // const { startQuiz } = this.state
     this.setState({
       quizStart: true
     })
   }
 
-  //Component that holds the current quiz
   loadQuiz = () => {
-    const { currentIndex } = this.state //get the current index
+    const { currentIndex } = this.state
     this.setState(() => {
       return {
         question: QuizData[currentIndex].question,
@@ -43,19 +39,8 @@ class Quizz extends Component {
     )
   }
 
-  //Handles Click event for the next button
   nextQuestionHander = () => {
     const { userAnswer, points3, points2, points0, score } = this.state
-    // if (score >= 12) {
-    //   this.setState({
-    //     result: "Неплохо! Вы на верном пути, но можно еще немного постараться!"
-    //   })
-    // } else if (score >= 16) {
-    //   this.setState({
-    //     result: "Супер! Ваш образ жизни экологичен! Продолжайте в том же духе!"
-    //   })
-    // }
-    // console.log(score);
 
     if (userAnswer === points3) {
       this.setState({
@@ -71,30 +56,15 @@ class Quizz extends Component {
         score: score + 0
       })
     }
-
-    // if (score >= 12) {
-    //   this.setState({
-    //     result: `Неплохо! Вы на верном пути, но можно еще немного постараться!`
-    //   })
-    // }
-    // if (score >= 16) {
-    //   this.setState({
-    //     result: "Супер! Ваш образ жизни экологичен! Продолжайте в том же духе!"
-    //   })
-    // }
-    // console.log(score);
-
     this.setState({
       currentIndex: this.state.currentIndex + 1
     })
   }
 
-  //Load the quiz once the component mounts
   componentDidMount() {
     this.loadQuiz();
   }
 
-  //Update the component
   componentDidUpdate(prevProps, prevState) {
     const { currentIndex } = this.state;
     if (this.state.currentIndex !== prevState.currentIndex) {
@@ -112,7 +82,6 @@ class Quizz extends Component {
     }
   }
 
-  //Check the answer
   checkAnswer = answer => {
     this.setState({
       userAnswer: answer,
@@ -143,22 +112,18 @@ class Quizz extends Component {
         result: `Неплохо! Вы на верном пути, но можно еще немного постараться!`
       })
     }
+    
     if (score >= 13) {
       this.setState({
         result: "Супер! Ваш образ жизни экологичен! Продолжайте в том же духе!"
       })
     }
-    console.log(score);
-
     if (this.state.currentIndex === QuizData.length - 1) {
       this.setState({
         quizEnd: true
       })
     }
-
-
   }
-
 
   render() {
     const { question, options, currentIndex, userAnswer, quizEnd, quizStart, img, score } = this.state //get the current state
@@ -166,8 +131,6 @@ class Quizz extends Component {
       return (
         <div className="quiz">
           <div className="quiz_result-page">
-            
-
             <div className="quiz_result">
               <div className="container">
                 <span className="quiz_result-text">Ваш результат:</span>
@@ -187,7 +150,6 @@ class Quizz extends Component {
         </div>
       )
     }
-
 
     return (
       <div className="quiz">
@@ -231,7 +193,6 @@ class Quizz extends Component {
             </div>
           }
       </div>
-      
     )
   }
 }

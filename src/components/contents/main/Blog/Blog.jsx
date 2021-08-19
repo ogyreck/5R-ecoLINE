@@ -1,25 +1,18 @@
 import React from "react"
 import { Link } from "react-router-dom";
-// import ScrollToTop from "../../../../ScrollToTop";
 import "./blog.css"
 
 const Blog = () => {
-
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
     <section className="blog">
-      {/* <div className="blog__bg"> */}
         <div className="container">
-
           <h2 className="blog__title">Блог</h2>
-
           <div className="blog__cards">
-
             <div className="blog__card-item">
-
               <div className="blog__card-visible">
                 <img src="/img/blog/blog_1.jpg" alt="" />
               <span className="card__title">Глобальная война за воду.
@@ -31,20 +24,13 @@ const Blog = () => {
                   </div>
                   <span className="card__info-date">05.07.2021</span>
                 </div>
-
                 <div className='Hover-blog'>
                   <Link to='/blog/statia'>
                     <button className='blog-btn'>Читать</button>
                   </Link>
                 </div>
               </div>
-
-              {/* <div className="blog__card-hover">
-                <Link to="/blog" className="card__btn-hover">Читать</Link>
-              </div> */}
-
             </div>
-
             <div className="blog__card-item">
               <div className="blog__card-visible">
               <img src="/img/blog/blog_2.jpg" alt="" />
@@ -62,12 +48,7 @@ const Blog = () => {
                   </Link>
                 </div>
               </div>
-
-              {/* <div className="blog__card-hover">
-                <Link to="/blog" className="card__btn-hover">Читать</Link>
-              </div> */}
             </div> 
-
             <div className="blog__card-item">
               <div className="blog__card-visible">
               <img src="/img/blog/blog_3.jpg" alt="" />
@@ -85,24 +66,16 @@ const Blog = () => {
                   </Link>
                 </div>
               </div>
-
-              {/* <div className="blog__card-hover">
-                <Link to="/blog" className="card__btn-hover">Читать</Link>
-              </div> */}
             </div>
-
           </div>
           <div className="blog__btns">
             <Link to="/shop" className="blog__btn-catalog">Читать больше</Link>
-            {/* <Link to="/blog" className="blog__btn-more">Читать дальше</Link> */}
           </div>
-          
           <div className="blog-up">
           <span onClick={scrollTop}>Наверх</span>
             <img src="img/blog/arrow.svg" alt="" />
           </div>
         </div>
-      {/* </div> */}
     </section>
   )
 }

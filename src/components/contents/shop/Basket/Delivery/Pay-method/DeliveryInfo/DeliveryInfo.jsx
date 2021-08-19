@@ -1,5 +1,3 @@
-import "./DeliveryInfo.css"
-
 const DeliveryInfo = () => {
    return (
       <>

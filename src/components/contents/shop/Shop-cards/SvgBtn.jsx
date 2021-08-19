@@ -1,6 +1,5 @@
 import React, { Component} from "react";
 
-
 export default class SvgBtn extends Component {
   constructor(props) {
     super(props);

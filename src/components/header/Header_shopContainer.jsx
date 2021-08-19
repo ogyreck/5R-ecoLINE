@@ -1,17 +1,14 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
 import "./header.css";
 import {connect} from "react-redux";
 import HeaderShop from "./Header_shop";
 
-
 let mapStateToProps = (state) =>{
- return{
-   inBasket: state.cardReducer.basketLenght
- }
+  return{
+    inBasket: state.cardReducer.basketLenght
+  }
 }
 let mapDispatchToProps = (dispatch) =>{
- return{}
+  return{}
 }
 
 const HeaderShopContainer = connect(mapStateToProps, mapDispatchToProps)(HeaderShop);

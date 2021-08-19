@@ -6,7 +6,6 @@ import Products from "./Products/Products";
 import HeaderShopContainer from "../../../header/Header_shopContainer";
 
 const Basket = (props) => {
-   console.log(props, 'props - Basket')
    return (
       <>
          <HeaderShopContainer />
@@ -28,7 +27,6 @@ const Basket = (props) => {
                          countMines={props.countMines}/>
                <Delivery />
             </div>
-            {/* <div className="basket-image"></div> */}
          </section>
          <Footer />
       </>

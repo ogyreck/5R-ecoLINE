@@ -6,13 +6,8 @@
   flex-direction: row;
   position: relative;
   margin-top: -9px;
-  /* width: 1920px; */
 }
 
-/* main {
-  overflow-x: hidden;
-  overflow-y: hidden;
-} */
 
 .animation__image-first {
   width: 50%;

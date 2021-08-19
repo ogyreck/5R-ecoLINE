@@ -1,9 +1,7 @@
 #header{
   position:fixed;
   width: 100%;
-  /* background-color: transparent; */
   background-color: #fff;
-  /* background-color: rgba(255, 255, 255, 0.9); */
   z-index: 101;
   border-bottom: 1px solid#DFDFDF;
 }
@@ -158,32 +156,6 @@ nav ul{
   
 }
 
-
-/*
-.search__input {
-  color: #9A9A9A;
-  font-size: 16px;
-  padding-left: 41px;
-  font-weight: 500;
-  background: url(/src/img/search.svg) no-repeat 12px 12px;
-  background-color: #eeeeee;
-  border-radius: 8px;
-  width: 206px;
-  height: 40px;
-  border: none;
-  outline: none;
-}
-
-.search__input:focus,
-.search__input:hover {
-  background-color: #C2C2C2;
-} */
-
-
-
-
-
-/* для главной страницы */
 .navigationHeader {
   margin-top: 32px;
   display: flex;
@@ -221,10 +193,8 @@ nav ul{
   background-color:grey;
   border-radius: 50%;
   text-align: center;
-  /* display: table-cell; */
-  /* vertical-align: middle; */
-  /* line-height: 27px; */
 }
+
 .navigation__link-vk img,
 .navigation__link-inst img,
 .navigation__link-telegram img {
@@ -239,7 +209,6 @@ nav ul{
 }
 
 .logo__name span{
-  /* color: #fff; */
   color: #6A7A56;
 }
 
@@ -309,7 +278,6 @@ nav ul{
   transform: rotate(-45deg);
 }
 
-
 .navigation__search-icon:hover,
 .navigation__favorites-icon:hover{
   /* fill: #C28686; */
@@ -321,15 +289,14 @@ nav ul{
 
   fill: none;
   stroke: #878787;
-  /* color: #878787; */
-  /* stroke-width: 1.5px; */
 }
 
 .navigation__basket-icon {
   fill: none;
   stroke: #878787;
 }
+
 .navigation__basket-icon:hover {
-  fill: none;
+  fill: #C28686;
   stroke: #C28686;
 }

@@ -5,9 +5,7 @@ import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { Link } from 'react-router-dom';
 
 const Catalog = () => {
-
   SwiperCore.use([Navigation, Pagination]);
-
   return (
     <section className="catalog">
       <div className="container">
@@ -18,7 +16,6 @@ const Catalog = () => {
         slidesPerView={4}
         spaceBetween={30}
         freeMode={true}
-        // slidesPerView={1}
         className="catalogSlider"
         loop={true}
       >
@@ -61,7 +58,6 @@ const Catalog = () => {
             <img className="slider-catalog__img" src="img/catalog/hygiene.jpg" alt="" />
           </div>
         </SwiperSlide>
-
       </Swiper>
     </section>
   )

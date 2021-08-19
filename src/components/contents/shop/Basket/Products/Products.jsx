@@ -9,21 +9,15 @@ const Noting = () => {
 }
 
 const Products = (props) => {
-
     let input = React.createRef();
     let saleCount = React.createRef();
     let price = React.createRef();
-
     const sale = () => {
         if (input.current.value === "ECOLIFE"){
             saleCount.current.outerText = parseInt(allSum / 100 *10);
             price.current.outerText = allSum - parseInt(allSum / 100 *10);
-
-            // console.log(saleCount);
         }
-        // console.log(saleCount.current.outerText);
     }
-
     let scet = 0;
     let allSum= 0;
     let productBasKet = props.basket.map((product) => {
@@ -39,9 +33,7 @@ const Products = (props) => {
                         countPlius = {props.countPlius}
                         countMines={props.countMines}
                         count={product.count}
-
     />)})
-
     return (
         <>
         <div className="products">
@@ -57,17 +49,13 @@ const Products = (props) => {
             <hr className="products__line"/>
             <div className="flex-wrapper">
                 <div className="products__promocode">
-                    {/* <form action="#" method="GET"> */}
-                        <input type="text" name="promo" ref={input} onChange={sale} placeholder="Введите промокод"/>
-                        {/* <button type="submit">Применить</button> */}
-                    {/* </form> */}
+                    <input type="text" name="promo" ref={input} onChange={sale} placeholder="Введите промокод"/>
                 </div>
                 <div className="flex-product-total-wrapper">
                     <p className="products__sale">Скидка: <span ref={saleCount}>0</span> ₽</p>
                     <p className="products__total">Сумма заказа: <span>{allSum} ₽</span></p>
                 </div>
             </div>
-
         </div>
         <div className="delivery-method">
             <p className="form-heading form-heading-delivery">Выберите способ доставки:</p>
