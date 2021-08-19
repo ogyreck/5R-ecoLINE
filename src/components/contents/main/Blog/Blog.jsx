@@ -39,9 +39,9 @@ const Blog = () => {
                 </div>
               </div>
 
-              <div className="blog__card-hover">
+              {/* <div className="blog__card-hover">
                 <Link to="/blog" className="card__btn-hover">Читать</Link>
-              </div>
+              </div> */}
 
             </div>
 
@@ -52,9 +52,9 @@ const Blog = () => {
                 <div className="card__info">
                   <div className="card__info-viewers">
                     <img src="/img/eye.svg" alt="" />
-                    <span>304</span>
+                    <span>450</span>
                   </div>
-                  <span className="card__info-date">05.07.2021</span>
+                  <span className="card__info-date">05.08.2021</span>
                 </div>
                 <div className='Hover-blog'>
                   <Link to='/blog/statia'>
@@ -63,9 +63,9 @@ const Blog = () => {
                 </div>
               </div>
 
-              <div className="blog__card-hover">
+              {/* <div className="blog__card-hover">
                 <Link to="/blog" className="card__btn-hover">Читать</Link>
-              </div>
+              </div> */}
             </div> 
 
             <div className="blog__card-item">
@@ -75,9 +75,9 @@ const Blog = () => {
                 <div className="card__info">
                   <div className="card__info-viewers">
                     <img src="/img/eye.svg" alt="" />
-                    <span>304</span>
+                    <span>250</span>
                   </div>
-                  <span className="card__info-date">05.07.2021</span>
+                  <span className="card__info-date">10.08.2021</span>
                 </div>
                 <div className='Hover-blog'>
                   <Link to='/blog/statia'>
@@ -86,9 +86,9 @@ const Blog = () => {
                 </div>
               </div>
 
-              <div className="blog__card-hover">
+              {/* <div className="blog__card-hover">
                 <Link to="/blog" className="card__btn-hover">Читать</Link>
-              </div>
+              </div> */}
             </div>
 
           </div>

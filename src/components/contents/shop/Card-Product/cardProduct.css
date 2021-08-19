@@ -28,6 +28,10 @@
   padding-left: 0;
 }
 
+.navigation__links-active{
+  color: #585858;
+}
+
 .card{
   padding-top: 40px;
 }
@@ -43,7 +47,7 @@
 .cardSlide .swiper-button-prev,
 .cardSlide .swiper-button-next {
   color: #878787;
-  margin-top: -45px;
+  margin-top: -65px;
 }
 
 .card__wrapper {

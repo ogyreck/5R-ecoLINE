@@ -2,7 +2,7 @@ import React from "react";
 
 import "./about.css";
 import HeaderShopContainer from "../../header/Header_shopContainer";
-import {Link} from "react-router-dom";
+import { Link, NavLink} from "react-router-dom";
 import Footer from "../../footer/Footer";
 import Concept from "../main/Concept/Concept";
 
@@ -16,9 +16,9 @@ const About = () => {
                     <section className="navigation">
                         <div className="container">
                             <div className="navigation__links">
-                                <Link to="/" className="navigation__links-item">Главная</Link>
+                                <NavLink exact activeClassName="navigation__links-active" to="/" className="navigation__links-item">Главная</NavLink>
                                 <img src="/img/arrow_left.svg" alt="Стрелка"/>
-                                <Link to="/" className="navigation__links-item">O нас</Link>
+                                <NavLink exact activeClassName="navigation__links-active" to="/about" className="navigation__links-item">O нас</NavLink>
 
 
                             </div>

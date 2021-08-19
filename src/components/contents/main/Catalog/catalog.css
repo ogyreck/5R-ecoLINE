@@ -5,13 +5,17 @@
   padding-bottom: 120px;
 }
 
+.slider-catalog:hover{
+  filter: drop-shadow(2px 2px 40px rgba(107, 64, 64, 0.2));
+}
+
 .slider-catalog{
   position: relative;
-  filter: drop-shadow(2px 2px 40px rgba(107, 64, 64, 0.1));
+  
 }
 
 .slider-catalog__img{
-  width: 570px;
+  width: 500px;
   height: 352px;
   border-radius: 4px;
 }

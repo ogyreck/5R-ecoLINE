@@ -1,5 +1,7 @@
 import React from "react";
-import ShopCard from "../Shop-cards/ShopCard";
+// import FavoriteCard from "../Favorites/FavoriteCard";
+import Recommendation from "./Recommendation";
+// import ShopCard from "../Shop-cards/ShopCard";
 import "./suggestions.css";
 
 
@@ -14,10 +16,18 @@ const Suggestions = () => {
       <div className="container">
         <h3 className="suggestions-title">Вам может понравиться</h3>
         <div className="shop-cards">
+          <Recommendation/>
+          <Recommendation/>
+          <Recommendation/>
+          <Recommendation/>
+          {/* <FavoriteCard/>
+          <FavoriteCard/>
+          <FavoriteCard/>
+          <FavoriteCard/> */}
+          {/* <ShopCard />
           <ShopCard />
           <ShopCard />
-          <ShopCard />
-          <ShopCard />
+          <ShopCard /> */}
         </div>
         <div className="blog-up">
           <span onClick={scrollTop}>Наверх</span>

@@ -1,7 +1,7 @@
 import React from "react";
 import './blogPage.css';
 import HeaderShopContainer from "../../../header/Header_shopContainer";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import Footer from "../../../footer/Footer"
 import Subscribe from "../../../contents/shop/Subscribe/Subscribe"
 
@@ -15,12 +15,11 @@ const BlogPage = () => {
                 <section className="navigation">
                     <div className="container">
                         <div className="navigation__links">
-                            <Link to="/" className="navigation__links-item">Главная</Link>
+                            <NavLink exact activeClassName="navigation__links-active" to="/" className="navigation__links-item">Главная</NavLink>
                             <img src="/img/arrow_left.svg" alt="Стрелка"/>
-                            <Link to="/blog" className="navigation__links-item">Блог</Link>
+                            <NavLink exact activeClassName="navigation__links-active" to="/blog" className="navigation__links-item">Блог</NavLink>
                             <img src="/img/arrow_left.svg" alt="Стрелка"/>
-                            <Link to="/blog/statia" className="navigation__links-item">5R. Как жить по принципу ноль
-                                отходов</Link>
+                            <NavLink exact activeClassName="navigation__links-active" to="/blog/statia" className="navigation__links-item">5R. Как жить по принципу ноль отходов</NavLink>
                         </div>
                     </div>
                 </section>

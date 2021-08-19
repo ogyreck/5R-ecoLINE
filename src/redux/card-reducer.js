@@ -10,7 +10,7 @@ let initialState = {
     cardsData: [
         {
             type: "home",
-            sale: false, img: "img/cards-in-shop/card1.png",
+            sale: true, img: "img/cards-in-shop/card1.png",
             nameCard: 'Ершик кокосовый для чистки бутылок', cost: "299", id: 1, disable: false, inButton: 'В корзину'
         },
         {
@@ -45,17 +45,17 @@ let initialState = {
         },
         {
             type: "zero",
-            sale: false, img: "img/cards-in-shop/crad7.png",
+            sale: true, img: "img/cards-in-shop/crad7.png",
             nameCard: 'Изделие №1 4 цвета', cost: "210", id: 7, disable: false, inButton: 'В корзину'
         },
         {
             type: "zero",
-            sale: true, img: "img/cards-in-shop/crad8.png",
+            sale: false, img: "img/cards-in-shop/crad8.png",
             nameCard: 'Набор из муслина 3 предмета', cost: "300", id: 8, disable: false, inButton: 'В корзину'
         },
         {
             type: "zero",
-            sale: true, img: "img/cards-in-shop/card9.png",
+            sale: false, img: "img/cards-in-shop/card9.png",
             nameCard: 'Мочалка для тела из люффы', cost: "250", id: 9, disable: false, inButton: 'В корзину'
         },
         {
@@ -65,21 +65,32 @@ let initialState = {
         },
         {
             type: "zero",
-            sale: true, img: "img/cards-in-shop/card11.png",
+            sale: false, img: "img/cards-in-shop/card11.png",
             nameCard: 'Совочек для муки и круп', cost: "240", id: 11, disable: false, inButton: 'В корзину'
         },
     ],
     basket: [],
     basketLenght: 0,
-    sum: 0
+    sum: 0,
+
+    favorites: [],
+    favoritesLength: 0
 }
 
 let productsJson = JSON.parse(localStorage.getItem('basket'))
 let productsLenghtJson = JSON.parse(localStorage.getItem('baskLength'))
 
+// let favoritesJson = JSON.parse(localStorage.getItem('favorites'))
+// let favoritesLengthJson = JSON.parse(localStorage.getItem('favoritesLength'))
+
 
 let productsLenght = productsLenghtJson ? productsLenghtJson : 0;
 let products = productsJson ? productsJson : []
+
+
+// let favorites = favoritesJson ? favoritesJson : []
+// let favoritesLength = favoritesLengthJson ? favoritesLengthJson : 0;
+
 
 let catalog = JSON.parse(localStorage.getItem('cardsData'))
 
@@ -89,6 +100,13 @@ if (products.length) {
     initialState.cardsData = [...catalog]
 
 }
+
+// if (favorites.length) {
+//     initialState.favorites = [...favorites]
+//     initialState.favoritesLength = favoritesLength
+//     initialState.cardsData = [...catalog]
+
+// }
 
 export const cardReducer = (state = initialState, action) => {
     // console.log(state)
@@ -117,7 +135,6 @@ export const cardReducer = (state = initialState, action) => {
                 disable: true,
                 inButton: 'Добавлено',
                 count: 1,
-
             }
 
             stateCopy.basket.push(newCard)

@@ -218,6 +218,14 @@
   width: 490px;
 }
 
+.quiz_sale-btn:hover {
+  background-color: #9E6A6A;
+}
+
+.quiz_sale-btn:active {
+  background-color: #865454;
+} 
+
 .quiz_sale-btn {
   display: inline-block;
   margin-top: 28px;

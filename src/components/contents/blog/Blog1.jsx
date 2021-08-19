@@ -1,14 +1,15 @@
 import React from "react";
 import "./blog1.css";
 import HeaderShopContainer from "../../header/Header_shopContainer";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import BlogCard from "./Blog-crad/BlogCard";
 import Subscribe from "../shop/Subscribe/Subscribe";
 import Footer from "../../footer/Footer";
 
 const Blog = (props) => {
     console.log(props)
-    let blogCrad = props.blogData.map(card => <BlogCard img={card.img}
+    let blogCrad = props.blogData.map(card => <BlogCard key={card.title}
+                                                        img={card.img}
                                                         title={card.title}
                                                         view={card.view}
                                                         data={card.data} />)
@@ -27,9 +28,9 @@ const Blog = (props) => {
                     <section className="navigation">
                         <div className="container">
                             <div className="navigation__links">
-                                <Link to="/" className="navigation__links-item">Главная</Link>
+                                <NavLink exact activeClassName="navigation__links-active" to="/" className="navigation__links-item">Главная</NavLink>
                                 <img src="/img/arrow_left.svg" alt="Стрелка"/>
-                                <Link to="/" className="navigation__links-item">Блог</Link>
+                                <NavLink exact activeClassName="navigation__links-active" to="/blog" className="navigation__links-item">Блог</NavLink>
                             </div>
                         </div>
                     </section>

@@ -1,6 +1,6 @@
 import React from "react";
 import Footer from "../../../footer/Footer";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import CardInfo from "./CardInfo"
 import "./cardProduct.css";
 
@@ -37,15 +37,15 @@ const CardProduct = () => {
         <section className="navigation">
           <div className="container">
             <div className="navigation__links">
-              <Link to="/" className="navigation__links-item">Главная</Link>
+              <NavLink exact to="/" activeClassName="navigation__links-active" className="navigation__links-item">Главная</NavLink>
               <img src="/img/arrow_left.svg" alt="Стрелка" />
-              <Link to="/" className="navigation__links-item">Эко-магазин</Link>
+              <NavLink exact to="/shop" className="navigation__links-item" activeClassName="navigation__links-active">Эко-магазин</NavLink>
               <img src="/img/arrow_left.svg" alt="Стрелка" />
-              <Link to="/" className="navigation__links-item">Каталог</Link>
+              <NavLink exact to="/shop" className="navigation__links-item" activeClassName="navigation__links-active">Каталог</NavLink>
               <img src="/img/arrow_left.svg" alt="Стрелка" />
-              <Link to="/" className="navigation__links-item">Zero Waste</Link>
+              <NavLink exact to="/shop" className="navigation__links-item" activeClassName="navigation__links-active">Zero Waste</NavLink>
               <img src="/img/arrow_left.svg" alt="Стрелка" />
-              <Link to="/" className="navigation__links-item">Стакан складной Stojo</Link>
+              <NavLink exact to="/shop/card" className="navigation__links-item" activeClassName="navigation__links-active">Стакан складной Stojo</NavLink>
             </div>
           </div>
         </section>
