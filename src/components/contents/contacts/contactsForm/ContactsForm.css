@@ -51,13 +51,12 @@
 }
 
 .contacts-button:hover {
-  background-color: #4E5E3B;
-  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .contacts-button:active {
-  background-color: #344025;
-  border: none;
+  background-color: rgba(67, 67, 67, 0.1);
+  border: 1.2px solid rgba(255, 255, 255, 0.5);
 }
 
 .contacts-button {

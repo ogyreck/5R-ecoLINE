@@ -8,14 +8,15 @@ const Catalog = () => {
   SwiperCore.use([Navigation, Pagination]);
   return (
     <section className="catalog">
-      <div className="container">
+      <div className="container catalog_container">
         <h2 className="main-heading catalog__title">Каталог</h2>
         
 
       <Swiper
         slidesPerView={2}
-        spaceBetween={30}
-        // freeMode={true}
+          slidesPerGroup={1}
+        spaceBetween={-55}
+        freeMode={true}
         className="catalogSlider"
         navigation={true}
         loop={true}
@@ -25,9 +26,8 @@ const Catalog = () => {
             <Link to="/shop">
               <img className="slider-catalog__arrow" src="img/catalog/arrow.svg" alt="" />
               <span className="slider-catalog__text">Для дома</span>
-              <span className="slider-catalog__sale">SALE</span>
-              
             </Link>
+              <div className="slide_hover"></div>
             <img className="slider-catalog__img" src="/img/catalog/home.jpg" alt="" />
           </div>
         </SwiperSlide>
@@ -36,7 +36,6 @@ const Catalog = () => {
             <Link to="/shop">
               <p className="slider-catalog__text">Косметика</p>
               <img className="slider-catalog__arrow" src="img/catalog/arrow.svg" alt="" />
-              <span className="slider-catalog__sale">SALE</span>
             </Link>
             <div className="slide_hover"></div>
             <img className="slider-catalog__img" src="/img/catalog/cosmetics.jpg" alt="" />

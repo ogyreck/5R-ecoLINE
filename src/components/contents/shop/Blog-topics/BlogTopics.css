@@ -1,11 +1,12 @@
 .blog__topics {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  /* gap: 20px; */
   justify-content: flex-start;
 }
 
 .blog__topics a{
+  margin-left: 20px;
   width: 175px;
   height: 40px;
   font-weight: 500;
@@ -15,7 +16,6 @@
   border-radius: 48px;
   text-align: center;
   padding-top: 9px;
-
   color: rgba(194, 134, 134, 0.8);
 }
 

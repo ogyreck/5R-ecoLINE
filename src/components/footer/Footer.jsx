@@ -20,15 +20,15 @@ const Footer = () => {
             </div>
             <div className="footer__menu">
               <span>Каталог</span>
-              <Link to="/shop">Для дома</Link>
-              <Link to="/shop">Zero Waste</Link>
-              <Link to="/shop">Косметика</Link>
-              <Link to="/shop">Личная гигиена</Link>
+              <Link to="/shop/home">Для дома</Link>
+              <Link to="/shop/zero-waste">Zero Waste</Link>
+              <Link to="/shop/cosmetics">Косметика</Link>
+              <Link to="/shop/hygiene">Личная гигиена</Link>
             </div>
             <div className="footer__menu">
               <span>Покупателю</span>
-              <Link to="/shop">Доставка и оплата</Link>
-              <Link to="/shop">Сертификаты</Link>
+              <Link to="/">Доставка и оплата</Link>
+              <Link to="/">Сертификаты</Link>
             </div>
             <div className="footer__social">
               <div className="footer__social-links">
