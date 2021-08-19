@@ -14,6 +14,9 @@ const ShopCards = (props) => {
                                                             addBasket={props.addBasket}
                                                             disable={card.disable}
                                                             inButton={card.inButton}
+                                                            addFavorite = {props.addFavorite}
+                                                            fevorClass = {card.favoriteClass}
+                                                            favorDis = {card.favor}
                                                             type={card.type}
     />)
 

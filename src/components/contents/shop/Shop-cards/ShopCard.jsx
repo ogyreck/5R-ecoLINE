@@ -18,15 +18,31 @@ const NEW = (props) => {
 
 const ShopCard = (props) => {
 
-    let addFavorite = () =>{
-        console.log('любимое')
-    }
+
+
 
     let addBasket = () => {
         props.addBasket(props.id)
     }
+    let addFavorite = () =>{
+        props.addFavorite(props.id,props.favorId)
 
-    console.log(props.type)
+
+    }
+    let delFavorite = () =>{
+        props.delFavorite()
+    }
+
+    let prover = () =>{
+        if (props.fevorClass === 'shop_favorite'){
+            return addFavorite
+        }else{
+            return delFavorite
+        }
+    }
+
+
+    console.log(props.favorDis)
     return (
         
             <div className="shop-card__item">
@@ -42,17 +58,31 @@ const ShopCard = (props) => {
                         <button className="shop-card-button"  disabled={props.disable} onClick={addBasket}>{props.inButton}</button>
                     </div>
                 </div>
-                <div className="shop-card__icons">
-                    {/*<Link to="/shop/favorites">*/}
-                    <input type='checkbox' className='custom-checkbox' id="happy" name="happy" value="yes"/>
-                    <label  for="happy">
-                    {/*    <svg className='shop_favorite' width="23" height="20" onClick={addFavorite}>*/}
-                    {/*    <use xlinkHref="/sprite.svg#favorites"></use>*/}
-                    {/*</svg>*/}
-                    </label>
 
-                    {/*</Link>*/}
-                </div>
+                {/*<input type="checkbox" class="checkbox_img" id="svg" name=""/>*/}
+                {/*<label for="svg" className="checkbox_img-label">*/}
+                {/*    <div className="shop-card__icons">*/}
+                {/*        <svg className='shop_favorite' width="23" height="20" >*/}
+                {/*            <use xlinkHref="/sprite.svg#favorites"></use>*/}
+                {/*        </svg>*/}
+                {/*    </div>*/}
+                {/*</label>*/}
+                <button className="shop-card__icons"  onClick={prover} disabled={props.favorDis}>
+                    <div className="shop-card__icons shop-card__icons-svg">
+                           <svg className={props.fevorClass} width="23" height="20" >
+
+                             <use xlinkHref="/sprite.svg#favorites"></use>*/}
+                        </svg>
+                       </div>
+                </button>
+                
+                {/* <div className="shop-card__icons">
+                    <Link to="/shop/favorites">
+                    <svg className='shop_favorite' width="23" height="20" >
+                        <use xlinkHref="/sprite.svg#favorites"></use>
+                    </svg>
+                    </Link>
+                </div> */}
                 <NEW sale={props.new}/>
                 <div className='id'>{props.id}</div>
             </div>

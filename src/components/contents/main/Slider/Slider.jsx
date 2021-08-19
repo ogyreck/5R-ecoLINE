@@ -20,6 +20,7 @@ const Slider = () => {
                     navigation={true}
                     pagination={true}
                     // slidesPerView={1}
+                    loop={true}
                     className="mainSlider"
                 >
                     <SwiperSlide>
@@ -34,7 +35,7 @@ const Slider = () => {
                             <div className="slide__info">
                                 <p className="slide__text">Стакан складной Stojo</p>
                                 <p className="slide__price">1 200 ₽</p>
-                                <Link to="/shop" className="slide__btn">Смотреть</Link>
+                                <Link to="/shop/card" className="slide__btn">Смотреть</Link>
                             </div>
                         </div>
                     </SwiperSlide>
@@ -50,7 +51,7 @@ const Slider = () => {
                             <div className="slide__info">
                                 <p className="slide__text">Чехол для телефона <br/>“No plastic it’s fantastic”</p>
                                 <p className="slide__price">1 390 ₽</p>
-                                <Link to="/shop" className="slide__btn">Смотреть</Link>
+                                <Link to="/shop/card" className="slide__btn">Смотреть</Link>
                             </div>
                         </div>
                     </SwiperSlide>
@@ -66,7 +67,7 @@ const Slider = () => {
                             <div className="slide__info">
                                 <p className="slide__text">Дезодорант “Chom Chom”</p>
                                 <p className="slide__price">1 100 ₽</p>
-                                <Link to="/shop" className="slide__btn">Смотреть</Link>
+                                <Link to="/shop/card" className="slide__btn">Смотреть</Link>
                             </div>
                         </div>
                     </SwiperSlide>

@@ -10,7 +10,7 @@ const Animation = () => {
       <section className="animation">
          <div className="animation__image-first">
             <img className="image__bad animation__image" src={Bad} alt="" />
-            <p className="animation__text">Сделай правильный выбор ради лучшего будущего</p>
+            <p className="animation__text">Сделай правильный выбор<br/> ради лучшего будущего</p>
             <img className="animation__text animation__arrow" src={Arrow} alt="" />
          </div>
          <div className="animation__image-second">

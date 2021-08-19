@@ -4,6 +4,8 @@ const ADD_CARD = "CARD-ADD"
 const DELETE_CARD = 'DELETE-CARD'
 const COUNT_PLUS_BASKET = 'COUNT_PLUS_BASKET'
 const COUNT_MINESE_BASKET = "COUNT_MINESE_BASKET"
+const ADD_FAVORITE = 'ADD_FAVORITE'
+const DEL_FAVORITE = "DEL_FAVORITE"
 
 let initialState = {
 
@@ -11,22 +13,26 @@ let initialState = {
         {
             type: "home",
             sale: false, img: "img/cards-in-shop/card1.png",
-            nameCard: 'Ершик кокосовый для чистки бутылок', cost: "299", id: 1, disable: false, inButton: 'В корзину'
+            nameCard: 'Ершик кокосовый для чистки бутылок', cost: "299", id: 1, disable: false, inButton: 'В корзину',
+            favoriteClass: "shop_favorite", favor: false
         },
         {
             type: "home",
             sale: true, img: "img/cards-in-shop/card2.png",
-            nameCard: 'Щетка для посуды с ручкой', cost: "440", id: 2, disable: false, inButton: 'В корзину'
+            nameCard: 'Щетка для посуды с ручкой', cost: "440", id: 2, disable: false, inButton: 'В корзину',
+            favoriteClass: "shop_favorite", favor: false
         },
         {
             type: "home",
             sale: true, img: "img/cards-in-shop/card3.png",
-            nameCard: 'Миска для салата из массива бука', cost: "150", id: 3, disable: false, inButton: 'В корзину'
+            nameCard: 'Миска для салата из массива бука', cost: "150", id: 3, disable: false, inButton: 'В корзину',
+            favoriteClass: "shop_favorite", favor: false,
         },
         {
             type: "home",
             sale: true, img: "img/cards-in-shop/card4.png",
-            nameCard: 'Скалка из цельного массива бука', cost: "440", id: 4, disable: false, inButton: 'В корзину'
+            nameCard: 'Скалка из цельного массива бука', cost: "440", id: 4, disable: false, inButton: 'В корзину',
+            favoriteClass: "shop_favorite", favor: false
         },
         {
             type: "home",
@@ -36,40 +42,49 @@ let initialState = {
             cost: "690",
             id: 5,
             disable: false,
-            inButton: 'В корзину'
+            inButton: 'В корзину',
+            favoriteClass: "shop_favorite", favor: false
         },
         {
             type: "zero",
             sale: true, img: "img/cards-in-shop/card6.png",
-            nameCard: 'Фартук из необеленного хлопка', cost: "500", id: 6, disable: false, inButton: 'В корзину'
+            nameCard: 'Фартук из необеленного хлопка', cost: "500", id: 6, disable: false, inButton: 'В корзину',
+            favoriteClass: "shop_favorite", favor: false
+
         },
         {
             type: "zero",
             sale: false, img: "img/cards-in-shop/crad7.png",
-            nameCard: 'Изделие №1 4 цвета', cost: "210", id: 7, disable: false, inButton: 'В корзину'
+            nameCard: 'Изделие №1 4 цвета', cost: "210", id: 7, disable: false, inButton: 'В корзину',
+            favoriteClass: "shop_favorite", favor: false
         },
         {
             type: "zero",
             sale: true, img: "img/cards-in-shop/crad8.png",
-            nameCard: 'Набор из муслина 3 предмета', cost: "300", id: 8, disable: false, inButton: 'В корзину'
+            nameCard: 'Набор из муслина 3 предмета', cost: "300", id: 8, disable: false, inButton: 'В корзину',
+            favoriteClass: "shop_favorite", favor: false
         },
         {
             type: "zero",
             sale: true, img: "img/cards-in-shop/card9.png",
-            nameCard: 'Мочалка для тела из люффы', cost: "250", id: 9, disable: false, inButton: 'В корзину'
+            nameCard: 'Мочалка для тела из люффы', cost: "250", id: 9, disable: false, inButton: 'В корзину',
+            favoriteClass: "shop_favorite", favor: false
         },
         {
             type: "zero",
             sale: false, img: "img/cards-in-shop/card10.png",
-            nameCard: 'Губка из целлюлозы и люффы', cost: "270", id: 10, disable: false, inButton: 'В корзину'
+            nameCard: 'Губка из целлюлозы и люффы', cost: "270", id: 10, disable: false, inButton: 'В корзину',
+            favoriteClass: "shop_favorite", favor: false
         },
         {
             type: "zero",
             sale: true, img: "img/cards-in-shop/card11.png",
-            nameCard: 'Совочек для муки и круп', cost: "240", id: 11, disable: false, inButton: 'В корзину'
+            nameCard: 'Совочек для муки и круп', cost: "240", id: 11, disable: false, inButton: 'В корзину',
+            favoriteClass: "shop_favorite", favor: false
         },
     ],
     basket: [],
+    favorite: [],
     basketLenght: 0,
     sum: 0
 }
@@ -117,9 +132,24 @@ export const cardReducer = (state = initialState, action) => {
                 disable: true,
                 inButton: 'Добавлено',
                 count: 1,
+                favoriteClass: stateCopy.cardsData[action.idCard - 1].favoriteClass,
+                favor: stateCopy.cardsData[action.idCard - 1].favor
 
             }
+            let newCardFavor = stateCopy.favorite[action.idCard - 1] = {
+                sale: stateCopy.favorite[action.idCard - 1].sale,
+                img: stateCopy.favorite[action.idCard - 1].img,
+                nameCard: stateCopy.favorite[action.idCard - 1].nameCard,
+                cost: stateCopy.favorite[action.idCard - 1].cost,
+                id: action.idCard,
+                disable: true,
+                inButton: 'Добавлено',
+                count: 1,
+                favoriteClass: stateCopy.favorite[action.idCard - 1].favoriteClass,
+                favor: stateCopy.favorite[action.idCard - 1].favor
 
+            }
+            stateCopy.favorite[action.idCard-1] = {...newCardFavor}
             stateCopy.basket.push(newCard)
 
 
@@ -134,8 +164,10 @@ export const cardReducer = (state = initialState, action) => {
 
             let bask = [...stateCopy.basket]
             let card = [...stateCopy.cardsData]
+            let favor = [...stateCopy.favorite]
             let newBask;
             let newCard;
+            let newFavor;
             let deletedCard = bask[action.idCardDelete]
             newBask = remove(bask, action.idCardDelete)
 
@@ -150,8 +182,20 @@ export const cardReducer = (state = initialState, action) => {
                 }
                 return item
             })
+            newFavor = favor.map((item) => {
+
+                if (item.id === deletedCard.id) {
+                    return {
+                        ...item,
+                        disable: false,
+                        inButton: 'В корзину'
+                    }
+                }
+                return item
+            })
             stateCopy.basket = [...newBask]
             stateCopy.cardsData = [...newCard]
+            stateCopy.favorite = [...newFavor]
             stateCopy.basketLenght = stateCopy.basket.length
              localStorage.setItem('basket', JSON.stringify([...newBask]))
 
@@ -175,6 +219,32 @@ export const cardReducer = (state = initialState, action) => {
 
             stateCopy.basket = bask2
             return stateCopy
+        case ADD_FAVORITE:
+
+
+            stateCopy.cardsData[action.idCard-1].favoriteClass = 'shop_favorite_active'
+            stateCopy.cardsData[action.idCard-1].favor= true
+
+
+                stateCopy.favorite.push({
+                    ...stateCopy.cardsData[action.idCard - 1],
+                    favoriteClass: 'shop_favorite_active',
+                    favor: true
+
+                })
+
+                return stateCopy
+
+
+        case DEL_FAVORITE:
+            let card = [...stateCopy.cardsData]
+            let favor = [...stateCopy.favorite];
+            stateCopy.cardsData[action.idCard-1].favoriteClass = 'shop_favorite'
+            stateCopy.cardsData[action.idCard-1].favor= false
+            remove(favor, action.idInFavor)
+            stateCopy.favorite = [...favor]
+            return stateCopy
+
 
         default:
             return state;
@@ -215,6 +285,20 @@ export const countMinuseBasketAction = (idCardValue) => {
     return {
         type: COUNT_MINESE_BASKET,
         idCard: idCardValue,
+    }
+}
+export const addFavorite = (idCardValue, idInFavor) => {
+    return {
+        type: ADD_FAVORITE,
+        idCard: idCardValue,
+        idInFavor: idInFavor
+    }
+}
+
+export const delFavorite = ( idInFavor) => {
+    return {
+        type: DEL_FAVORITE,
+        idInFavor: idInFavor
     }
 }
 

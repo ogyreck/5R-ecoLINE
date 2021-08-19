@@ -19,6 +19,7 @@ import Cosmetics from "./components/contents/shop/Catalogs/Cosmetics";
 import Hygiene from "./components/contents/shop/Catalogs/Hygiene";
 import ZeroWaste from "./components/contents/shop/Catalogs/ZeroWaste";
 import BlogContainer from "./components/contents/blog/BlogContainer";
+import FavoritesContainer from "./components/contents/shop/Favorites/FavoritesContainer";
 
 const App = (props) => {
     // debugger;
@@ -35,7 +36,7 @@ const App = (props) => {
                 <Route exact path='/shop/basket' render={()=><BasketContainer />}/>
                 <Route exact path='/shop/card' component={CardProduct}/>
                 <Route exact path='/thanks' component={ThankYou}/>
-                <Route exact path='/shop/favorites' component={Favorites}/>
+                <Route exact path='/shop/favorites' render={()=><FavoritesContainer />}/>
                 <Route exact path='/contacts' component={Contacts}/>
                 <Route exact path='/blog/statia' render={()=><BlogPage />}/>
             </ScrollToTop>

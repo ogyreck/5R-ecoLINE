@@ -28,8 +28,8 @@ const Footer = () => {
             </div>
             <div className="footer__menu">
               <span>Покупателю</span>
-              <Link to="/shop">Оплата и доставка</Link>
-              <Link to="/shop">FAQ</Link>
+              <Link to="/shop">Доставка и оплата</Link>
+              {/* <Link to="/shop">FAQ</Link> */}
               <Link to="/shop">Сертификаты</Link>
             </div>
             <div className="footer__social">

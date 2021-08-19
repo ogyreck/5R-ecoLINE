@@ -105,11 +105,19 @@
   text-align: center;
 }
 
+.form-button:hover {
+  background-color: #4E5E3B;
+}
+
+.form-button:active {
+  background-color: #344025;
+}
+
 .form-button {
   outline: none;
   border: none;
   padding: 16px 38px;
-  background: #387732;
+  background: #6E8254;
   border-radius: 4px;
   font-weight: 500;
   font-size: 18px;

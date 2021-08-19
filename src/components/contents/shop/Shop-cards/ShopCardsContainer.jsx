@@ -2,7 +2,7 @@
 import "./ShopCards.css";
 import {connect} from "react-redux";
 import ShopCards from "./ShopCards";
-import {addBasketAction} from "../../../../redux/card-reducer";
+import {addBasketAction, addFavorite} from "../../../../redux/card-reducer";
 
 
 
@@ -15,6 +15,9 @@ let mapDispatchToProps = (dispatch) => {
     return{
         addBasket: (id) =>{
             dispatch(addBasketAction(id))
+        },
+        addFavorite: (id) =>{
+            dispatch(addFavorite(id))
         }
 
     }
