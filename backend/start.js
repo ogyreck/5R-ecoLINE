@@ -3,12 +3,6 @@ import mongoose from 'mongoose'
 import Post from './Post.js'
 import db from './db.js'
 
-//import path from 'path';
-//import { fileURLToPath } from 'url';
-//
-//const __filename = fileURLToPath(import.meta.url);
-//const __dirname = path.dirname(__filename);
-
 const PORT = process.env.PORT || 5000;
 
 const app = express()
@@ -25,6 +19,8 @@ app.post('/shop/add', async (req, res) => {
 })
 
 app.get('/shop/get', async (req, res) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Methods", "PUT, GET, POST, DELETE, OPTIONS");
     Post.find(function(err, search){
         if(err) return console.log(err);
         res.send(search)

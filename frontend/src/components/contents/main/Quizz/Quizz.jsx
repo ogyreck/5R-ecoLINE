@@ -72,6 +72,18 @@ class Quizz extends Component {
       })
     }
 
+    // if (score >= 12) {
+    //   this.setState({
+    //     result: `Неплохо! Вы на верном пути, но можно еще немного постараться!`
+    //   })
+    // }
+    // if (score >= 16) {
+    //   this.setState({
+    //     result: "Супер! Ваш образ жизни экологичен! Продолжайте в том же духе!"
+    //   })
+    // }
+    // console.log(score);
+
     this.setState({
       currentIndex: this.state.currentIndex + 1
     })
@@ -111,8 +123,6 @@ class Quizz extends Component {
   finishHandler = () => {
     const { userAnswer, points3, points2, points0, score } = this.state
 
-    
-
     if (userAnswer === points3) {
       this.setState({
         score: score + 3
@@ -128,17 +138,17 @@ class Quizz extends Component {
       })
     }
 
-    if (score >= 12) {
+    if (score >= 9) {
       this.setState({
         result: `Неплохо! Вы на верном пути, но можно еще немного постараться!`
       })
     }
-    if (score >= 16) {
+    if (score >= 13) {
       this.setState({
         result: "Супер! Ваш образ жизни экологичен! Продолжайте в том же духе!"
       })
     }
-    console.log(this.state.score);
+    console.log(score);
 
     if (this.state.currentIndex === QuizData.length - 1) {
       this.setState({
@@ -151,7 +161,7 @@ class Quizz extends Component {
 
 
   render() {
-    const { question, options, currentIndex, userAnswer, quizEnd, quizStart, img } = this.state //get the current state
+    const { question, options, currentIndex, userAnswer, quizEnd, quizStart, img, score } = this.state //get the current state
     if (quizEnd) {
       return (
         <div className="quiz">
@@ -161,7 +171,7 @@ class Quizz extends Component {
             <div className="quiz_result">
               <div className="container">
                 <span className="quiz_result-text">Ваш результат:</span>
-                <span className="quiz_score">{this.state.score} из 18 баллов!</span>
+                <span className="quiz_score">{score} из 18 баллов!</span>
                 <p className="quiz_score-text">{this.state.result}</p>
                 <img src="img/quiz/arrow_long.svg" alt="" />
               </div>

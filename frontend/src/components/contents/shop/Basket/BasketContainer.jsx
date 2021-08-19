@@ -15,7 +15,7 @@ let mapStateToProps = (state) => {
 
 
     return{
-        basket: state.basket
+        basket: state.cardReducer.basket
     }
 }
 let mapDispatchToProps = (dispatch) =>{

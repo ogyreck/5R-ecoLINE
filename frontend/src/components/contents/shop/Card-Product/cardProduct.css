@@ -9,8 +9,9 @@
 }
 
 .navigation{
-  padding-top: 153px;
+  padding-top: 68px;
 }
+
 
 .navigation__links-item{
   font-size: 16px;
@@ -27,17 +28,26 @@
   padding-left: 0;
 }
 
+.navigation__links-active{
+  color: #585858;
+}
+
 .card{
-  padding-top: 80px;
+  padding-top: 40px;
 }
 .card__img{
+  border-radius: 4px;
   background-color: #fff;
   filter: drop-shadow(2px 2px 12px rgba(67, 41, 41, 0.1));
 }
 
+.cardSlide .swiper-pagination-bullet img{
+  border-radius: 4px;
+}
 .cardSlide .swiper-button-prev,
 .cardSlide .swiper-button-next {
-  color: #C28686;
+  color: #878787;
+  margin-top: -65px;
 }
 
 .card__wrapper {
@@ -58,6 +68,7 @@
   padding-top: 80px;
 }
 .card__name{
+  font-weight: 500;
   font-size: 32px;
   line-height: 110%;
   color: #6B4040;

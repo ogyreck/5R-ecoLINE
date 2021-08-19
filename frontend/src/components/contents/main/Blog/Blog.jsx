@@ -1,8 +1,13 @@
 import React from "react"
 import { Link } from "react-router-dom";
+// import ScrollToTop from "../../../../ScrollToTop";
 import "./blog.css"
 
 const Blog = () => {
+
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <section className="blog">
@@ -10,16 +15,6 @@ const Blog = () => {
         <div className="container">
 
           <h2 className="blog__title">Блог</h2>
-
-          {/* <div className="blog__topics">
-            <button className="blog__topic-active">Популярные</button>
-            <button>Ресурсы</button>
-            <button>Отдых</button>
-            <button>Климат</button>
-            <button>Экотехнологии</button>
-            <button>Проблемы</button>
-            <button>Пути решения</button>
-          </div> */}
 
           <div className="blog__cards">
 
@@ -36,11 +31,16 @@ const Blog = () => {
                   </div>
                   <span className="card__info-date">05.07.2021</span>
                 </div>
+
+                <div className='Hover-blog'>
+                  <Link to='/blog/statia'>
+                    <button className='blog-btn'>Читать</button>
+                  </Link>
+                </div>
               </div>
 
               {/* <div className="blog__card-hover">
-                <span className="card__title-hover">Знали ли вы, что мы можем получать тепло и электричество из биологических отходов?</span>
-                <button className="card__btn-hover">Читать</button>
+                <Link to="/blog" className="card__btn-hover">Читать</Link>
               </div> */}
 
             </div>
@@ -52,16 +52,20 @@ const Blog = () => {
                 <div className="card__info">
                   <div className="card__info-viewers">
                     <img src="/img/eye.svg" alt="" />
-                    <span>304</span>
+                    <span>450</span>
                   </div>
-                  <span className="card__info-date">05.07.2021</span>
+                  <span className="card__info-date">05.08.2021</span>
+                </div>
+                <div className='Hover-blog'>
+                  <Link to='/blog/statia'>
+                    <button className='blog-btn'>Читать</button>
+                  </Link>
                 </div>
               </div>
 
               {/* <div className="blog__card-hover">
-                <span className="card__title-hover">Знали ли вы, что мы можем получать тепло и электричество из биологических отходов?</span>
-                <button className="card__btn-hover">Читать</button>
-              </div>*/}
+                <Link to="/blog" className="card__btn-hover">Читать</Link>
+              </div> */}
             </div> 
 
             <div className="blog__card-item">
@@ -71,25 +75,30 @@ const Blog = () => {
                 <div className="card__info">
                   <div className="card__info-viewers">
                     <img src="/img/eye.svg" alt="" />
-                    <span>304</span>
+                    <span>250</span>
                   </div>
-                  <span className="card__info-date">05.07.2021</span>
+                  <span className="card__info-date">10.08.2021</span>
+                </div>
+                <div className='Hover-blog'>
+                  <Link to='/blog/statia'>
+                    <button className='blog-btn'>Читать</button>
+                  </Link>
                 </div>
               </div>
 
               {/* <div className="blog__card-hover">
-                <span className="card__title-hover">Знали ли вы, что мы можем получать тепло и электричество из биологических отходов?</span>
-                <button className="card__btn-hover">Читать</button>
+                <Link to="/blog" className="card__btn-hover">Читать</Link>
               </div> */}
             </div>
 
           </div>
           <div className="blog__btns">
-            <Link to="/shop" className="blog__btn-catalog">В каталог</Link>
-            <Link to="/blog" className="blog__btn-more">Читать дальше</Link>
+            <Link to="/shop" className="blog__btn-catalog">Читать больше</Link>
+            {/* <Link to="/blog" className="blog__btn-more">Читать дальше</Link> */}
           </div>
+          
           <div className="blog-up">
-            <span>Наверх</span>
+          <span onClick={scrollTop}>Наверх</span>
             <img src="img/blog/arrow.svg" alt="" />
           </div>
         </div>

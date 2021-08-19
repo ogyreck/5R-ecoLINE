@@ -1,0 +1,143 @@
+
+.animation {
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  margin-top: -9px;
+  /* width: 1920px; */
+}
+
+/* main {
+  overflow-x: hidden;
+  overflow-y: hidden;
+} */
+
+.animation__image-first {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  transition: width 2s, z-index 2s;
+}
+
+.animation__image-second {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  transition: width 2s, z-index 2s;
+}
+
+.animation__image {
+  height: 800px;
+  width: 100%;
+}
+
+.image__bad {
+  object-fit: cover;
+}
+
+.image__good {
+  object-fit: cover;
+}
+
+.animation__image-first:hover {
+  width: 70%;
+  z-index: 100;
+  transition: width 2s;
+}
+
+.animation__image-second:hover {
+  width: 70%;
+  z-index: 100;
+  transition: width 2s;
+}
+
+.animation__text {
+  padding-left: 25px;
+  position: absolute;
+  top: 358px;
+  right: 100px;
+  opacity: 0;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 52px;
+  color: #ffffff;
+  animation: textEnd 0.4s forwards;
+}
+
+
+.animation__text-second {
+  padding-left: 0;
+  left: 170px;
+  /* white-space: wrap; */
+}
+
+.animation__image-first:hover .animation__text {
+  opacity: 1;
+  animation: textStart 1s forwards;
+}
+
+.animation__image-second:hover .animation__text {
+  opacity: 1;
+  animation: textStart 1s forwards;
+}
+
+@keyframes textStart {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes textEnd {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.animation__arrow {
+  width: 270px;
+  height: 18px;
+  position: absolute;
+  top: 60%;
+  right: 100px;
+}
+
+.animation__button:hover {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.animation__button:active {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.animation__button {
+  padding: 0;
+  position: absolute;
+  top: 60%;
+  left: 170px;
+  border: 1.2px solid rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 167px;
+  height: 56px;
+  color: #ffffff;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}

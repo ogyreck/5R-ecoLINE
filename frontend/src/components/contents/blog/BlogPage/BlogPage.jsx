@@ -1,7 +1,7 @@
 import React from "react";
 import './blogPage.css';
 import HeaderShopContainer from "../../../header/Header_shopContainer";
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import Footer from "../../../footer/Footer"
 import Subscribe from "../../../contents/shop/Subscribe/Subscribe"
 
@@ -10,18 +10,16 @@ const BlogPage = () => {
     return (
         <>
             <HeaderShopContainer/>
+            <main>
             <div className="card__bg">
                 <section className="navigation">
                     <div className="container">
                         <div className="navigation__links">
-                            <Link to="/" className="navigation__links-item">Главная</Link>
+                            <NavLink exact activeClassName="navigation__links-active" to="/" className="navigation__links-item">Главная</NavLink>
                             <img src="/img/arrow_left.svg" alt="Стрелка"/>
-                            <Link to="/blog" className="navigation__links-item">Блог</Link>
+                            <NavLink exact activeClassName="navigation__links-active" to="/blog" className="navigation__links-item">Блог</NavLink>
                             <img src="/img/arrow_left.svg" alt="Стрелка"/>
-                            <Link to="/blog/statia" className="navigation__links-item">5R. Как жить по принципу ноль
-                                отходов</Link>
-
-
+                            <NavLink exact activeClassName="navigation__links-active" to="/blog/statia" className="navigation__links-item">5R. Как жить по принципу ноль отходов</NavLink>
                         </div>
                     </div>
                 </section>
@@ -54,7 +52,7 @@ const BlogPage = () => {
                 </div>
             </section>
             <section className='main-text-blog'>
-                <div className='container'>
+                <div className='container blog-container'>
                     <div className="citata-blog">
                         <p>Ноль отходов назвали самой популярной экологической концепцией среди россиян.
                             Раньше этот принцип пытались применить только к производству, и мало кто верил, что обычные современные люди могут обойтись в быту вообще без мусора.</p>
@@ -126,6 +124,7 @@ const BlogPage = () => {
                 </div>
             </section>
             <Subscribe/>
+            </main>
             <Footer/>
         </>
     )

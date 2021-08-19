@@ -4,8 +4,12 @@
   /* background-color: transparent; */
   background-color: #fff;
   /* background-color: rgba(255, 255, 255, 0.9); */
-  z-index: 31;
+  z-index: 101;
   border-bottom: 1px solid#DFDFDF;
+}
+
+.main__wrapper{
+  padding-left: 100px;
 }
 
 .header{
@@ -74,6 +78,7 @@ nav ul{
 
 .nav__link-shop img {
   margin-left: 10px;
+  padding-bottom: 2px;
 }
 
 .nav__link-items{
@@ -83,7 +88,8 @@ nav ul{
   border-radius: 0px 0px 4px 4px;
   position: absolute;
   margin-top: 10px;
-  padding-left: 5px;
+  padding-left: 16px;
+  padding-right: 16px;
   left: 0;
   top: 100%;
   z-index: 5;
@@ -121,6 +127,7 @@ nav ul{
 .header-favorites,
 .header-basket {
   cursor: pointer;
+  opacity: 1;
 }
 .header-favorites,
 .header-basket {
@@ -132,18 +139,6 @@ nav ul{
 }
 
 .goods__number{
-  /* color: #E0E0E0;
-  border-radius: 50%;
-  padding: 2px 7px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 14px;
-  background-color: #25733B;
-  margin-bottom: 10px;
-  position: absolute;
-  margin-top: -10px;
-  margin-left: -10px; */
-
   display: flex;
   width: 23px;
   color: #E0E0E0;
@@ -152,7 +147,7 @@ nav ul{
   font-weight: 500;
   font-size: 14px;
   line-height: 14px;
-  background-color: #25733B;
+  background-color: #6E8254;
   margin-bottom: 10px;
   position: absolute;
   margin-top: -37px;
@@ -240,13 +235,12 @@ nav ul{
   font-weight: bold;
   font-size: 28px;
   line-height: 130%;
-  color: #283827;
-  /* margin-left: 7px; */
+  color: #343C2A;
 }
 
 .logo__name span{
   /* color: #fff; */
-  color: #387732;
+  color: #6A7A56;
 }
 
 /* для страницы магазина */
@@ -255,11 +249,65 @@ nav ul{
   display: flex;
   flex-direction: row;
   margin-top: 33px;
+  position: relative;
 }
 
-/* .header{ */
-/* background-color: rgba(70, 70, 70, 0.466) !important; */
-/* } */
+.header-input input::placeholder{
+  color:#c9c9c9;
+  font-size: 16px;
+  line-height: 128%;
+}
+
+.header-input input{
+  width: 270px;
+  height: 40px;
+  background-color: rgba(196, 196, 196, 0.2);
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  line-height: 128%;
+  padding-left: 20px;
+  outline: none;
+  position: relative;
+}
+
+.header-input{
+  display: none;
+  position: absolute;
+  right: 0;
+  top: -9px;
+}
+
+.header__input-close {
+  position: absolute;
+  right: 32px;
+  top: 13px;
+  width: 12px;
+  height: 12px;
+  opacity: 0.6;
+}
+
+.header__input-close:hover {
+  opacity: 1;
+}
+
+.header__input-close:before,
+.header__input-close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 12px;
+  width: 2px;
+  background-color: #6A6A6A;
+}
+
+.header__input-close:before {
+  transform: rotate(45deg);
+}
+
+.header__input-close:after {
+  transform: rotate(-45deg);
+}
 
 
 .navigation__search-icon:hover,

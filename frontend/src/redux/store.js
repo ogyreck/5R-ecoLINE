@@ -1,12 +1,13 @@
-import { createStore } from "redux";
+import {combineReducers, createStore} from "redux";
 import {cardReducer} from './card-reducer';
+import {blogReducer} from "./blog-reducer";
 
 
-let reducer = cardReducer
+let reducer = combineReducers({cardReducer, blogReducer})
 
-// s
 
 let store = createStore(reducer)
+console.log(store)
 
 
 

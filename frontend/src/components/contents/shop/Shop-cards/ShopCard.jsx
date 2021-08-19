@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // import favorites from "../../../../img/favorites-icon.svg"
 // import cardImage from "../../../../img/shop-image.png"
 // import { cardAddActionCreator } from "../../../../redux/card-reducer";
+import SvgBtn  from "./SvgBtn";
 
 const NEW = (props) => {
     if (props.sale) {
@@ -22,7 +23,17 @@ const ShopCard = (props) => {
         props.addBasket(props.id)
     }
 
-    console.log(props.type)
+    // let btn = React.createRef();
+    // let svg = React.createRef();
+
+    // const favorites = (e) => {
+    //     btn.current.style.opacity = "1";
+    //     svg.current.style.fill = "#C28686";
+    //     svg.current.style.stroke = "#C28686";
+    //     // e.target
+    // }
+
+    // console.log(props.type)
     return (
         
             <div className="shop-card__item">
@@ -38,13 +49,14 @@ const ShopCard = (props) => {
                         <button className="shop-card-button"  disabled={props.disable} onClick={addBasket}>{props.inButton}</button>
                     </div>
                 </div>
-                <div className="shop-card__icons">
-                    <Link to="/shop/favorites">
-                        <svg className='shop_favorite' width="23" height="20" >
-                            <use xlinkHref="/sprite.svg#favorites"></use>
-                        </svg>
-                    </Link>
-                </div>
+                <SvgBtn/>
+
+                {/* <button onClick={favorites} ref={btn} className="shop-card__icons">
+                    <svg className='shop_favorite' ref={svg} width="23" height="20" >
+                        <use xlinkHref="/sprite.svg#favorites"></use>
+                    </svg>
+                </button> */}
+
                 <NEW sale={props.new}/>
                 <div className='id'>{props.id}</div>
             </div>

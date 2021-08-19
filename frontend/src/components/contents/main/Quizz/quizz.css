@@ -83,7 +83,8 @@
 }
 
 .quiz_selected {
-  background-color: #7BB970;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.9);
 }
 
 .quiz_options {
@@ -201,6 +202,7 @@
   /* background-size: cover; */
   background-repeat: no-repeat;
   background-position: center center;
+  /* background-position: -70% 0; */
 }
 
 .quiz_sale {
@@ -215,6 +217,14 @@
   color: #C28686;
   width: 490px;
 }
+
+.quiz_sale-btn:hover {
+  background-color: #9E6A6A;
+}
+
+.quiz_sale-btn:active {
+  background-color: #865454;
+} 
 
 .quiz_sale-btn {
   display: inline-block;

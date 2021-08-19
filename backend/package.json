@@ -7,8 +7,8 @@
         "mongoose": "^5.13.5"
     },
     "scripts": {
-    "running": "node ./start.js",
-    "dev": "nodemon ./start.js"
+        "start": "node ./start.js",
+        "start1": "nodemon ./start.js"
     },
     "devDependencies": {
         "nodemon": "^2.0.12"

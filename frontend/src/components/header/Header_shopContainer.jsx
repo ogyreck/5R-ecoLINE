@@ -7,7 +7,7 @@ import HeaderShop from "./Header_shop";
 
 let mapStateToProps = (state) =>{
  return{
-   inBasket: state.basketLenght
+   inBasket: state.cardReducer.basketLenght
  }
 }
 let mapDispatchToProps = (dispatch) =>{

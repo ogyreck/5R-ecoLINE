@@ -10,7 +10,7 @@
   background: url("../../../../img/leaves.png");
   color: transparent;
   -webkit-background-clip: text;
-  animation: animate 40s infinite linear;
+  animation: animate 100s infinite linear;
   animation-direction: alternate;
 }
 
@@ -63,7 +63,7 @@
 }
 
 .form__btn {
-  margin-top: -1px;
+  margin-top: 1px;
   margin-left: -1px;
   width: 206px;
   height: 62px;

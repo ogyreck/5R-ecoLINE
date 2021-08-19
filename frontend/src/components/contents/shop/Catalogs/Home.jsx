@@ -1,33 +1,31 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 // import "./shop.css";
 // import ShopCards from "./Shop-cards/ShopCards";
 import BlogTopics from "../Blog-topics/BlogTopics";
 // import ShopDescription from "./Shop-description/ShopDescription";
-// import Discount from "../Discount/Discount";
 // import HeaderShop from "../../header/Header_shop";
 import Footer from "../../../footer/Footer"
 // import ShopCardsContainer from "../Shop-cards/ShopCardsContainer";
 import HeaderShopContainer from "../../../header/Header_shopContainer";
-import ShopCardsContainer from "../Shop-cards/ShopCardsContainer";
 
 const Shop = (props) => {
   return (
     <>
       <HeaderShopContainer />
       <main>
-        {/* <Discount /> */}
         <div className="container-shop">
           {/* <ShopDescription/> */}
           <div className="navigation__links shop-navigation__links">
-            <Link to="/" className="navigation__links-item">Главная</Link>
+            <NavLink exact activeClassName="navigation__links-active" to="/" className="navigation__links-item">Главная</NavLink>
             <img src="/img/arrow_left.svg" alt="Стрелка" />
-            <Link to="/shop" className="navigation__links-item">Каталог</Link>
+            <NavLink exact activeClassName="navigation__links-active" to="/shop" className="navigation__links-item">Каталог</NavLink>
+            <img src="/img/arrow_left.svg" alt="Стрелка" />
+            <NavLink exact activeClassName="navigation__links-active" to="/shop/home" className="navigation__links-item">Для дома</NavLink>
           </div>
-          <h2 className="main-heading main-heading-catalog">Каталог товаров</h2>
+          <h2 className="main-heading main-heading-catalog">Каталог</h2>
           <BlogTopics />
           <h1>Home</h1>
-            <ShopCardsContainer />
         </div>
       </main>
       <Footer/>

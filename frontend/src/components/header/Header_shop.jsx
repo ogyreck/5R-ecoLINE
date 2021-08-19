@@ -2,7 +2,32 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./header.css";
 
+// export default class HeaderShop extends React.Component {}
 const HeaderShop = (props) => {
+
+
+
+    let textInput = React.createRef();
+    let search = React.createRef();
+    let favorites = React.createRef();
+    let basket = React.createRef();
+    
+    
+    function handleClick() {
+        // textInput.current.focus();
+        textInput.current.style.display = "block";
+        search.current.style.opacity = "0";
+        favorites.current.style.opacity = "0";
+        basket.current.style.opacity = "0";
+    }
+
+    function inputClose() {
+        // textInput.current.focus();
+        textInput.current.style.display = "none";
+        search.current.style.opacity = "1";
+        favorites.current.style.opacity = "1";
+        basket.current.style.opacity = "1";
+    }
 
     return (
         <>
@@ -69,25 +94,28 @@ const HeaderShop = (props) => {
                             </ul>
                         </nav>
 
-                        <div className="navigation__shop">
-                            <div className="header-search">
+                        <div  className="navigation__shop">
+                            <div onClick={handleClick} ref={search} className="header-search">
                                 <svg width="21" height="21" className="navigation__search-icon">
                                     <use xlinkHref="/sprite.svg#search"></use>
                                 </svg>
                             </div>
-                            <Link to="/shop/favorites" className="header-favorites">
-                                
+                            <Link to="/shop/favorites" ref={favorites} className="header-favorites">
                                     <svg width="23" height="20" fill="red" className="navigation__favorites-icon">
                                         <use xlinkHref="/sprite.svg#favorites"></use>
                                     </svg>
                                 
                             </Link>
-                            <Link to="/shop/basket" className="header-basket">
+                            <Link to="/shop/basket" ref={basket} className="header-basket">
                                     <svg width="23" height="20" className="navigation__basket-icon">
                                         <use xlinkHref="/sprite.svg#basket"></use>
                                     </svg>
                                     <label className="goods__number" htmlFor="goods__btn">{props.inBasket}</label>
                             </Link>
+                            <div ref={textInput} className="header-input">
+                                <input type="text" placeholder="Поиск" />
+                                <div onClick={inputClose} className="header__input-close"></div>
+                            </div>
 
                         </div>
                     </div>

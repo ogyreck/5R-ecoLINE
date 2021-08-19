@@ -1,7 +1,7 @@
 import "./Contacts.css"
 import Footer from "../../footer/Footer";
 import HeaderShopContainer from "../../header/Header_shopContainer";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import ContactsInfo from "./contactsInfo/ContactsInfo";
 import ContactsForm from "./contactsForm/ContactsForm";
 
@@ -13,9 +13,9 @@ const Contacts = () => {
             <div className="contacts-bg">
                <div className="container">
                   <div className="navigation__links">
-                     <Link to="/" className="navigation__links-item">Главная</Link>
+                     <NavLink exact activeClassName="navigation__links-active" to="/" className="navigation__links-item">Главная</NavLink>
                      <img src="/img/arrow_left.svg" alt="Стрелка" />
-                     <Link to="/contacts" className="navigation__links-item">Контакты</Link>
+                     <NavLink exact activeClassName="navigation__links-active" to="/contacts" className="navigation__links-item">Контакты</NavLink>
                   </div>
                   <h2 className="main-heading main-heading-contacts">Контакты</h2>
                   <ContactsInfo />

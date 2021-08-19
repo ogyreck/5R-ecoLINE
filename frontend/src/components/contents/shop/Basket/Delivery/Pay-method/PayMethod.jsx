@@ -1,7 +1,6 @@
 import DeliveryInfo from "./DeliveryInfo/DeliveryInfo";
 import "./PayMethod.css"
 import PersonalInfo from "./PersonalInfo/PersonalInfo";
-// import { Link } from "react-router-dom";
 
 const PayMethod = () => {
    return (
@@ -25,7 +24,6 @@ const PayMethod = () => {
             Перезвонить мне для уточнения деталей заказа
          </label>
          <div className="button-container">
-
             <input type="submit" value="Оформить заказ" className="form-button"/>
          </div>
       </>

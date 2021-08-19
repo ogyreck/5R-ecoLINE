@@ -5,12 +5,15 @@
     line-height: 148%;
     color: #6E8254;
 }
+.blog__topics-blog {
+    padding-top: 38px;
+}
 .blog__topics-blog button{
     color: #6E8254;
-    border: 1px solid #6E8254;
+    border: 1px solid rgba(106, 122, 86, 0.5);
 }
 .blog__topic-active1 {
-    background: #6E8254 !important;
+    background-color: #6E8254 !important;
     color: #fff !important;
     font-weight: 500 !important;
 }
@@ -20,3 +23,17 @@
     gap: 30px;
 }
 
+.blog-scroll-up span{
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 128%;
+    color: rgba(194, 134, 134, 0.8);
+    padding-right: 10px;
+}
+
+.blog-scroll-up{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 48px;
+}

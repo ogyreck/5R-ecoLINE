@@ -1,13 +1,5 @@
 import mongoose from 'mongoose'
 
-//const Post = new mongoose.Schema({
-//    name: {type: String, required: true},
-//    price: {type: Number, required: true, min: 0},
-//    img: {type: String}
-//})
-//
-//export default mongoose.model('Post', Post)
-
 const scheme = new mongoose.Schema({
     type: {type: String, required: true},
     sale: {type: Boolean, required: true},

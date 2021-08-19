@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./shop.css";
 // import ShopCards from "./Shop-cards/ShopCards";
 import BlogTopics from "./Blog-topics/BlogTopics";
@@ -18,11 +18,11 @@ const Shop = (props) => {
         <div className="container-shop">
           {/* <ShopDescription/> */}
           <div className="navigation__links shop-navigation__links">
-            <Link to="/" className="navigation__links-item">Главная</Link>
+            <NavLink exact activeClassName="navigation__links-active" to="/" className="navigation__links-item">Главная</NavLink>
             <img src="/img/arrow_left.svg" alt="Стрелка" />
-            <Link to="/shop" className="navigation__links-item">Каталог</Link>
+            <NavLink exact activeClassName="navigation__links-active" to="/shop" className="navigation__links-item">Каталог</NavLink>
             </div>
-          <h2 className="main-heading main-heading-catalog">Каталог товаров</h2>
+          <h2 className="main-heading main-heading-catalog">Каталог</h2>
           <BlogTopics />
           <ShopCardsContainer />
         </div>
