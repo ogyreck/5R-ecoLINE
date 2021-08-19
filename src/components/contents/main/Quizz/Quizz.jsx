@@ -152,7 +152,7 @@ class Quizz extends Component {
     }
 
     return (
-      <div className="quiz">
+        <section className="quiz">
           {
             quizStart 
             ?
@@ -192,7 +192,7 @@ class Quizz extends Component {
               </div>
             </div>
           }
-      </div>
+      </section>
     )
   }
 }

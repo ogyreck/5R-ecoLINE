@@ -4,6 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import Footer from "../../../footer/Footer";
 import HeaderShopContainer from "../../../header/Header_shopContainer";
 import FavoriteCard from "./FavoriteCard";
+import Suggestions from "../Card-Product/Suggestions";
 
 const Favorites = () => {
    return (
@@ -38,6 +39,7 @@ const Favorites = () => {
                </div>
             </div>
          </section>
+         <Suggestions/>
          <Footer />
       </>
    );

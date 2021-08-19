@@ -1,16 +1,13 @@
 import React from 'react';
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Redirect, Route } from "react-router-dom";
 
 import Main from './components/contents/main/Main';
-// import Blog1 from './components/contents/blog/Blog1';
 import About from './components/contents/about/About';
 import Shop from './components/contents/shop/Shop';
-// import Basket from "./components/contents/shop/Basket/Basket";
 import ScrollToTop from "./ScrollToTop";
 import CardProduct from "./components/contents/shop/Card-Product/CardProduct";
 import BasketContainer from "./components/contents/shop/Basket/BasketContainer";
 import ThankYou from './components/contents/shop/Basket/ThankYou/ThankYou';
-// import Favotites from './components/contents/shop/Favorites/Favotites';
 import Favorites from './components/contents/shop/Favorites/Favorites'
 import Contacts from "./components/contents/contacts/Contacts";
 import BlogPage from "./components/contents/blog/BlogPage/BlogPage";
@@ -41,6 +38,7 @@ const App = (props) => {
                 <Route exact path='/shop/cosmetics' component={Cosmetics}/>
                 <Route exact path='/shop/hygiene' component={Hygiene}/>
                 <Route exact path='/shop/zero-waste' component={ZeroWaste}/>
+                <Redirect to="/"/>
             </BrowserRouter>
         </>
     );
