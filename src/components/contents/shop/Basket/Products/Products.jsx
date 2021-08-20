@@ -16,12 +16,12 @@ const Products = (props) => {
         if (input.current.value === "ECOLIFE" || input.current.value === "ecolife") {
             saleCount.current.innerHTML = parseInt(allSum / 100 * 10);
             price.current.innerHTML = allSum - parseInt(allSum / 100 * 10);
-            input.current.style.border = "1px solid #d3d3d3"
-            input.current.placeholder = "Введите промокод"
+            // input.current.style.border = "1px solid #d3d3d3"
+            // input.current.placeholder = "Введите промокод"
         } else {
             console.log(input.current.placeholder);
-            input.current.style.border = "1px solid #DB6666"
-            input.current.placeholder = "Неверный промокод"
+            // input.current.style.border = "1px solid #DB6666"
+            // input.current.placeholder = "Неверный промокод"
             saleCount.current.innerHTML = 0;
             price.current.innerHTML = allSum;
         }
