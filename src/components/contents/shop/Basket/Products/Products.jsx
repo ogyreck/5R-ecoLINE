@@ -12,10 +12,18 @@ const Products = (props) => {
     let input = React.createRef();
     let saleCount = React.createRef();
     let price = React.createRef();
-    const sale = () => {
-        if (input.current.value === "ECOLIFE"){
-            saleCount.current.outerText = parseInt(allSum / 100 *10);
-            price.current.outerText = allSum - parseInt(allSum / 100 *10);
+    const promo = () =>{
+        if (input.current.value === "ECOLIFE" || input.current.value === "ecolife") {
+            saleCount.current.innerHTML = parseInt(allSum / 100 * 10);
+            price.current.innerHTML = allSum - parseInt(allSum / 100 * 10);
+            input.current.style.border = "1px solid #d3d3d3"
+            input.current.placeholder = "Введите промокод"
+        } else {
+            console.log(input.current.placeholder);
+            input.current.style.border = "1px solid #DB6666"
+            input.current.placeholder = "Неверный промокод"
+            saleCount.current.innerHTML = 0;
+            price.current.innerHTML = allSum;
         }
     }
     let scet = 0;
@@ -49,7 +57,8 @@ const Products = (props) => {
             <hr className="products__line"/>
             <div className="flex-wrapper">
                 <div className="products__promocode">
-                    <input type="text" name="promo" ref={input} onChange={sale} placeholder="Введите промокод"/>
+                    <input className="products__promocode-input" type="text" name="promo" ref={input}  placeholder="Введите промокод"/>
+                    <button onClick={promo} className="products__promocode-btn">Применить</button>
                 </div>
                 <div className="flex-product-total-wrapper">
                     <p className="products__sale">Скидка: <span ref={saleCount}>0</span> ₽</p>
