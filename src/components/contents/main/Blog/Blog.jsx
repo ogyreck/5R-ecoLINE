@@ -69,7 +69,7 @@ const Blog = () => {
             </div>
           </div>
           <div className="blog__btns">
-            <Link to="/shop" className="blog__btn-catalog">Читать больше</Link>
+            <Link to="/blog" className="blog__btn-catalog">Читать больше</Link>
           </div>
           <div className="blog-up">
           <span onClick={scrollTop}>Наверх</span>

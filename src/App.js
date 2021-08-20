@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Redirect, Route } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 
 import Main from './components/contents/main/Main';
 import About from './components/contents/about/About';
@@ -38,7 +38,6 @@ const App = (props) => {
                 <Route exact path='/shop/cosmetics' component={Cosmetics}/>
                 <Route exact path='/shop/hygiene' component={Hygiene}/>
                 <Route exact path='/shop/zero-waste' component={ZeroWaste}/>
-                <Redirect to="/"/>
             </BrowserRouter>
         </>
     );
