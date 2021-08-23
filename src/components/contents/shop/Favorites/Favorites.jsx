@@ -9,24 +9,24 @@ import ShopCard from "../Shop-cards/ShopCard";
 const Favorites = (props) => {
     console.log(props, 'favor')
     let sket = 0
-    let cardFavor = props.favorite.map(card => {
-        let favorId = sket++
-
-        return <ShopCard key={card.id} name={card.nameCard}
-                                                        favorId={favorId}
-                                                          cost={card.cost}
-                                                          img={card.img}
-                                                          new={card.sale}
-                                                          id={card.id}
-                                                          addBasket={props.addBasket}
-                                                          disable={card.disable}
-                                                          inButton={card.inButton}
-                                                          addFavorite={props.addFavorite}
-                                                            delFavor={props.delFavorite}
-                                                          fevorClass={card.favoriteClass}
-                                                          type={card.type}
-
-    />})
+    // let cardFavor = props.favorite.map(card => {
+    //     let favorId = sket++
+    //
+    //     return <ShopCard key={card.id} name={card.nameCard}
+    //                                                     favorId={favorId}
+    //                                                       cost={card.cost}
+    //                                                       img={card.img}
+    //                                                       new={card.sale}
+    //                                                       id={card.id}
+    //                                                       addBasket={props.addBasket}
+    //                                                       disable={card.disable}
+    //                                                       inButton={card.inButton}
+    //                                                       addFavorite={props.addFavorite}
+    //                                                         delFavor={props.delFavorite}
+    //                                                       fevorClass={card.favoriteClass}
+    //                                                       type={card.type}
+    //
+    // />})
     return (
         <>
             <HeaderShopContainer/>
@@ -41,7 +41,13 @@ const Favorites = (props) => {
                     </div>
                     <h2 className="main-heading main-heading-liked">Избранное</h2>
                     <div className='shop-cards'>
-                       {cardFavor}
+                       <ShopCard name={"Щетка для посуды с ручкой"} img={"img/cards-in-shop/card2.png"}
+                                 cost={440}
+                                 disable={false}
+                                 inButton={'В корзину'}
+                                 addFavorite={props.addFavorite}
+                                 fevorClass={"shop_favorite_active"}
+                       />
                     </div>
                     <div className="button-container">
                         <Link to="/shop">

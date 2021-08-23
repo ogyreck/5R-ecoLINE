@@ -136,20 +136,20 @@ export const cardReducer = (state = initialState, action) => {
                 favor: stateCopy.cardsData[action.idCard - 1].favor
 
             }
-            let newCardFavor = stateCopy.favorite[action.idCard - 1] = {
-                sale: stateCopy.favorite[action.idCard - 1].sale,
-                img: stateCopy.favorite[action.idCard - 1].img,
-                nameCard: stateCopy.favorite[action.idCard - 1].nameCard,
-                cost: stateCopy.favorite[action.idCard - 1].cost,
-                id: action.idCard,
-                disable: true,
-                inButton: 'Добавлено',
-                count: 1,
-                favoriteClass: stateCopy.favorite[action.idCard - 1].favoriteClass,
-                favor: stateCopy.favorite[action.idCard - 1].favor
-
-            }
-            stateCopy.favorite[action.idCard-1] = {...newCardFavor}
+            // let newCardFavor = stateCopy.favorite[action.idCard - 1] = {
+            //     sale: stateCopy.favorite[action.idCard - 1].sale,
+            //     img: stateCopy.favorite[action.idCard - 1].img,
+            //     nameCard: stateCopy.favorite[action.idCard - 1].nameCard,
+            //     cost: stateCopy.favorite[action.idCard - 1].cost,
+            //     id: action.idCard,
+            //     disable: true,
+            //     inButton: 'Добавлено',
+            //     count: 1,
+            //     favoriteClass: stateCopy.favorite[action.idCard - 1].favoriteClass,
+            //     favor: stateCopy.favorite[action.idCard - 1].favor
+            //
+            // }
+            // stateCopy.favorite[action.idCard-1] = {...newCardFavor}
             stateCopy.basket.push(newCard)
 
 
@@ -221,29 +221,17 @@ export const cardReducer = (state = initialState, action) => {
             return stateCopy
         case ADD_FAVORITE:
 
+            if (stateCopy.cardsData[action.idCard-1].favoriteClass === 'shop_favorite_active'){
+                stateCopy.cardsData[action.idCard-1].favoriteClass = "shop_favorite"
+            }else{
+                stateCopy.cardsData[action.idCard-1].favoriteClass = "shop_favorite_active"
+            }
 
-            stateCopy.cardsData[action.idCard-1].favoriteClass = 'shop_favorite_active'
-            stateCopy.cardsData[action.idCard-1].favor= true
-
-
-                stateCopy.favorite.push({
-                    ...stateCopy.cardsData[action.idCard - 1],
-                    favoriteClass: 'shop_favorite_active',
-                    favor: true
-
-                })
 
                 return stateCopy
 
 
-        case DEL_FAVORITE:
-            let card = [...stateCopy.cardsData]
-            let favor = [...stateCopy.favorite];
-            stateCopy.cardsData[action.idCard-1].favoriteClass = 'shop_favorite'
-            stateCopy.cardsData[action.idCard-1].favor= false
-            remove(favor, action.idInFavor)
-            stateCopy.favorite = [...favor]
-            return stateCopy
+
 
 
         default:

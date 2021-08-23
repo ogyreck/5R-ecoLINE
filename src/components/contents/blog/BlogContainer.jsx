@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "./blog1.css";
 import {connect} from "react-redux";
 import Blog1 from "./Blog1";

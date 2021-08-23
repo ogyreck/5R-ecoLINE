@@ -1,6 +1,6 @@
 // import React, {useRef} from "react"
 import "./Product.css"
-// import productCardImage from "../../../.././../img/product-image.jpg"
+import {Link} from "react-router-dom"
 
 const Product = (props) => {
 
@@ -28,17 +28,17 @@ const Product = (props) => {
    return (
       <div className="products__card">
          <img src={props.img} alt="" className="products__card-image" />
-         <div className="products__card-description">{props.nameCard}</div>
+         <Link to="/shop/card"><div className="products__card-description">{props.nameCard}</div></Link>
          <div className="products__card-price">{props.cost} ₽</div>
          <div className="products__card-count">
             <button className="card__count-btn" onClick={delCount}>−</button>
-           <span className='card__count'>{props.count}</span>
+            <span className='card__count'>{props.count}</span>
             <button className="card__count-btn" onClick={addCount}>+</button>
          </div>
          <div className="products__card-total">{props.cost * props.count} ₽</div>
          <span className="close" onClick={deleteBascet}></span>
       </div>
    );
-};
+}
 
 export default Product;

@@ -25,21 +25,13 @@ const ShopCard = (props) => {
         props.addBasket(props.id)
     }
     let addFavorite = () =>{
-        props.addFavorite(props.id,props.favorId)
+        props.addFavorite(props.id,)
 
 
     }
-    let delFavorite = () =>{
-        props.delFavorite()
-    }
 
-    let prover = () =>{
-        if (props.fevorClass === 'shop_favorite'){
-            return addFavorite
-        }else{
-            return delFavorite
-        }
-    }
+
+
 
 
     console.log(props.favorDis)
@@ -67,7 +59,7 @@ const ShopCard = (props) => {
                 {/*        </svg>*/}
                 {/*    </div>*/}
                 {/*</label>*/}
-                <button className="shop-card__icons"  onClick={prover} disabled={props.favorDis}>
+                <button className="shop-card__icons"  onClick={addFavorite} disabled={props.favorDis}>
                     <div className="shop-card__icons shop-card__icons-svg">
                            <svg className={props.fevorClass} width="23" height="20" >
 

@@ -10,6 +10,7 @@ const BlogPage = () => {
     return (
         <>
             <HeaderShopContainer/>
+            <main>
             <div className="card__bg">
                 <section className="navigation">
                     <div className="container">
@@ -20,8 +21,6 @@ const BlogPage = () => {
                             <img src="/img/arrow_left.svg" alt="Стрелка"/>
                             <Link to="/blog/statia" className="navigation__links-item">5R. Как жить по принципу ноль
                                 отходов</Link>
-
-
                         </div>
                     </div>
                 </section>
@@ -54,7 +53,7 @@ const BlogPage = () => {
                 </div>
             </section>
             <section className='main-text-blog'>
-                <div className='container'>
+                <div className='container blog-container'>
                     <div className="citata-blog">
                         <p>Ноль отходов назвали самой популярной экологической концепцией среди россиян.
                             Раньше этот принцип пытались применить только к производству, и мало кто верил, что обычные современные люди могут обойтись в быту вообще без мусора.</p>
@@ -126,6 +125,7 @@ const BlogPage = () => {
                 </div>
             </section>
             <Subscribe/>
+            </main>
             <Footer/>
         </>
     )

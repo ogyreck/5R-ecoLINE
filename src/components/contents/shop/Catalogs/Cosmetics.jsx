@@ -21,7 +21,7 @@ const Shop = (props) => {
             <img src="/img/arrow_left.svg" alt="Стрелка" />
             <Link to="/shop" className="navigation__links-item">Каталог</Link>
           </div>
-          <h2 className="main-heading main-heading-catalog">Каталог товаров</h2>
+          <h2 className="main-heading main-heading-catalog">Каталог</h2>
           <BlogTopics />
           <h1>Cosmetics</h1>
         </div>

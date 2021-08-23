@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route } from "react-router-dom";
 
 import Main from './components/contents/main/Main';
-import Blog1 from './components/contents/blog/Blog1';
+// import Blog1 from './components/contents/blog/Blog1';
 import About from './components/contents/about/About';
 import Shop from './components/contents/shop/Shop';
 // import Basket from "./components/contents/shop/Basket/Basket";
